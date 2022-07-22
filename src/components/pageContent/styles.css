@@ -1,8 +1,55 @@
-.produits_accueil {
+/* .produits_accueil {
   height: auto;
   width: 100%;
   background-color: #FAF7EE;
   padding-bottom: 10vh;
+}
+
+.acuil_item {
+    height: 70vh;
+    width: 100%;
+}
+
+
+.food_item {
+    height: 90vh;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.swg_items_products {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.swg_items_products#romantic_rose {background-color: #F8ACB9;}
+.swg_items_products#amber_oud {background-color: #FF9E54;}
+.swg_items_products#passions_fruits {background-color: #8832CC;}
+
+.lvm_items_products {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prfm_item_perfume {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rem;
+}
+
+.bdm_item_perfume {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rem;
 }
 
 .acuil_col_name {
@@ -153,30 +200,6 @@
   background-size: contain;
   background-position: center;
 }
-.acuil_col_overview .acuil_overview_content .acuil_image.handwash_image {
-  background-image: url("../../assets/img/home/lavemains.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.antibacterial_image {
-  background-image: url("../../assets/img/home/antibacterien.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.perfume_image {
-  background-image: url("../../assets/img/home/bodymist.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.showergel_image {
-  background-image: url("../../assets/img/home/showergel.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.coffee_image {
-  background-image: url("../../assets/img/home/coffee.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.food_image {
-  background-image: url("../../assets/img/home/food.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.airfreshener_image {
-  background-image: url("../../assets/img/home/airfreshener.webp");
-}
-.acuil_col_overview .acuil_overview_content .acuil_image.bodymist_image {
-  background-image: url("../../assets/img/home/bodymist.webp");
-}
 
 .acuil_col_description {
   height: 100%;
@@ -249,9 +272,6 @@
   background-image: url("../../assets/img/home/ultracompact.webp");
 }
 
-
- /* Accueil */
-
         
  .acuil_col_name {
     height: 20%;
@@ -293,4 +313,4 @@
     line-height: 4rem;
     text-align: center;
     max-width: 600px;
-}
+} */
