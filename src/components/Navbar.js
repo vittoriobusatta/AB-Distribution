@@ -130,7 +130,7 @@ const Li = styled.li`
     &.hover_coffee::after {
       background-color: ${coffee};
     }
-    &.hover_showergel::after {
+    /* &.hover_showergel::after {
       background-color: $shower_gel;
     }
     &.hover_perfume::after {
@@ -150,7 +150,7 @@ const Li = styled.li`
     }
     &.hover_bodymist::after {
       background-color: $bodymist;
-    }
+    } */
 
     &.product_active {
       position: relative;
