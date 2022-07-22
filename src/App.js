@@ -13,24 +13,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
     transition: all .3s ease-in;
-
-    @media (max-width: 1200px) {
-      font-size: 50%;
-    }
-    @media (max-width: 850px) {
-      font-size: 40%;
-    }
-    @media (max-width: 650px) {
-      font-size: 30%;
-    }
-    @media (max-width: 380px) {
-      font-size: 20%;
-    }
   }
 
   body {
     background-color: ${mainColor};
-    font-size: 1.4em;
+    font-size: 1.6rem;
   }
 
   ::-moz-selection {
@@ -86,11 +73,11 @@ function App() {
   }, [scrollTop]);
 
   return (
-    <div>
+    <>
       <GlobalStyle />
       <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
       <HomePage />
-    </div>
+    </>
   );
 }
 

@@ -45,7 +45,7 @@ const RightContent = styled.div`
 `;
 const Logo = styled.svg`
   height: auto;
-  width: 7.5rem;
+  width: 7rem;
   min-height: 60px;
   min-width: 60px;
   & path {
@@ -244,8 +244,6 @@ function Navbar({ openMenu, setOpenMenu }) {
           <LeftContent>
             <a href="https://www.ab-distribution.re">
               <Logo
-                width="179"
-                height="122"
                 viewBox="0 0 179 122"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

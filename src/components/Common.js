@@ -14,3 +14,6 @@ export const bodymist = "#FF9B71";
 
 export const muliRegular = "Muli Regular";
 export const muliBold = "Muli Bold";
+export const playfairDisplayMedium = "PlayfairDisplay Medium";
+export const playfairDisplayRegular = "PlayfairDisplay Regular";
+export const baliviaRegular = "Balivia Regular";

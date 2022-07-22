@@ -1,0 +1,296 @@
+.produits_accueil {
+  height: auto;
+  width: 100%;
+  background-color: #FAF7EE;
+  padding-bottom: 10vh;
+}
+
+.acuil_col_name {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acuil_col_name .acuil_name_content {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.acuil_col_name .acuil_name_content h1 {
+  position: relative;
+  font-family: baliva;
+  font-weight: 700;
+  font-size: max(2rem, 10px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  max-width: 250px;
+}
+.acuil_col_name .acuil_name_content h1::before {
+  position: absolute;
+  content: "";
+  bottom: -2rem;
+  left: 0%;
+  width: 112px;
+  height: 3px;
+  background: #000;
+  z-index: 10;
+}
+.acuil_col_name .acuil_name_content h1.antibacterial_line::before {
+  background-color: #B7E2FA;
+}
+.acuil_col_name .acuil_name_content h1.handwash_line::before {
+  background-color: #FEDA57;
+}
+.acuil_col_name .acuil_name_content h1.perfume_line::before {
+  background-color: #FBDCE2;
+}
+.acuil_col_name .acuil_name_content h1.coffee_line::before {
+  background-color: #AF7F61;
+}
+.acuil_col_name .acuil_name_content h1.food_line::before {
+  background-color: #FF6262;
+}
+.acuil_col_name .acuil_name_content h1.showergel_line::before {
+  background-color: #f76b84;
+}
+.acuil_col_name .acuil_name_content h1.airfreshener_line::before {
+  background-color: #BC89FD;
+}
+.acuil_col_name .acuil_name_content h1.bodymist_line::before {
+  background-color: #2E2B27;
+}
+.acuil_col_name .acuil_name_content span {
+  height: auto;
+  width: auto;
+  position: relative;
+  margin-left: 3rem;
+}
+.acuil_col_name .acuil_name_content span a {
+  position: relative;
+  color: #222;
+  font-family: muli_bold;
+  font-size: max(1.3rem, 9px);
+  z-index: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.4s ease-out;
+}
+.acuil_col_name .acuil_name_content span a.bodymist_color {
+  color: #fff;
+}
+.acuil_col_name .acuil_name_content span a.bodymist_color:hover {
+  color: #fff;
+}
+.acuil_col_name .acuil_name_content span a:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  top: 2rem;
+  border-bottom: 2px solid #000;
+  transition: width 0.4s ease-out;
+  z-index: 2;
+}
+.acuil_col_name .acuil_name_content span a:hover:before {
+  width: 100%;
+}
+.acuil_col_name .acuil_name_content span svg {
+  height: 20rem;
+  width: 20rem;
+  min-height: 80px;
+  min-width: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transform: translate(-25%, 46%);
+}
+.acuil_col_name .acuil_name_content span svg.antibacterial_color path {
+  fill: #B7E2FA;
+}
+.acuil_col_name .acuil_name_content span svg.handwash_color path {
+  fill: #FEDA57;
+}
+.acuil_col_name .acuil_name_content span svg.perfume_color path {
+  fill: #FBDCE2;
+}
+.acuil_col_name .acuil_name_content span svg.coffee_color path {
+  fill: #AF7F61;
+}
+.acuil_col_name .acuil_name_content span svg.food_color path {
+  fill: #FF6262;
+}
+.acuil_col_name .acuil_name_content span svg.showergel_color path {
+  fill: #f76b84;
+}
+.acuil_col_name .acuil_name_content span svg.airfreshener_color path {
+  fill: #BC89FD;
+}
+.acuil_col_name .acuil_name_content span svg.bodymist_color path {
+  fill: #2E2B27;
+}
+
+.acuil_col_overview {
+  height: 100%;
+  width: 40%;
+}
+.acuil_col_overview .acuil_overview_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acuil_col_overview .acuil_overview_content .acuil_image {
+  height: 80%;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.handwash_image {
+  background-image: url("../../assets/img/home/lavemains.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.antibacterial_image {
+  background-image: url("../../assets/img/home/antibacterien.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.perfume_image {
+  background-image: url("../../assets/img/home/bodymist.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.showergel_image {
+  background-image: url("../../assets/img/home/showergel.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.coffee_image {
+  background-image: url("../../assets/img/home/coffee.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.food_image {
+  background-image: url("../../assets/img/home/food.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.airfreshener_image {
+  background-image: url("../../assets/img/home/airfreshener.webp");
+}
+.acuil_col_overview .acuil_overview_content .acuil_image.bodymist_image {
+  background-image: url("../../assets/img/home/bodymist.webp");
+}
+
+.acuil_col_description {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acuil_col_description .acuil_description_content {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.acuil_col_description .acuil_description_content p {
+  font-family: muli_reg;
+  font-size: max(1.4rem, 9px);
+  font-weight: 400;
+  line-height: 2.3rem;
+  text-align: left;
+  color: #222;
+  padding-right: 0.5rem;
+}
+
+.brands {
+  height: 80vh;
+  width: 100%;
+}
+.brands .brands_top {
+  height: 30%;
+  width: 100%;
+}
+.brands .brands_bottom {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands .brands_bottom .brands_bottom_content {
+  height: 100%;
+  width: 100%;
+}
+.brands .brands_bottom .brands_bottom_content .brands_grid {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+}
+.brands .brands_bottom .brands_bottom_content .brands_image {
+  height: 40%;
+  width: 30%;
+  min-width: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.brands .brands_bottom .brands_bottom_content .brands_image.tukas {
+  background-image: url("../../assets/img/home/tukas.webp");
+}
+.brands .brands_bottom .brands_bottom_content .brands_image.nestle {
+  background-image: url("../../assets/img/home/nestle.webp");
+}
+.brands .brands_bottom .brands_bottom_content .brands_image.ultracompact {
+  background-image: url("../../assets/img/home/ultracompact.webp");
+}
+
+
+ /* Accueil */
+
+        
+ .acuil_col_name {
+    height: 20%;
+    width: 100%;
+}
+
+.acuil_col_name .acuil_name_content span a:before {
+    display: none;
+}
+
+.acuil_col_overview {
+    height: 60%;
+    width: 100%;
+}
+
+.acuil_col_description {
+    height: 20%;
+    width: 100%;
+}
+
+.acuil_col_overview .acuil_overview_content .acuil_image {
+    height: 80%;
+    width: 80%;
+}
+
+.acuil_col_name .acuil_name_content {
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 3rem 0 0;
+}
+
+.acuil_col_description .acuil_description_content  {
+    width: 70%;
+}
+
+.acuil_col_description .acuil_description_content p {
+    line-height: 4rem;
+    text-align: center;
+    max-width: 600px;
+}
