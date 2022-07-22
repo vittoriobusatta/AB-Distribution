@@ -176,16 +176,20 @@ export const NameContent = styled.div`
     @media (min-width: 650px) {
       font-size: 1.3rem;
     }
-
-    &:before {
-      content: "";
-      display: block;
-      position: relative;
-      width: 0;
-      top: 2rem;
-      border-bottom: 2px solid #000;
-      transition: width 0.4s ease-out;
-      z-index: 2;
+    @media (min-width: 850px) {
+      &:before {
+        content: "";
+        display: block;
+        position: relative;
+        width: 0;
+        top: 2rem;
+        border-bottom: 2px solid #000;
+        transition: width 0.4s ease-out;
+        z-index: 2;
+      }
+      &:hover:before {
+        width: 100%;
+      }
     }
   }
 `;

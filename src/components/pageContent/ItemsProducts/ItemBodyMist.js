@@ -21,7 +21,7 @@ function ItemBodyMist() {
       <Layout>
         <Name>
           <NameContent>
-            <Title className="bodymist_line">Brume Corporelle</Title>
+            <Title className="bodymist_line">Brumes Corporelle</Title>
             <span>
               <a href="anti-bacterien">Voir les Produits</a>
               <Svg

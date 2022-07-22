@@ -110,7 +110,8 @@ const Paragraph = styled.p`
   padding: 2rem;
   max-width: 720px;
   @media (max-width: 350px) {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
   @media (min-width: 650px) {
     font-size: 1.8rem;
@@ -173,7 +174,6 @@ function Landing() {
             </div>
           </div>
         </div> */}
-
       </Wrap>
     </Container>
   );

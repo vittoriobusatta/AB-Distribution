@@ -45,11 +45,18 @@ const RightContent = styled.div`
 `;
 const Logo = styled.svg`
   height: auto;
-  width: 7rem;
-  min-height: 60px;
-  min-width: 60px;
+  width: 6.5rem;
+  @media (max-width: 350px) {
+    width: 6rem;
+  }
+  @media (min-width: 650px) {
+    width: 7rem;
+  }
+  @media (min-width: 1100px) {
+    width: 7.5rem;
+  }
   & path {
-    transition: all 0.5s cubic-bezier(0.25, 1.02, 0.61, 0.42);
+    transition: all 0.5s ease;
   }
   &:hover path:nth-child(2),
   &:hover path:nth-child(3) {
