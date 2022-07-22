@@ -1,17 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import {primaryColor } from "./Common";
+import {mainColor } from "./Common";
 
 const HomePageContainer = styled.main`
-  height: auto;
-  width: calc(100% - 100px);
-  background-color: #000;
-
+  height: 200vh;
+  width: 100%;
 `;
 
-const HomePage = ({ lightMode, setlightMode }) => {
+const HomePage = ({}) => {
   return (
-    <HomePageContainer isLight={lightMode}>
+    <HomePageContainer>
 
     </HomePageContainer>
   );
