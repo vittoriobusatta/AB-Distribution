@@ -102,7 +102,7 @@ const Description = styled.div`
 const Paragraph = styled.p`
   position: relative;
   color: #838383;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
   line-height: 2.5rem;
   font-family: ${muliRegular};

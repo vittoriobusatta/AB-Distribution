@@ -19,14 +19,16 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 10vh;
+  row-gap: 15vh;
+  @media (min-width: 1100px) {
+    row-gap: 10vh;
+  }
 `;
 
 function Products() {
   return (
     <Container>
       <Wrapper>
-
         <ItemAntibacterial />
         <ItemHandwash />
         <ItemShowerGel />
@@ -35,7 +37,6 @@ function Products() {
         <ItemAirFreshener />
         <ItemCoffee />
         <ItemFood />
-
       </Wrapper>
     </Container>
   );
