@@ -159,13 +159,16 @@ export const NameContent = styled.div`
     position: relative;
     color: #222;
     font-family: ${muliBold};
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     z-index: 1;
     text-transform: uppercase;
     white-space: nowrap;
     transition: all 0.4s ease-out;
     @media (max-width: 350px) {
       font-size: 1rem;
+    }
+    @media (min-width: 650px) {
+      font-size: 1.3rem;
     }
 
     &:before {
