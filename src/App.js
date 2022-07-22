@@ -3,7 +3,7 @@ import "./reset.css";
 import { mainColor } from "./components/Common";
 import { createGlobalStyle } from "styled-components";
 import { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 

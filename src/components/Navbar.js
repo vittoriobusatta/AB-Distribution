@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { muliRegular, muliBold, accueil, coffee, perfume } from "./Common";
+import { muliRegular, muliBold, accueil, coffee } from "./Common";
 
 const Container = styled.header`
   height: 8vh;

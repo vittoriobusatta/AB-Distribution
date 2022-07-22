@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import {mainColor } from "./Common";
+import {} from "./Common";
 
 const HomePageContainer = styled.main`
   height: 200vh;
   width: 100%;
 `;
 
-const HomePage = ({}) => {
+const HomePage = () => {
   return (
     <HomePageContainer>
 
