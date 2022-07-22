@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-
+  const [openMenu, setOpenMenu] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
@@ -88,7 +88,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <Navbar />
+      <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
       <HomePage />
     </div>
   );

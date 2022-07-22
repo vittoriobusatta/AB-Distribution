@@ -10,51 +10,46 @@ const Container = styled.header`
   right: 0;
   z-index: 999;
   transition: all 0.3s ease-in 0s, top 0.3s ease 0s;
-  background: #FDFAF0;
+  background: #fdfaf0;
 `;
 const Wrap = styled.div`
   height: 100%;
   width: 100%;
   display: inline-flex;
+  justify-content: space-between;
   flex-direction: row;
-  padding: 1rem 2rem;
+  padding: 1rem max(2rem, 20px);
 `;
 const Left = styled.div`
   height: 100%;
-  width: 10%;
+  width: auto;
+  flex: 1;
 `;
 const LeftContent = styled.div`
   height: 100%;
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
 `;
 const Right = styled.div`
   height: 100%;
-  width: 90%;
+  width: auto;
+  flex: 1;
 `;
 const RightContent = styled.div`
   height: 100%;
-  width: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 `;
-// const MobileMenu = styled.div`
-//   display: none;
-//   height: 100vh;
-//   width: 75vw;
-//   position: fixed;
-//   inset: 0 0 0 25%;
-//   background-color: #fffbf5;
-//   z-index: 100;
-//   transform: translateX(100%);
-//   transition: transform 400ms ease-out;
-// `;
 const Logo = styled.svg`
   height: auto;
   width: 7.5rem;
   min-height: 60px;
   min-width: 60px;
   & path {
-    transition: all .5s cubic-bezier(.25,1.02,.61,.42);
+    transition: all 0.5s cubic-bezier(0.25, 1.02, 0.61, 0.42);
   }
   &:hover path:nth-child(2),
   &:hover path:nth-child(3) {
@@ -62,11 +57,14 @@ const Logo = styled.svg`
   }
 `;
 const Nav = styled.nav`
+  display: none;
   height: 100%;
   width: 100%;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media (min-width: 850px) {
+    display: flex;
+  }
 `;
 const Ul = styled.ul`
   display: inline-flex;
@@ -197,7 +195,48 @@ const Li = styled.li`
   }
 `;
 
-function Navbar() {
+const BurgerContainer = styled.button`
+  position: relative;
+  height: 40px;
+  width: 45px;
+  background: none;
+  border: none;
+  @media (min-width: 850px) {
+    display: none;
+  }
+`;
+
+const Bar = styled.div`
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 45px;
+  border-radius: 10px;
+  background: #000;
+  transition: ${(props) =>
+    props.isActive === true ? "transform 400ms ease" : "transform 0.5s ease"};
+  z-index: 999;
+  &.bar1 {
+    top: 0;
+    transform: ${(props) =>
+      props.isActive === true
+        ? "translate3d(0, 18px, 0) rotate(-225deg)"
+        : "translateY(10px)"};
+  }
+  &.bar2 {
+    bottom: 0;
+    transform: ${(props) =>
+      props.isActive === true
+        ? "translate3d(0, -19px, 0) rotate(225deg)"
+        : "translateY(-10px)"};
+  }
+`;
+
+function Navbar({ openMenu, setOpenMenu }) {
+  const ClickMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <Container id="navbar">
       <Wrap>
@@ -257,63 +296,10 @@ function Navbar() {
               </Ul>
             </Nav>
 
-            {/* <div className="mobile_menu">
-              <div className="mobile_menu_wrapper">
-                <button className="hdwcr_content_menu_burger">
-                  <span className="hdwcr_content_menu_burger_btn">
-                    <span className="bar bar_1"></span>
-                    <span className="bar bar_2"></span>
-                  </span>
-                </button>
-              </div>
-
-              <MobileMenu>
-                <div className="mm_overview_content">
-                  <div className="mm_content_nav">
-                    <div className="mm_home">
-                      <div className="mm_colapsite">
-                        <a
-                          className="product_active product_accueil"
-                          href="https://www.ab-distribution.re"
-                        >
-                          Accueil
-                        </a>
-                      </div>
-                    </div>
-                    <div className="mm_links_menu">
-                      <ul>
-                        <li>
-                          <a href="#produits">Produits</a>
-                        </li>
-                        <li>
-                          <a href="#contact">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <aside className="mm_socials_links">
-                    <ul>
-                      <li>
-                        <a href="">
-                          <i className="fa-brands fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i className="fa-solid fa-envelope"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i className="fa-brands fa-facebook"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </aside>
-                </div>
-              </MobileMenu>
-            </div> */}
+            <BurgerContainer onClick={ClickMenu} isActive={openMenu}>
+              <Bar className="bar1" isActive={openMenu} />
+              <Bar className="bar2" isActive={openMenu} />
+            </BurgerContainer>
           </RightContent>
         </Right>
       </Wrap>
