@@ -88,6 +88,9 @@ export const Title = styled.h1`
   @media (max-width: 350px) {
     font-size: 2rem;
   }
+  @media (min-width: 650px) {
+    font-size: 3.5rem;
+  }
   @media (min-width: 850px) {
     font-size: 5rem;
   }
@@ -101,11 +104,14 @@ export const Title = styled.h1`
     bottom: -1rem;
     left: 5%;
     width: 112px;
-    height: 3px;
+    height: 2px;
     background: #000;
     z-index: 10;
     @media (max-width: 350px) {
       width: 85px;
+    }
+    @media (min-width: 650px) {
+      height: 3px;
     }
   }
 
