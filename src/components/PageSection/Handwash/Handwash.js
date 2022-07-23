@@ -26,7 +26,7 @@ const Wrap = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 15vh;
+  row-gap: 10vh;
 `;
 
 const ImageContainer = styled.div`
@@ -48,18 +48,6 @@ const Image = styled.img`
 const Items = styled.div`
   height: 100vh;
   width: 100%;
-  &#mango {
-    border: 2px solid ${mangoColor};
-  }
-  &#cranberry {
-    border: 2px solid ${cranberryColor};
-  }
-  &#blueberry {
-    border: 2px solid ${blueberryColor};
-  }
-  &#plum {
-    border: 2px solid ${plumColor};
-  }
 `;
 
 const ItemContent = styled.div`
