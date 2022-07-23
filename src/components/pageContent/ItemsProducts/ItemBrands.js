@@ -25,6 +25,9 @@ const Content = styled.div`
 `;
 const BrandsTitle = styled.div`
   grid-area: 2 / 2 / 5 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 650px) {
     grid-area: 1 / 3 / 7 / 6;
   }
@@ -33,14 +36,13 @@ const BrandsTitle = styled.div`
   }
   span {
     height: auto;
-    width: auto;
-    position: relative;
+    width: fit-content;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     h1 {
-      color: $black;
+      color: #111;
       font-family: ${baliviaRegular};
       font-size: 3rem;
       text-transform: uppercase;
@@ -59,10 +61,8 @@ const BrandsTitle = styled.div`
     }
 
     svg {
-      max-width: 200px;
-      position: absolute;
-      bottom: 0;
-      transform: translate(0, 90%);
+      width: auto;
+      padding-top: 0.5rem;
     }
   }
 `;
@@ -149,8 +149,6 @@ function ItemBrands() {
           <span>
             <h1>Nos Marques</h1>
             <svg
-              width="272"
-              height="32"
               viewBox="0 0 272 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
