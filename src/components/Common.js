@@ -23,6 +23,11 @@ export const playfairDisplayMedium = "PlayfairDisplay Medium";
 export const playfairDisplayRegular = "PlayfairDisplay Regular";
 export const baliviaRegular = "Balivia Regular";
 
+// Animations /////////////////////////////////////////////////////////////////
+
+export const textHover = "all 0.5s cubic-bezier(0, 0, 0.25, 1.21)";
+
+
 // Components  ////////////////////////////////////////////////////////////////
 
 export const Item = styled.div`

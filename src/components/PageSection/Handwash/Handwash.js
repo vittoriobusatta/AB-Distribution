@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { albraSans, baliviaRegular, cabinMedium, cabinRegular } from "../../Common";
+import {
+  albraSans,
+  baliviaRegular,
+  cabinMedium,
+  cabinRegular,
+  textHover,
+} from "../../Common";
 import blueberry from "../../../../src/assets/img/handwash/blueberry.webp";
 import mango from "../../../../src/assets/img/handwash/mango.webp";
 import plum from "../../../../src/assets/img/handwash/plum.webp";
@@ -30,7 +36,6 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
 `;
 
 const Image = styled.img`
@@ -85,14 +90,14 @@ const Left = styled.div`
       font-size: 3.5rem;
     }
     @media (min-width: 650px) {
-    font-size: 7rem;
-  }
-  @media (min-width: 850px) {
-    font-size: 8rem;
-  }
-  @media (min-width: 1100px) {
-    font-size: 9rem;
-  }
+      font-size: 7rem;
+    }
+    @media (min-width: 850px) {
+      font-size: 8rem;
+    }
+    @media (min-width: 1100px) {
+      font-size: 9rem;
+    }
   }
   &.img_mango::before {
     color: ${mangoColor};
@@ -206,6 +211,20 @@ const NumberLinks = styled.div`
   & a {
     font-family: ${baliviaRegular};
     font-size: 3.5rem;
+    transition: ${textHover};
+
+    &:hover.mango_color {
+      color: #ffd365;
+    }
+    &:hover.cranberry_color {
+      color: #df3946;
+    }
+    &:hover.plum_color {
+      color: #cf73ad;
+    }
+    &:hover.blueberry_color {
+      color: #91eaff;
+    }
     &.mango_color {
       color: ${mangoColor};
     }
@@ -248,7 +267,6 @@ function Handwash() {
   return (
     <Container>
       <Wrap>
-
         <Items id="mango">
           <ItemContent>
             <Left className="img_mango">
@@ -417,7 +435,6 @@ function Handwash() {
             </Right>
           </ItemContent>
         </Items>
-
       </Wrap>
     </Container>
   );
