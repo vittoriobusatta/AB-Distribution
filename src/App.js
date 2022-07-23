@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
     transition: all .3s ease-in;
+    height: fill-available;
   }
 
   body {

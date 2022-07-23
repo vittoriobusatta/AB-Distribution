@@ -8,7 +8,8 @@ const Container = styled.section`
   top: 0;
   right: 0;
   width: calc(100vw - 100px);
-  height: 100vh;
+  min-height: 100vh;
+    min-height: fill-available;
   display: flex;
   align-items: flex-end;
   z-index: 99;
