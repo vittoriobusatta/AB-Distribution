@@ -1,6 +1,4 @@
-import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import {} from "./Common";
 import Handwash from "./PageSection/Handwash/Handwash";
 import Landing from "./HomePageContent/Landing";
 import Products from "./HomePageContent/Products";
@@ -16,19 +14,23 @@ const Container = styled.main`
   margin-top: 8vh;
 `;
 
-const HomePage = () => {
+const HomePage = ({ openMenu, setOpenMenu }) => {
 
   return (
     <Container>
-
-      <Landing /> 
+      <Landing setOpenMenu={setOpenMenu} openMenu={openMenu} />
       <ScrollToTop />
 
-        <Routes>
-          <Route path="/" element={<Products />} />
-          <Route path="lave-mains" element={<Handwash /> } />
-        </Routes>
-        
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Products
+            />
+          }
+        />
+        <Route path="lave-mains" element={<Handwash />} />
+      </Routes>
     </Container>
   );
 };

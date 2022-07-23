@@ -9,7 +9,7 @@ import ItemCoffee from "./ItemsProducts/ItemCoffee";
 import ItemPerfume from "./ItemsProducts/ItemPerfume";
 import ItemAirFreshener from "./ItemsProducts/ItemAirFreshener";
 import ItemBrands from "./ItemsProducts/ItemBrands";
-
+import { useState } from "react";
 
 const Container = styled.section`
   height: auto;
@@ -27,6 +27,9 @@ const Wrapper = styled.div`
 `;
 
 function Products() {
+  const [,] = useState(false);
+
+  console.log();
   return (
     <Container>
       <Wrapper>

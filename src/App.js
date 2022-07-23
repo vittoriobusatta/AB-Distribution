@@ -78,10 +78,9 @@ function App() {
         <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
         <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />
         <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} />
-        <HomePage />
 
         <Routes>
-          <Route path="/*" element={<HomePage />} />
+          <Route path="/*" element={<HomePage setOpenMenu={setOpenMenu} openMenu={openMenu} />} />
         </Routes>
       </BrowserRouter>
     </>
