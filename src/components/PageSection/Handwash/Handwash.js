@@ -84,6 +84,15 @@ const Left = styled.div`
     @media (max-width: 350px) {
       font-size: 3.5rem;
     }
+    @media (min-width: 650px) {
+    font-size: 7rem;
+  }
+  @media (min-width: 850px) {
+    font-size: 8rem;
+  }
+  @media (min-width: 1100px) {
+    font-size: 9rem;
+  }
   }
   &.img_mango::before {
     color: ${mangoColor};
@@ -160,6 +169,8 @@ const DescriptionParagraph = styled.div`
   height: auto;
   width: 100%;
   padding-top: 2rem;
+  display: flex;
+  justify-content: center;
   & p {
     font-family: ${cabinRegular};
     font-size: 1.4rem;
