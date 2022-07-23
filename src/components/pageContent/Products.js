@@ -9,6 +9,8 @@ import ItemBodyMist from "./ItemsProducts/ItemBodyMist";
 import ItemCoffee from "./ItemsProducts/ItemCoffee";
 import ItemPerfume from "./ItemsProducts/ItemPerfume";
 import ItemAirFreshener from "./ItemsProducts/ItemAirFreshener";
+import ItemBrands from "./ItemsProducts/ItemBrands";
+
 
 const Container = styled.section`
   height: auto;
@@ -37,6 +39,7 @@ function Products() {
         <ItemAirFreshener />
         <ItemCoffee />
         <ItemFood />
+        <ItemBrands />
       </Wrapper>
     </Container>
   );
