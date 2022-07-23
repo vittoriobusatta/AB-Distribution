@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import {} from "./Common";
-import Landing from "./pageContent/Landing";
-import Products from "./pageContent/Products";
+import Handwash from "./PageSection/Handwash/Handwash";
+import Landing from "./HomePageContent/Landing";
+// import Products from "./HomePageContent/Products";
 
 const Container = styled.main`
   height: auto;
@@ -18,7 +19,8 @@ const HomePage = () => {
   return (
     <Container>
       <Landing />
-      <Products />
+      {/* <Products />  */}
+      <Handwash />
     </Container>
   );
 };

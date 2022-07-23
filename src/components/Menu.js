@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { mainColor, muliBold, muliRegular } from "./Common";
-import "./styles.css";
+import { mainColor, cabinBold, cabinMedium } from "./Common";
 
 const Container = styled.section`
   position: fixed;
@@ -55,11 +54,11 @@ const Colapsite = styled.div`
   & a {
     font-size: 1.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 
     &.product_active {
       position: relative;
-      font-family: ${muliBold};
+      font-family: ${cabinBold};
       text-transform: uppercase;
     }
   }
@@ -76,7 +75,7 @@ const NavLinks = styled.div`
       a {
         color: #222;
         font-size: 1.6rem;
-        font-family: ${muliRegular};
+        font-family: ${cabinMedium};
       }
     }
   }

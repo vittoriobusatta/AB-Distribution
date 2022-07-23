@@ -1,44 +1,63 @@
 @font-face {
-  font-family: "Muli Regular";
-  src: url("../src/fonts/muli/Muli-Regular.woff") format("woff"),
-    /* Modern Browsers */ url("../src/fonts/muli/Muli-Regular.ttf")
+  font-family: "Cabin Regular";
+  src: url("../src/assets/fonts/Cabin/Cabin-Regular.woff") format("woff"),
+    /* Modern Browsers */ url("../src/assets/fonts/Cabin/Cabin-Regular.ttf")
       format("truetype"); /* Safari, Android, iOS */
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 @font-face {
-  font-family: "Muli Bold";
-  src: url("../src/fonts/muli/Muli-Bold.woff") format("woff"),
-    /* Modern Browsers */ url("../src/fonts/muli/Muli-Bold.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+  font-family: "Cabin Medium";
+  src: url("../src/assets/fonts/Cabin/Cabin-Medium.woff") format("woff"),
+    url("../src/assets/fonts/Cabin/Cabin-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Cabin Bold";
+  src: url("../src/assets/fonts/Cabin/Cabin-Bold.woff") format("woff"),
+    url("../src/assets/fonts/Cabin/Cabin-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 @font-face {
   font-family: "PlayfairDisplay Medium";
-  src: url("../src/fonts/playfairDisplay/PlayfairDisplay-Medium.woff") format("woff"),
-    /* Modern Browsers */ url("../src/fonts/playfairDisplay/PlayfairDisplay-Medium.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+  src: url("../src/assets/fonts/playfairDisplay/PlayfairDisplay-Medium.woff")
+      format("woff"),
+    url("../src/assets/fonts/playfairDisplay/PlayfairDisplay-Medium.ttf")
+      format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 @font-face {
   font-family: "PlayfairDisplay Regular";
-  src: url("../src/fonts/playfairDisplay/PlayfairDisplay-Regular.woff") format("woff"),
-    /* Modern Browsers */ url("../src/fonts/playfairDisplay/PlayfairDisplay-Regular.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+  src: url("../src/assets/fonts/playfairDisplay/PlayfairDisplay-Regular.woff")
+      format("woff"),
+    url("../src/assets/fonts/playfairDisplay/PlayfairDisplay-Regular.ttf")
+      format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 @font-face {
   font-family: "Balivia Regular";
-  src: url("../src/fonts/balivia/Balivia-Regular.woff") format("woff"),
-    /* Modern Browsers */ url("../src/fonts/balivia/Balivia-Regular.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+  src: url("../src/assets/fonts/balivia/Balivia-Regular.woff") format("woff"),
+    url("../src/assets/fonts/balivia/Balivia-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "AlbraSans Medium";
+  src: url("../src/assets/fonts/AlbraSans/Albra_Sans-Medium.woff")
+      format("woff"),
+    url("../src/assets/fonts/AlbraSans/Albra_Sans-Medium.ttf")
+      format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;

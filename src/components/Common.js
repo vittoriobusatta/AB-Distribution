@@ -6,16 +6,19 @@ export const mainColor = "#FAF7EE";
 export const accueil = "#FF9B71";
 export const coffee = "#FF9B71";
 export const perfume = "#FF9B71";
-export const shower_gel = "#FF9B71";
-export const antibacterial = "#FF9B71";
+export const showeGel = "#FF9B71";
+export const antiBacterial = "#FF9B71";
 export const food = "#FF9B71";
 export const airfreshener = "#FF9B71";
 export const bodymist = "#FF9B71";
+export const handWash = "#FEDA57";
 
 // Font Familly ///////////////////////////////////////////////////////////////
 
-export const muliRegular = "Muli Regular";
-export const muliBold = "Muli Bold";
+export const cabinRegular = "Cabin Regular";
+export const cabinBold = "Cabin Bold";
+export const cabinMedium = "Cabin Medium";
+export const albraSans = "AlbraSans Medium";
 export const playfairDisplayMedium = "PlayfairDisplay Medium";
 export const playfairDisplayRegular = "PlayfairDisplay Regular";
 export const baliviaRegular = "Balivia Regular";
@@ -164,7 +167,7 @@ export const NameContent = styled.div`
   & span a {
     position: relative;
     color: #222;
-    font-family: ${muliBold};
+    font-family: ${cabinBold};
     font-size: 1.1rem;
     z-index: 1;
     text-transform: uppercase;
@@ -260,7 +263,7 @@ export const DescriptionContent = styled.div`
   align-items: center;
 `;
 export const P = styled.p`
-  font-family: ${muliRegular};
+  font-family: ${cabinRegular};
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.3rem;

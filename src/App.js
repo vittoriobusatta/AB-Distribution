@@ -63,7 +63,6 @@ function App() {
         navBar.style.top = "-100px";
       } else {
         navBar.style.top = "0";
-        // navBar.style.backgroundColor = "#FDFAF0";
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }

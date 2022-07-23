@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  muliRegular,
+  cabinRegular,
   baliviaRegular,
   playfairDisplayMedium,
   accueil,
@@ -17,9 +17,6 @@ const Container = styled.section`
   @media (min-width: 650px) {
     height: calc(90vh - 8vh);
   }
-  /* @media (min-width: 850px) {
-    height: calc(100vh - 8vh);
-  } */
 `;
 const Wrap = styled.div`
   height: 100%;
@@ -105,7 +102,7 @@ const Paragraph = styled.p`
   font-size: 1.4rem;
   text-align: center;
   line-height: 2.5rem;
-  font-family: ${muliRegular};
+  font-family: ${cabinRegular};
   width: fit-content;
   padding: 2rem;
   max-width: 720px;

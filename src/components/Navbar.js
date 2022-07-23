@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { muliRegular, muliBold, accueil, coffee } from "./Common";
+import { cabinRegular, cabinBold, accueil, coffee } from "./Common";
 
 const Container = styled.header`
   height: 8vh;
@@ -87,7 +87,7 @@ const Li = styled.li`
     color: #000;
     font-size: max(1.8rem, 15px);
     text-transform: uppercase;
-    font-family: ${muliRegular};
+    font-family: ${cabinRegular};
     white-space: nowrap;
     transition: 0.2s ease-out;
     z-index: 1;
@@ -162,7 +162,7 @@ const Li = styled.li`
 
     &.product_active {
       position: relative;
-      font-family: ${muliBold};
+      font-family: ${cabinBold};
 
       &.product_accueil {
         color: ${accueil};

@@ -13,7 +13,7 @@ const Container = styled.section`
     opacity: ${(props) =>
     props.isActive === true ? 0.5 : 0};;
     transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
-    background-color: #FAF7EE;
+    background-color: #202020;
 `;
 
 
