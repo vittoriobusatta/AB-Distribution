@@ -9,7 +9,7 @@ const Container = styled.section`
   right: 0;
   width: calc(100vw - 100px);
   min-height: 100vh;
-    min-height: fill-available;
+  min-height: fill-available;
   display: flex;
   align-items: flex-end;
   z-index: 99;
@@ -31,6 +31,8 @@ const Container = styled.section`
 `;
 const Wrap = styled.div`
   height: calc(100vh - 8vh);
+  min-height: calc(100vh - 8vh);
+  min-height: fill-available;
   width: 100%;
   display: flex;
   justify-content: space-between;
