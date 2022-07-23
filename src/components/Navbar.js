@@ -8,7 +8,7 @@ const Container = styled.header`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 999;
+  z-index: 100;
   transition: all 0.3s ease-in 0s, top 0.3s ease 0s;
   box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
   background-color: #FAF7EE;
@@ -209,6 +209,7 @@ const BurgerContainer = styled.button`
   width: 45px;
   background: none;
   border: none;
+  z-index: 200;
   @media (min-width: 850px) {
     display: none;
   }

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../pageContent/styles.css";
 import ItemAntibacterial from "./ItemsProducts/ItemAntibacterial";
 import ItemHandwash from "./ItemsProducts/ItemHandwash";
 import ItemShowerGel from "./ItemsProducts/ItemShowerGel";

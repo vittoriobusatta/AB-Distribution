@@ -106,7 +106,7 @@ export const Title = styled.h1`
     width: 112px;
     height: 2px;
     background: #000;
-    z-index: 10;
+    z-index: 2;
     @media (max-width: 350px) {
       width: 85px;
     }
