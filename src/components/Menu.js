@@ -5,11 +5,10 @@ import "./styles.css";
 
 const Container = styled.section`
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: calc(100vw - 100px);
-  min-height: 100vh;
-  min-height: fill-available;
+  height: calc(100vh - 8vh);
   display: flex;
   align-items: flex-end;
   z-index: 99;
@@ -30,10 +29,9 @@ const Container = styled.section`
   }
 `;
 const Wrap = styled.div`
-  height: calc(100vh - 8vh);
-  min-height: calc(100vh - 8vh);
-  min-height: fill-available;
+  height: 100%;
   width: 100%;
+  min-height: fill-available;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
