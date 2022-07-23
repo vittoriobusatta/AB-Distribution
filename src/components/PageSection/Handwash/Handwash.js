@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { albraSans, baliviaRegular, cabinMedium } from "../../Common";
+import { albraSans, baliviaRegular, cabinMedium, cabinRegular } from "../../Common";
 import blueberry from "../../../../src/assets/img/handwash/blueberry.webp";
 import mango from "../../../../src/assets/img/handwash/mango.webp";
 import plum from "../../../../src/assets/img/handwash/plum.webp";
 import cranberry from "../../../../src/assets/img/handwash/cranberry.webp";
-import "./styles.css";
 
 const mangoColor = "#F8C23A";
 const cranberryColor = "#E91D2D";
@@ -32,43 +31,6 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    font-size: 5rem;
-    color: #000000;
-    font-family: ${albraSans};
-    text-transform: uppercase;
-  }
-  &.img_mango::before {
-    /* color: ${mangoColor}; */
-    content: "Mango";
-    transform: translate(25%, 0);
-    left: -5%;
-    top: 0%;
-  }
-  &.img_cranberry::before {
-    /* color: ${cranberryColor}; */
-    content: "Cranberry";
-    left: -5%;
-    top: 0%;
-    transform: translate(15%, 0);
-  }
-  &.img_blueberry::before {
-    /* color: ${blueberryColor}; */
-    content: "Blueberry";
-    left: -5%;
-    top: 0%;
-    transform: translate(15%, 0);
-  }
-  &.img_plum::before {
-    /* color: ${plumColor}; */
-    content: "Plum";
-    left: -5%;
-    top: 0%;
-    transform: translate(25%, 0);
-  }
 `;
 
 const Image = styled.img`
@@ -104,25 +66,56 @@ const ItemContent = styled.div`
   padding: 0px 1rem;
 `;
 const Left = styled.div`
-  height: 70%;
+  height: 60%;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    font-size: 5rem;
+    font-family: ${albraSans};
+    text-transform: uppercase;
+    left: 0%;
+    top: 0%;
+    @media (max-width: 350px) {
+      font-size: 3.5rem;
+    }
+  }
+  &.img_mango::before {
+    color: ${mangoColor};
+    content: "Mango";
+  }
+  &.img_cranberry::before {
+    color: ${cranberryColor};
+    content: "Cranberry";
+  }
+  &.img_blueberry::before {
+    color: ${blueberryColor};
+    content: "Blueberry";
+  }
+  &.img_plum::before {
+    color: ${plumColor};
+    content: "Plum";
+  }
 `;
 const Right = styled.div`
-  height: 30%;
+  height: 40%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 const ProductAbout = styled.div`
-  height: auto;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 const DescriptionTitle = styled.div`
@@ -141,6 +134,15 @@ const DescriptionTitle = styled.div`
     &.mango_line::before {
       background-color: ${mangoColor};
     }
+    &.cranberry_line::before {
+      background-color: ${cranberryColor};
+    }
+    &.plum_line::before {
+      background-color: ${plumColor};
+    }
+    &.blueberry_line::before {
+      background-color: ${blueberryColor};
+    }
     &::before {
       position: absolute;
       content: "";
@@ -154,17 +156,19 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-
 const DescriptionParagraph = styled.div`
   height: auto;
   width: 100%;
   padding-top: 2rem;
   & p {
-    font-family: muli_reg;
-    font-size: max(1.5rem, 8px);
+    font-family: ${cabinRegular};
+    font-size: 1.4rem;
     line-height: 2rem;
     text-align: center;
     max-width: 500px;
+    @media (max-width: 350px) {
+      font-size: 1.2rem;
+    }
   }
 `;
 const Info = styled.div`
@@ -191,7 +195,18 @@ const NumberLinks = styled.div`
   & a {
     font-family: ${baliviaRegular};
     font-size: 3.5rem;
-    height: fit-content;
+    &.mango_color {
+      color: ${mangoColor};
+    }
+    &.cranberry_color {
+      color: ${cranberryColor};
+    }
+    &.plum_color {
+      color: ${plumColor};
+    }
+    &.blueberry_color {
+      color: ${blueberryColor};
+    }
   }
   & span {
     position: relative;
@@ -200,16 +215,16 @@ const NumberLinks = styled.div`
     background: #000;
     top: 5px;
     &.mango_bg {
-      background-color: #f8c23a;
+      background-color: ${mangoColor};
     }
     &.cranberry_bg {
-      background-color: #e91d2d;
+      background-color: ${cranberryColor};
     }
     &.plum_bg {
-      background-color: #bd4b93;
+      background-color: ${plumColor};
     }
     &.blueberry_bg {
-      background-color: #54c6e1;
+      background-color: ${blueberryColor};
     }
   }
 `;
@@ -225,46 +240,42 @@ function Handwash() {
 
         <Items id="mango">
           <ItemContent>
-            <Left>
+            <Left className="img_mango">
               {/* <h1>MANGO</h1> */}
-              <ImageContainer className="img_mango">
+              <ImageContainer>
                 <Image src={mango} alt="" />
               </ImageContainer>
             </Left>
 
             <Right>
               <ProductAbout>
-                <div className="lvm_descriptions">
-                  <div className="lvm_description_content">
-                    <DescriptionTitle>
-                      <h1 className="mango_line">Mangue</h1>
-                      <Info>
-                        <span>500ml</span>
-                        <span>•</span>
-                        <span>Lave Mains</span>
-                      </Info>
-                    </DescriptionTitle>
+                <DescriptionTitle>
+                  <h1 className="mango_line">Mangue</h1>
+                  <Info>
+                    <span>500ml</span>
+                    <span>•</span>
+                    <span>Lave Mains</span>
+                  </Info>
+                </DescriptionTitle>
 
-                    <DescriptionParagraph>
-                      <p>
-                        Ultra Compact vous propose une solution de savon liquide
-                        qui rendra le lavage de vos mains agréable avec son
-                        parfum aromatisé à la mangue. Il purifiera vos mains de
-                        la saleté et les rendra propre et douces.
-                      </p>
-                    </DescriptionParagraph>
+                <DescriptionParagraph>
+                  <p>
+                    Ultra Compact vous propose une solution de savon liquide qui
+                    rendra le lavage de vos mains agréable avec son parfum
+                    aromatisé à la mangue. Il purifiera vos mains de la saleté
+                    et les rendra propre et douces.
+                  </p>
+                </DescriptionParagraph>
 
-                    <NumberLinks>
-                      <a className="mango_color" href="#blueberry">
-                        04
-                      </a>
-                      <span className="mango_bg"></span>
-                      <a className="mango_color" href="#cranberry">
-                        02
-                      </a>
-                    </NumberLinks>
-                  </div>
-                </div>
+                <NumberLinks>
+                  <a className="mango_color" href="#blueberry">
+                    04
+                  </a>
+                  <span className="mango_bg"></span>
+                  <a className="mango_color" href="#cranberry">
+                    02
+                  </a>
+                </NumberLinks>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -272,45 +283,41 @@ function Handwash() {
 
         <Items id="cranberry">
           <ItemContent>
-            <Left>
-              <ImageContainer className="img_cranberry">
+            <Left className="img_cranberry">
+              <ImageContainer>
                 <Image src={cranberry} alt="" />
               </ImageContainer>
             </Left>
 
             <Right>
               <ProductAbout>
-                <div className="lvm_descriptions">
-                  <div className="lvm_description_content">
-                    <DescriptionTitle>
-                      <h1 className="cranberry_line">Canneberge</h1>
-                      <Info>
-                        <span>500ml</span>
-                        <span>•</span>
-                        <span>Lave Mains</span>
-                      </Info>
-                    </DescriptionTitle>
+                <DescriptionTitle>
+                  <h1 className="cranberry_line">Canneberge</h1>
+                  <Info>
+                    <span>500ml</span>
+                    <span>•</span>
+                    <span>Lave Mains</span>
+                  </Info>
+                </DescriptionTitle>
 
-                    <DescriptionParagraph>
-                      <p>
-                        Ultra Compact vous propose une solution de savon liquide
-                        qui rendra le lavage de vos mains agréable avec son
-                        parfum aromatisé à la mangue. Il purifiera vos mains de
-                        la saleté et les rendra propre et douces.
-                      </p>
-                    </DescriptionParagraph>
+                <DescriptionParagraph>
+                  <p>
+                    Ultra Compact vous propose une solution de savon liquide qui
+                    rendra le lavage de vos mains agréable avec son parfum
+                    aromatisé à la canneberge. Il purifiera vos mains de la
+                    saleté et les rendra propre et douces.
+                  </p>
+                </DescriptionParagraph>
 
-                    <NumberLinks>
-                      <a className="cranberry_color" href="#mango">
-                        01
-                      </a>
-                      <span className="cranberry_bg"></span>
-                      <a className="cranberry_color" href="#plum">
-                        03
-                      </a>
-                    </NumberLinks>
-                  </div>
-                </div>
+                <NumberLinks>
+                  <a className="cranberry_color" href="#mango">
+                    01
+                  </a>
+                  <span className="cranberry_bg"></span>
+                  <a className="cranberry_color" href="#plum">
+                    03
+                  </a>
+                </NumberLinks>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -318,45 +325,41 @@ function Handwash() {
 
         <Items id="plum">
           <ItemContent>
-            <Left>
-              <ImageContainer className="img_plum">
+            <Left className="img_plum">
+              <ImageContainer>
                 <Image src={plum} alt="" />
               </ImageContainer>
             </Left>
 
             <Right>
               <ProductAbout>
-                <div className="lvm_descriptions">
-                  <div className="lvm_description_content">
-                    <DescriptionTitle>
-                      <h1 className="plum_line">Prune</h1>
-                      <Info>
-                        <span>500ml</span>
-                        <span>•</span>
-                        <span>Lave Mains</span>
-                      </Info>
-                    </DescriptionTitle>
+                <DescriptionTitle>
+                  <h1 className="plum_line">Prune</h1>
+                  <Info>
+                    <span>500ml</span>
+                    <span>•</span>
+                    <span>Lave Mains</span>
+                  </Info>
+                </DescriptionTitle>
 
-                    <DescriptionParagraph>
-                      <p>
-                        Ultra Compact vous propose une solution de savon liquide
-                        qui rendra le lavage de vos mains agréable avec son
-                        parfum aromatisé à la mangue. Il purifiera vos mains de
-                        la saleté et les rendra propre et douces.
-                      </p>
-                    </DescriptionParagraph>
+                <DescriptionParagraph>
+                  <p>
+                    Ultra Compact vous propose une solution de savon liquide qui
+                    rendra le lavage de vos mains agréable avec son parfum
+                    aromatisé à la prune. Il purifiera vos mains de la saleté et
+                    les rendra propre et douces.
+                  </p>
+                </DescriptionParagraph>
 
-                    <NumberLinks>
-                      <a className="plum_color" href="#cranberry">
-                        02
-                      </a>
-                      <span className="plum_bg"></span>
-                      <a className="plum_color" href="#blueberry">
-                        04
-                      </a>
-                    </NumberLinks>
-                  </div>
-                </div>
+                <NumberLinks>
+                  <a className="plum_color" href="#cranberry">
+                    02
+                  </a>
+                  <span className="plum_bg"></span>
+                  <a className="plum_color" href="#blueberry">
+                    04
+                  </a>
+                </NumberLinks>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -364,45 +367,41 @@ function Handwash() {
 
         <Items id="blueberry">
           <ItemContent>
-            <Left>
-              <ImageContainer className="img_blueberry">
+            <Left className="img_blueberry">
+              <ImageContainer>
                 <Image src={blueberry} alt="" />
               </ImageContainer>
             </Left>
 
             <Right>
               <ProductAbout>
-                <div className="lvm_descriptions">
-                  <div className="lvm_description_content">
-                    <DescriptionTitle>
-                      <h1 className="blueberry_line">Myrtille</h1>
-                      <Info>
-                        <span>500ml</span>
-                        <span>•</span>
-                        <span>Lave Mains</span>
-                      </Info>
-                    </DescriptionTitle>
+                <DescriptionTitle>
+                  <h1 className="blueberry_line">Myrtille</h1>
+                  <Info>
+                    <span>500ml</span>
+                    <span>•</span>
+                    <span>Lave Mains</span>
+                  </Info>
+                </DescriptionTitle>
 
-                    <DescriptionParagraph>
-                      <p>
-                        Ultra Compact vous propose une solution de savon liquide
-                        qui rendra le lavage de vos mains agréable avec son
-                        parfum aromatisé à la mangue. Il purifiera vos mains de
-                        la saleté et les rendra propre et douces.
-                      </p>
-                    </DescriptionParagraph>
+                <DescriptionParagraph>
+                  <p>
+                    Ultra Compact vous propose une solution de savon liquide qui
+                    rendra le lavage de vos mains agréable avec son parfum
+                    aromatisé à la myrtille. Il purifiera vos mains de la saleté
+                    et les rendra propre et douces.
+                  </p>
+                </DescriptionParagraph>
 
-                    <NumberLinks>
-                      <a className="blueberry_color" href="#plum">
-                        03
-                      </a>
-                      <span className="blueberry_bg"></span>
-                      <a className="blueberry_color" href="#mango">
-                        01
-                      </a>
-                    </NumberLinks>
-                  </div>
-                </div>
+                <NumberLinks>
+                  <a className="blueberry_color" href="#plum">
+                    03
+                  </a>
+                  <span className="blueberry_bg"></span>
+                  <a className="blueberry_color" href="#mango">
+                    01
+                  </a>
+                </NumberLinks>
               </ProductAbout>
             </Right>
           </ItemContent>
