@@ -42,17 +42,18 @@ const BrandsTitle = styled.div`
     h1 {
       color: $black;
       font-family: ${baliviaRegular};
-      font-size: 4rem;
+      font-size: 3rem;
       text-transform: uppercase;
       position: relative;
       text-align: center;
-      @media (min-width: 400px) {
-        font-size: 4.5rem;
-      }
+
       @media (min-width: 650px) {
-        font-size: 5rem;
+        font-size: 3.5rem;
       }
       @media (min-width: 850px) {
+        font-size: 5rem;
+      }
+      @media (min-width: 1100px) {
         font-size: 5.5rem;
       }
     }
