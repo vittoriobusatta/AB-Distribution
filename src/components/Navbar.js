@@ -10,7 +10,8 @@ const Container = styled.header`
   right: 0;
   z-index: 999;
   transition: all 0.3s ease-in 0s, top 0.3s ease 0s;
-  background: #fdfaf0;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+  background-color: #FAF7EE;
 `;
 const Wrap = styled.div`
   height: 100%;
@@ -218,7 +219,7 @@ const Bar = styled.div`
   left: 0;
   height: 3px;
   width: 45px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #000;
   transition: ${(props) =>
     props.isActive === true ? "transform 400ms ease" : "transform 0.5s ease"};

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Homepage";
 import Navbar from "./components/Navbar";
+import Menu from "./components/Menu";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -17,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${mainColor};
+    overflow: ${(props) =>
+    props.isActive === true ? "hidden" : "visible"};
     font-size: 1.6rem;
   }
 
@@ -54,16 +57,12 @@ function App() {
     function onScroll() {
       let navBar = document.getElementById("navbar");
 
-      // if (openMenu) {
-      //   navBar.style.top = "0";
-      //   return setOpenMenu(false);
-      // }
-
       let currentPosition = window.pageYOffset;
       if (currentPosition > scrollTop) {
         navBar.style.top = "-100px";
       } else {
         navBar.style.top = "0";
+        // navBar.style.backgroundColor = "#FDFAF0";
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
@@ -74,8 +73,12 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle isActive={openMenu}/>
       <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
+      <Menu
+        setOpenMenu={setOpenMenu}
+        openMenu={openMenu}
+      />
       <HomePage />
     </>
   );
