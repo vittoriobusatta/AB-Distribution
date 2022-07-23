@@ -10,8 +10,8 @@ const Container = styled.header`
   right: 0;
   z-index: 100;
   transition: all 0.3s ease-in 0s, top 0.3s ease 0s;
-  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
-  background-color: #FAF7EE;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: #faf7ee;
 `;
 const Wrap = styled.div`
   height: 100%;

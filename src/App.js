@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import HomePage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
+import Overlay from "./components/Overlay";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -19,8 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${mainColor};
-    overflow: ${(props) =>
-    props.isActive === true ? "hidden" : "visible"};
+    overflow: ${(props) => (props.isActive === true ? "hidden" : "visible")};
     font-size: 1.6rem;
   }
 
@@ -74,12 +74,10 @@ function App() {
 
   return (
     <>
-      <GlobalStyle isActive={openMenu}/>
+      <GlobalStyle isActive={openMenu} />
       <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
-      <Menu
-        setOpenMenu={setOpenMenu}
-        openMenu={openMenu}
-      />
+      <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />
+      <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} />
       <HomePage />
     </>
   );
