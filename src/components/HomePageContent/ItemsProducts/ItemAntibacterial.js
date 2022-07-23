@@ -1,5 +1,6 @@
 import React from "react";
 import antibacterial from "../../../assets/img/home/antibacterial.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemAntibacterial() {
           <NameContent>
             <Title className="antibacterial_line">Anti-Bactérien</Title>
             <span>
-              <a href="anti-bacterien">Voir les Produits</a>
+              <Link to="anti-bactérien">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="antibacterial_color"
                 viewBox="0 0 287 133"

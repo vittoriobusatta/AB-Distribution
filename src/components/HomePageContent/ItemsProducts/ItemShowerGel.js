@@ -1,5 +1,6 @@
 import React from "react";
 import showergel from "../../../assets/img/home/showergel.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemShowergel() {
           <NameContent>
             <Title className="showergel_line">Gels Douches</Title>
             <span>
-              <a href="gels-douches">Voir les Produits</a>
+              <Link to="gels-douches">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="showergel_color"
                 viewBox="0 0 287 133"

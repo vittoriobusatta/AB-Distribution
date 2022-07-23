@@ -1,8 +1,20 @@
 import React from "react";
 import airfreshener from "../../../assets/img/home/airfreshener.webp";
-import { Item, Layout, Name, NameContent, Title, Svg, Overview, OverviewContent, Image, Description, DescriptionContent, P } from "../../Common";
-
-
+import { Link } from "react-router-dom";
+import {
+  Item,
+  Layout,
+  Name,
+  NameContent,
+  Title,
+  Svg,
+  Overview,
+  OverviewContent,
+  Image,
+  Description,
+  DescriptionContent,
+  P,
+} from "../../Common";
 
 function ItemAirFreshener() {
   return (
@@ -12,7 +24,9 @@ function ItemAirFreshener() {
           <NameContent>
             <Title className="airfreshener_line">Désodorisants</Title>
             <span>
-              <a href="désodorisants">Voir les Produits</a>
+              <Link to="désodorisants">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="airfreshener_color"
                 viewBox="0 0 287 133"

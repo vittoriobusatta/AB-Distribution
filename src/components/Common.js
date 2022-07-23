@@ -169,7 +169,7 @@ export const NameContent = styled.div`
     margin-left: 3rem;
   }
 
-  & span a {
+  & span span {
     position: relative;
     color: #222;
     font-family: ${cabinBold};

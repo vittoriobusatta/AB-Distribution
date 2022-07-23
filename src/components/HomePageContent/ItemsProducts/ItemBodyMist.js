@@ -1,5 +1,6 @@
 import React from "react";
 import bodymist from "../../../assets/img/home/bodymist.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemBodyMist() {
           <NameContent>
             <Title className="bodymist_line">Brumes Corporelle</Title>
             <span>
-              <a href="anti-bacterien">Voir les Produits</a>
+              <Link to="brumes-corporelles">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="bodymist_color"
                 viewBox="0 0 287 133"

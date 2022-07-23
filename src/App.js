@@ -3,7 +3,7 @@ import "./reset.css";
 import { mainColor } from "./components/Common";
 import { createGlobalStyle } from "styled-components";
 import { useEffect, useState } from "react";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
@@ -74,10 +74,16 @@ function App() {
   return (
     <>
       <GlobalStyle isActive={openMenu} />
-      <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
-      <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />
-      <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} />
-      <HomePage />
+      <BrowserRouter>
+        <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
+        <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />
+        <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} />
+        <HomePage />
+
+        <Routes>
+          <Route path="/*" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

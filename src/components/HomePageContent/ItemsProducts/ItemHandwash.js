@@ -1,5 +1,6 @@
 import React from "react";
 import handwash from "../../../assets/img/home/handwash.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemHandwash() {
           <NameContent>
             <Title className="handwash_line">Lave Mains</Title>
             <span>
-              <a href="lave-mains">Voir les Produits</a>
+              <Link to="lave-mains">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="handwash_color"
                 viewBox="0 0 287 133"

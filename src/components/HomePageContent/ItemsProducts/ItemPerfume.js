@@ -1,5 +1,6 @@
 import React from "react";
 import perfume from "../../../assets/img/home/perfume.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemPerfume() {
           <NameContent>
             <Title className="perfume_line">Parfums d'Ambiance</Title>
             <span>
-              <a href="parfums">Voir les Produits</a>
+              <Link to="parfums-d-ambiance">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="perfume_color"
                 viewBox="0 0 287 133"
@@ -50,7 +53,7 @@ function ItemPerfume() {
         <Description>
           <DescriptionContent>
             <P>
-            Les parfums d’intérieur peuvent donner vie à votre décoration et à
+              Les parfums d’intérieur peuvent donner vie à votre décoration et à
               votre maison en amenant une dimension sensorielle toute
               particulière. Les parfums d’ambiance spray vous permettront de
               créer une nouvelle atmosphère intérieure parfumée en un tour de

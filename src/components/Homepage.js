@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import {} from "./Common";
 import Handwash from "./PageSection/Handwash/Handwash";
 import Landing from "./HomePageContent/Landing";
-// import Products from "./HomePageContent/Products";
+import Products from "./HomePageContent/Products";
+import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./Function/ScrollToTop";
 
 const Container = styled.main`
   height: auto;
-  /* height: 200vh; */
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -16,11 +17,18 @@ const Container = styled.main`
 `;
 
 const HomePage = () => {
+
   return (
     <Container>
-      <Landing />
-      {/* <Products />  */}
-      <Handwash />
+
+      <Landing /> 
+      <ScrollToTop />
+
+        <Routes>
+          <Route path="/" element={<Products />} />
+          <Route path="lave-mains" element={<Handwash /> } />
+        </Routes>
+        
     </Container>
   );
 };

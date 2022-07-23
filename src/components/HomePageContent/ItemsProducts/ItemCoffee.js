@@ -1,5 +1,6 @@
 import React from "react";
 import coffee from "../../../assets/img/home/coffee.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemCoffee() {
           <NameContent>
             <Title className="coffee_line">Nescafé xpress</Title>
             <span>
-              <a href="cafés">Voir les Produits</a>
+              <Link to="cafes">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="coffee_color"
                 viewBox="0 0 287 133"

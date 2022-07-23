@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { cabinRegular, cabinBold, accueil, coffee } from "./Common";
+import { Link } from "react-router-dom";
+
 
 const Container = styled.header`
   height: 8vh;
@@ -251,7 +253,7 @@ function Navbar({ openMenu, setOpenMenu }) {
       <Wrap>
         <Left>
           <LeftContent>
-            <a href="https://www.ab-distribution.re">
+            <Link to="/">
               <Logo
                 viewBox="0 0 179 122"
                 fill="none"
@@ -274,7 +276,7 @@ function Navbar({ openMenu, setOpenMenu }) {
                   strokeWidth="3"
                 />
               </Logo>
-            </a>
+            </Link>
           </LeftContent>
         </Left>
 

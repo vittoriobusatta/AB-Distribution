@@ -1,5 +1,6 @@
 import React from "react";
 import food from "../../../assets/img/home/food.webp";
+import { Link } from "react-router-dom";
 import {
   Item,
   Layout,
@@ -23,7 +24,9 @@ function ItemFood() {
           <NameContent>
             <Title className="food_line">Produits Alimentaires</Title>
             <span>
-              <a href="alimentations">Voir les Produits</a>
+              <Link to="alimentations">
+                <span>Voir les Produits</span>
+              </Link>
               <Svg
                 className="food_color"
                 viewBox="0 0 287 133"
