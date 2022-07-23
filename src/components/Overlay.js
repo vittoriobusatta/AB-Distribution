@@ -12,7 +12,6 @@ const Container = styled.section`
     props.isActive === true ? "visible" : "hidden"};
     opacity: ${(props) =>
     props.isActive === true ? 0.5 : 0};;
-    background: #363636;
     transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
     background-color: #FAF7EE;
 `;

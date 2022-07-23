@@ -47,7 +47,7 @@ const Home = styled.div`
 `;
 
 const Colapsite = styled.div`
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   height: 100%;
   width: 100%;
   padding: 3rem 0;
@@ -84,7 +84,7 @@ const NavLinks = styled.div`
 const Aside = styled.aside`
   height: auto;
   width: 100%;
-  border-top: 1.5px solid #000;
+  border-top: 2px solid #000;
   padding: 1.2rem 2rem;
   display: flex;
   justify-content: center;
