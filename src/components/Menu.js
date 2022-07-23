@@ -88,6 +88,7 @@ const Aside = styled.aside`
   padding: 1.2rem 2rem;
   display: flex;
   justify-content: center;
+  transition: all .25s cubic-bezier(.25,.46,.45,.94) .45s;
   & ul {
     display: inline-flex;
     justify-content: center;
