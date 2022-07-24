@@ -49,6 +49,18 @@ const Image = styled.img`
 const Items = styled.div`
   height: 100vh;
   width: 100%;
+  @media screen and (min-height: 900px) {
+    height: 100vh;
+  }
+  @media screen and (min-height: 700px) {
+    height: 140vh;
+  }
+  @media screen and (max-height: 700px) {
+    height: 140vh;
+  }
+  @media screen and (max-height: 500px) {
+    height: 180vh;
+  }
 `;
 
 const ItemContent = styled.div`
