@@ -36,9 +36,9 @@ const LeftContent = styled.div`
 `;
 const Logo = styled.svg`
   height: auto;
-  width: 6rem;
+  width: 5.5rem;
   @media (max-width: 350px) {
-    width: 5.5rem;
+    width: 5rem;
   }
   @media (min-width: 650px) {
     width: 7rem;
