@@ -54,9 +54,7 @@ function ItemBodyMist() {
           <DescriptionContent>
             <P>
               Nos brumes parfumées sont des parfums corporels qui sont
-              spécialement conçues pour leur grande légèreté. Elles sont
-              effectivement très différentes d’un parfum classique, et
-              ressemblent plutôt à une eau de toilette. De ce fait, ces eaux
+              spécialement conçues pour leur grande légèreté. Ces eaux
               parfumées sont beaucoup plus rafraîchissantes et contribuent
               également à hydrater notre corps.
             </P>

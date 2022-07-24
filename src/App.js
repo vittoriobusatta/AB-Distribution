@@ -16,11 +16,34 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     transition: all .3s ease-in;
     height: fill-available;
-  }
+    @media only screen and (min-width : 1824px) {
+      font-size: 70%;
+    } 
+    @media screen and (max-width: 1400px) {
+      font-size: 58%;
+    }
+    @media screen and (max-width: 1224px) {
+      font-size: 52%;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 46%;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40%;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 34%;
+    }
+    @media screen and (max-width: 321px) {
+      font-size: 28%;
+    }
+    
+  } 
 
   body {
     background-color: ${mainColor};
-    /* overflow: ${(props) => (props.isActive === true ? "hidden" : "visible")}; */
+    /* overflow: ${(props) =>
+      props.isActive === true ? "hidden" : "visible"}; */
     font-size: 1.6rem;
   }
 
@@ -71,7 +94,6 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
-
   return (
     <>
       <GlobalStyle isActive={openMenu} />
@@ -82,7 +104,10 @@ function App() {
         {/* <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
 
         <Routes>
-          <Route path="/*" element={<HomePage setOpenMenu={setOpenMenu} openMenu={openMenu} />} />
+          <Route
+            path="/*"
+            element={<HomePage setOpenMenu={setOpenMenu} openMenu={openMenu} />}
+          />
         </Routes>
       </BrowserRouter>
     </>

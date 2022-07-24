@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tukas from "../../../assets/img/home/tukas.webp";
 import nestle from "../../../assets/img/home/nestle.webp";
 import ultracompact from "../../../assets/img/home/ultracompact.webp";
-import { baliviaRegular } from "../../Common";
+import { baliviaRegular, sizeH1 } from "../../Common";
 
 const Container = styled.section`
   height: 80vh;
@@ -45,20 +45,10 @@ const BrandsTitle = styled.div`
     h1 {
       color: #111;
       font-family: ${baliviaRegular};
-      font-size: 3rem;
+      font-size: ${sizeH1};
       text-transform: uppercase;
       position: relative;
       text-align: center;
-
-      @media screen and (min-width: 650px) {
-        font-size: 3.5rem;
-      }
-      @media screen and (min-width: 850px) {
-        font-size: 5rem;
-      }
-      @media screen and (min-width: 1100px) {
-        font-size: 5.5rem;
-      }
     }
 
     svg {
