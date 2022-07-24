@@ -10,12 +10,10 @@ import ItemPerfume from "./ItemsProducts/ItemPerfume";
 import ItemAirFreshener from "./ItemsProducts/ItemAirFreshener";
 import ItemBrands from "./ItemsProducts/ItemBrands";
 import { useState } from "react";
+import Landing from "./Landing";
 
-const Container = styled.section`
-  height: auto;
-  width: 100%;
-`;
-const Wrapper = styled.div`
+
+const Wrapper = styled.section`
   height: 100%;
   width: 100%;
   display: flex;
@@ -31,7 +29,8 @@ function Products() {
 
   console.log();
   return (
-    <Container>
+    <>
+      <Landing />
       <Wrapper>
         <ItemAntibacterial />
         <ItemHandwash />
@@ -43,7 +42,7 @@ function Products() {
         <ItemFood />
         <ItemBrands />
       </Wrapper>
-    </Container>
+    </>
   );
 }
 

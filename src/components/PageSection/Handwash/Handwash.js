@@ -11,6 +11,7 @@ import blueberry from "../../../../src/assets/img/handwash/blueberry.webp";
 import mango from "../../../../src/assets/img/handwash/mango.webp";
 import plum from "../../../../src/assets/img/handwash/plum.webp";
 import cranberry from "../../../../src/assets/img/handwash/cranberry.webp";
+import LandingHandwash from "./LandingHandwash";
 
 const mangoColor = "#F8C23A";
 const cranberryColor = "#E91D2D";
@@ -150,11 +151,14 @@ const DescriptionTitle = styled.div`
       content: "";
       bottom: -1.5rem;
       width: 112px;
-      height: 3px;
+      height: 2px;
       background: #000;
       z-index: 10;
       left: 50%;
       transform: translate(-50%, 0);
+      @media (min-width: 650px) {
+      height: 3px;
+    }
     }
   }
 `;
@@ -252,180 +256,182 @@ const NumberLinks = styled.div`
 // }
 
 function Handwash() {
-
   return (
-    <Container>
-      <Wrap>
-        <Items id="mango">
-          <ItemContent>
-            <Left className="img_mango">
-              {/* <h1>MANGO</h1> */}
-              <ImageContainer>
-                <Image src={mango} alt="" />
-              </ImageContainer>
-            </Left>
+    <>
+      <LandingHandwash />
+      <Container>
+        <Wrap>
+          <Items id="mango">
+            <ItemContent>
+              <Left className="img_mango">
+                {/* <h1>MANGO</h1> */}
+                <ImageContainer>
+                  <Image src={mango} alt="" />
+                </ImageContainer>
+              </Left>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h1 className="mango_line">Mangue</h1>
-                  <Info>
-                    <span>500ml</span>
-                    <span>•</span>
-                    <span>Lave Mains</span>
-                  </Info>
-                </DescriptionTitle>
+              <Right>
+                <ProductAbout>
+                  <DescriptionTitle>
+                    <h1 className="mango_line">Mangue</h1>
+                    <Info>
+                      <span>500ml</span>
+                      <span>•</span>
+                      <span>Lave Mains</span>
+                    </Info>
+                  </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la mangue. Il purifiera vos mains de la saleté
-                    et les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
+                  <DescriptionParagraph>
+                    <p>
+                      Ultra Compact vous propose une solution de savon liquide
+                      qui rendra le lavage de vos mains agréable avec son parfum
+                      aromatisé à la mangue. Il purifiera vos mains de la saleté
+                      et les rendra propre et douces.
+                    </p>
+                  </DescriptionParagraph>
 
-                <NumberLinks>
-                  <a className="mango_color" href="#blueberry">
-                    04
-                  </a>
-                  <span className="mango_bg"></span>
-                  <a className="mango_color" href="#cranberry">
-                    02
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Items>
+                  <NumberLinks>
+                    <a className="mango_color" href="#blueberry">
+                      04
+                    </a>
+                    <span className="mango_bg"></span>
+                    <a className="mango_color" href="#cranberry">
+                      02
+                    </a>
+                  </NumberLinks>
+                </ProductAbout>
+              </Right>
+            </ItemContent>
+          </Items>
 
-        <Items id="cranberry">
-          <ItemContent>
-            <Left className="img_cranberry">
-              <ImageContainer>
-                <Image src={cranberry} alt="" />
-              </ImageContainer>
-            </Left>
+          <Items id="cranberry">
+            <ItemContent>
+              <Left className="img_cranberry">
+                <ImageContainer>
+                  <Image src={cranberry} alt="" />
+                </ImageContainer>
+              </Left>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h1 className="cranberry_line">Canneberge</h1>
-                  <Info>
-                    <span>500ml</span>
-                    <span>•</span>
-                    <span>Lave Mains</span>
-                  </Info>
-                </DescriptionTitle>
+              <Right>
+                <ProductAbout>
+                  <DescriptionTitle>
+                    <h1 className="cranberry_line">Canneberge</h1>
+                    <Info>
+                      <span>500ml</span>
+                      <span>•</span>
+                      <span>Lave Mains</span>
+                    </Info>
+                  </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la canneberge. Il purifiera vos mains de la
-                    saleté et les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
+                  <DescriptionParagraph>
+                    <p>
+                      Ultra Compact vous propose une solution de savon liquide
+                      qui rendra le lavage de vos mains agréable avec son parfum
+                      aromatisé à la canneberge. Il purifiera vos mains de la
+                      saleté et les rendra propre et douces.
+                    </p>
+                  </DescriptionParagraph>
 
-                <NumberLinks>
-                  <a className="cranberry_color" href="#mango">
-                    01
-                  </a>
-                  <span className="cranberry_bg"></span>
-                  <a className="cranberry_color" href="#plum">
-                    03
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Items>
+                  <NumberLinks>
+                    <a className="cranberry_color" href="#mango">
+                      01
+                    </a>
+                    <span className="cranberry_bg"></span>
+                    <a className="cranberry_color" href="#plum">
+                      03
+                    </a>
+                  </NumberLinks>
+                </ProductAbout>
+              </Right>
+            </ItemContent>
+          </Items>
 
-        <Items id="plum">
-          <ItemContent>
-            <Left className="img_plum">
-              <ImageContainer>
-                <Image src={plum} alt="" />
-              </ImageContainer>
-            </Left>
+          <Items id="plum">
+            <ItemContent>
+              <Left className="img_plum">
+                <ImageContainer>
+                  <Image src={plum} alt="" />
+                </ImageContainer>
+              </Left>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h1 className="plum_line">Prune</h1>
-                  <Info>
-                    <span>500ml</span>
-                    <span>•</span>
-                    <span>Lave Mains</span>
-                  </Info>
-                </DescriptionTitle>
+              <Right>
+                <ProductAbout>
+                  <DescriptionTitle>
+                    <h1 className="plum_line">Prune</h1>
+                    <Info>
+                      <span>500ml</span>
+                      <span>•</span>
+                      <span>Lave Mains</span>
+                    </Info>
+                  </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la prune. Il purifiera vos mains de la saleté et
-                    les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
+                  <DescriptionParagraph>
+                    <p>
+                      Ultra Compact vous propose une solution de savon liquide
+                      qui rendra le lavage de vos mains agréable avec son parfum
+                      aromatisé à la prune. Il purifiera vos mains de la saleté
+                      et les rendra propre et douces.
+                    </p>
+                  </DescriptionParagraph>
 
-                <NumberLinks>
-                  <a className="plum_color" href="#cranberry">
-                    02
-                  </a>
-                  <span className="plum_bg"></span>
-                  <a className="plum_color" href="#blueberry">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Items>
+                  <NumberLinks>
+                    <a className="plum_color" href="#cranberry">
+                      02
+                    </a>
+                    <span className="plum_bg"></span>
+                    <a className="plum_color" href="#blueberry">
+                      04
+                    </a>
+                  </NumberLinks>
+                </ProductAbout>
+              </Right>
+            </ItemContent>
+          </Items>
 
-        <Items id="blueberry">
-          <ItemContent>
-            <Left className="img_blueberry">
-              <ImageContainer>
-                <Image src={blueberry} alt="" />
-              </ImageContainer>
-            </Left>
+          <Items id="blueberry">
+            <ItemContent>
+              <Left className="img_blueberry">
+                <ImageContainer>
+                  <Image src={blueberry} alt="" />
+                </ImageContainer>
+              </Left>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h1 className="blueberry_line">Myrtille</h1>
-                  <Info>
-                    <span>500ml</span>
-                    <span>•</span>
-                    <span>Lave Mains</span>
-                  </Info>
-                </DescriptionTitle>
+              <Right>
+                <ProductAbout>
+                  <DescriptionTitle>
+                    <h1 className="blueberry_line">Myrtille</h1>
+                    <Info>
+                      <span>500ml</span>
+                      <span>•</span>
+                      <span>Lave Mains</span>
+                    </Info>
+                  </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la myrtille. Il purifiera vos mains de la saleté
-                    et les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
+                  <DescriptionParagraph>
+                    <p>
+                      Ultra Compact vous propose une solution de savon liquide
+                      qui rendra le lavage de vos mains agréable avec son parfum
+                      aromatisé à la myrtille. Il purifiera vos mains de la
+                      saleté et les rendra propre et douces.
+                    </p>
+                  </DescriptionParagraph>
 
-                <NumberLinks>
-                  <a className="blueberry_color" href="#plum">
-                    03
-                  </a>
-                  <span className="blueberry_bg"></span>
-                  <a className="blueberry_color" href="#mango">
-                    01
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Items>
-      </Wrap>
-    </Container>
+                  <NumberLinks>
+                    <a className="blueberry_color" href="#plum">
+                      03
+                    </a>
+                    <span className="blueberry_bg"></span>
+                    <a className="blueberry_color" href="#mango">
+                      01
+                    </a>
+                  </NumberLinks>
+                </ProductAbout>
+              </Right>
+            </ItemContent>
+          </Items>
+        </Wrap>
+      </Container>
+    </>
   );
 }
 

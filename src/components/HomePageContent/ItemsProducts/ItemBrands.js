@@ -36,7 +36,8 @@ const BrandsTitle = styled.div`
   }
   span {
     height: auto;
-    width: fit-content;
+    width: 100%;
+    max-width: fit-content;
     display: flex;
     align-items: center;
     flex-direction: column;
