@@ -144,7 +144,6 @@ export const LandingTitle = styled.h1`
     left: 50%;
     transform: translate(-50%, 80%);
     white-space: nowrap;
-    letter-spacing: 0.3rem;
 
     @media (max-width: 350px) {
       font-size: 2.5rem;

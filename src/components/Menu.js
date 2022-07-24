@@ -55,6 +55,7 @@ const Colapsite = styled.div`
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    color: #111;
 
     &.product_active {
       position: relative;
@@ -84,7 +85,7 @@ const Aside = styled.aside`
   height: auto;
   width: 100%;
   border-top: 2px solid #000;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   transition: all .25s cubic-bezier(.25,.46,.45,.94) .45s;
@@ -94,14 +95,14 @@ const Aside = styled.aside`
     align-items: center;
     height: auto;
     width: auto;
+    column-gap: 5rem;
     & li a {
       color: #222;
       font-size: 2rem;
       font-family: muli_reg;
       letter-spacing: 0.2rem;
-      margin-right: 7rem;
       & svg {
-        height: 2rem;
+        height: 1.8rem;
       }
     }
   }
