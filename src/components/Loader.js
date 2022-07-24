@@ -16,10 +16,8 @@ const Container = styled.section`
   overflow: hidden;
   user-select: none;
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transform: ${(props) => (props.isLoad === true ? "translateY(-100%)" : "translateY(0%)")};
-  /* opacity: ${(props) => (props.isLoad === true ? 0.1 : 1)}; */
+  /* transform: ${(props) => (props.isLoad === true ? "translateY(-100%)" : "translateY(0%)")}; */
   /* transform: translateY(0%); */
-  /* transform: translateY(-100%); */
 `;
 const Bloc = styled.div`
     display: flex;
@@ -46,7 +44,6 @@ const Circle = styled.div`
     width: 50px;
     height: 50px;
     border: 4px solid #f7ece2;
-    /* border: 4px solid rgba(255, 255, 255, 0.493); */
     border-left: 4px solid ${accueil};
     border-radius: 100px;
     animation: ${loaderRotate} 1s linear infinite;

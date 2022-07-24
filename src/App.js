@@ -8,8 +8,6 @@ import HomePage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Overlay from "./components/Overlay";
-import Loader from "./components/Loader";
-import IsLoading from "./components/Function/IsLoading";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -55,7 +53,6 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     function onScroll() {
@@ -78,8 +75,7 @@ function App() {
   return (
     <>
       <GlobalStyle isActive={openMenu} />
-      <IsLoading isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
-      <Loader isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
+      {/* <Loader isLoaded={isLoaded} setIsLoaded={setIsLoaded} /> */}
       <BrowserRouter>
         <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
         <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />

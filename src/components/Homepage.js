@@ -14,9 +14,7 @@ const Container = styled.main`
   margin-top: 8vh;
 `;
 
-const HomePage = ({ openMenu, setOpenMenu, isLoaded, setIsLoaded }) => {
-
- 
+const HomePage = ({ openMenu, setOpenMenu }) => {
 
   return (
     <Container>
