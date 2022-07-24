@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { cabinRegular, cabinBold, accueil, coffee } from "./Common";
+// import { cabinRegular, cabinBold, accueil, coffee } from "./Common";
 import { Link } from "react-router-dom";
 
 const Container = styled.header`
-  height: 8vh;
+  height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -36,14 +36,14 @@ const LeftContent = styled.div`
 `;
 const Logo = styled.svg`
   height: auto;
-  width: 5.5rem;
-  @media (max-width: 350px) {
-    width: 5rem;
+  width: 6rem;
+  @media screen and (max-width: 350px) {
+    width: 5.5rem;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     width: 7rem;
   }
-  @media (min-width: 850px) {
+  @media screen and (min-width: 850px) {
     & path {
       transition: all 0.5s ease;
     }
@@ -52,7 +52,7 @@ const Logo = styled.svg`
       fill: #ff773d;
     }
   }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     width: 7.5rem;
   }
 `;
@@ -76,7 +76,7 @@ const Logo = styled.svg`
 //   width: 100%;
 //   justify-content: flex-end;
 //   align-items: center;
-//   @media (min-width: 850px) {
+//   @media screen and (min-width: 850px) {
 //     display: flex;
 //   }
 // `;
@@ -154,7 +154,7 @@ const Logo = styled.svg`
 //   background: none;
 //   border: none;
 //   z-index: 200;
-//   @media (min-width: 850px) {
+//   @media screen and (min-width: 850px) {
 //     display: none;
 //   }
 // `;

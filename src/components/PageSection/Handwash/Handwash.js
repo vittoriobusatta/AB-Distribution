@@ -75,16 +75,16 @@ const Left = styled.div`
     text-transform: uppercase;
     left: 0%;
     top: 0%;
-    @media (max-width: 350px) {
+    @media screen and (max-width: 350px) {
       font-size: 3.5rem;
     }
-    @media (min-width: 650px) {
+    @media screen and (min-width: 650px) {
       font-size: 7rem;
     }
-    @media (min-width: 850px) {
+    @media screen and (min-width: 850px) {
       font-size: 8rem;
     }
-    @media (min-width: 1100px) {
+    @media screen and (min-width: 1100px) {
       font-size: 9rem;
     }
   }
@@ -156,7 +156,7 @@ const DescriptionTitle = styled.div`
       z-index: 10;
       left: 50%;
       transform: translate(-50%, 0);
-      @media (min-width: 650px) {
+      @media screen and (min-width: 650px) {
       height: 3px;
     }
     }
@@ -174,7 +174,7 @@ const DescriptionParagraph = styled.div`
     line-height: 2rem;
     text-align: center;
     max-width: 500px;
-    @media (max-width: 350px) {
+    @media screen and (max-width: 350px) {
       font-size: 1.2rem;
     }
   }

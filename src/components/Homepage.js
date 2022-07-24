@@ -18,7 +18,7 @@ const Container = styled.main`
   align-items: flex-end;
   flex-direction: column;
   row-gap: 15vh;
-  margin-top: 8vh;
+  margin-top: 70px;
 `;
 
 const HomePage = () => {

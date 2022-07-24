@@ -19,8 +19,11 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   row-gap: 15vh;
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     row-gap: 10vh;
+  }
+  @media screen and (max-height: 700px) {
+    row-gap: 30vh;
   }
 `;
 

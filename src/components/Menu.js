@@ -7,7 +7,7 @@ const Container = styled.section`
   bottom: 0;
   right: 0;
   width: calc(100vw - 100px);
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 70px);
   display: flex;
   align-items: flex-end;
   z-index: 99;
@@ -20,10 +20,10 @@ const Container = styled.section`
     props.isActive === true ? "translate(0%)" : "translate(100%)"};
   max-width: 400px;
 
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     width: calc(100vw - 70px);
   }
-  @media (min-width: 850px) {
+  @media screen and (min-width: 850px) {
     display: none;
   }
 `;

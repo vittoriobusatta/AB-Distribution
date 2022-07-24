@@ -31,10 +31,13 @@ export const textHover = "all 0.5s cubic-bezier(0, 0, 0.25, 1.21)";
 // Landing Components  ////////////////////////////////////////////////////////
 
 export const LandingContainer = styled.section`
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 70px);
   width: 100%;
-  @media (max-width: 350px) {
-    height: calc(70vh - 8vh);
+  @media screen and (max-width: 350px) {
+    height: calc(70vh - 70px);
+  }
+  @media screen and (max-height: 700px) {
+    height: calc(140vh - 70px);
   }
 `;
 
@@ -59,7 +62,7 @@ export const LandingBox = styled.div`
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 5vh;
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     padding-bottom: 0;
   }
 `;
@@ -83,11 +86,11 @@ export const LandingParagraph = styled.p`
   padding: 2rem;
   max-width: 720px;
 
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     font-size: 1.1rem;
     line-height: 2rem;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     font-size: 1.8rem;
   }
 `;
@@ -118,19 +121,19 @@ export const LandingTitle = styled.h1`
   position: relative;
   white-space: nowrap;
   font-family: ${playfairDisplayMedium};
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     font-size: 5rem;
   }
-  @media (min-width: 400px) {
+  @media screen and (min-width: 400px) {
     font-size: 6.5rem;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     font-size: 8rem;
   }
-  @media (min-width: 850px) {
+  @media screen and (min-width: 850px) {
     font-size: 12rem;
   }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     font-size: 14rem;
   }
 
@@ -145,16 +148,16 @@ export const LandingTitle = styled.h1`
     transform: translate(-50%, 80%);
     white-space: nowrap;
 
-    @media (max-width: 350px) {
+    @media screen and (max-width: 350px) {
       font-size: 2.5rem;
     }
-    @media (min-width: 650px) {
+    @media screen and (min-width: 650px) {
       font-size: 4.5rem;
     }
-    @media (min-width: 850px) {
+    @media screen and (min-width: 850px) {
       font-size: 5rem;
     }
-    @media (min-width: 1100px) {
+    @media screen and (min-width: 1100px) {
       font-size: 6.5rem;
     }
   }
@@ -203,18 +206,19 @@ export const LandingProductsTitle = styled.div`
       position: relative;
       text-align: center;
 
-      @media (min-width: 650px) {
+      @media screen and (min-width: 650px) {
         font-size: 3.5rem;
       }
-      @media (min-width: 850px) {
+      @media screen and (min-width: 850px) {
         font-size: 5rem;
       }
-      @media (min-width: 1100px) {
+      @media screen and (min-width: 1100px) {
         font-size: 5.5rem;
       }
     }
 
     & svg {
+      height: auto;
       width: auto;
       padding-top: 0.5rem;
     }
@@ -228,18 +232,22 @@ export const LandingProductsTitle = styled.div`
 export const Item = styled.div`
   height: 80vh;
   width: 100%;
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     height: 70vh;
   }
+  @media screen and (max-height: 850px) {
+    height: 110vh;
+  }
+
 `;
 export const Layout = styled.div`
   height: 100%;
   width: 100%;
   padding: 0 1rem;
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     padding: 0 2rem;
   }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +259,7 @@ export const Layout = styled.div`
 export const Name = styled.div`
   height: 10%;
   width: 100%;
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     height: 100%;
     width: 30%;
     display: flex;
@@ -262,20 +270,26 @@ export const Name = styled.div`
 export const Overview = styled.div`
   height: 70%;
   width: 100%;
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     height: 100%;
     width: 40%;
+  }
+  @media screen and (max-height: 850px) {
+    height: 60%;
   }
 `;
 export const Description = styled.div`
   height: 20%;
   width: 100%;
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     height: 100%;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (max-height: 850px) {
+    height: auto
   }
 `;
 
@@ -288,16 +302,16 @@ export const Title = styled.h1`
   text-transform: uppercase;
   text-align: left;
   max-width: 250px;
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     font-size: 2rem;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     font-size: 3.5rem;
   }
-  @media (min-width: 850px) {
+  @media screen and (min-width: 850px) {
     font-size: 5rem;
   }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     font-size: 5.5rem;
   }
 
@@ -310,10 +324,10 @@ export const Title = styled.h1`
     height: 2px;
     background: #000;
     z-index: 2;
-    @media (max-width: 350px) {
+    @media screen and (max-width: 350px) {
       width: 85px;
     }
-    @media (min-width: 650px) {
+    @media screen and (min-width: 650px) {
       height: 3px;
     }
   }
@@ -352,7 +366,7 @@ export const NameContent = styled.div`
   flex-direction: row;
   margin: 0 3rem 0 0;
 
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     flex-direction: column;
     justify-content: space-around;
   }
@@ -373,13 +387,13 @@ export const NameContent = styled.div`
     text-transform: uppercase;
     white-space: nowrap;
     transition: all 0.4s ease-out;
-    @media (max-width: 350px) {
+    @media screen and (max-width: 350px) {
       font-size: 1rem;
     }
-    @media (min-width: 650px) {
+    @media screen and (min-width: 650px) {
       font-size: 1.3rem;
     }
-    @media (min-width: 850px) {
+    @media screen and (min-width: 850px) {
       &:before {
         content: "";
         display: block;
@@ -407,7 +421,7 @@ export const Svg = styled.svg`
   bottom: 0;
   left: 0%;
   transform: translate(-20%, 40%);
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     display: block;
     min-height: 100px;
     transform: translate(-30%, 40%);
@@ -450,7 +464,7 @@ export const Image = styled.img`
   height: auto;
   width: 80%;
   max-width: 450px;
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     max-width: 550px;
   }
 `;
@@ -470,10 +484,10 @@ export const P = styled.p`
   text-align: center;
   color: #222;
   max-width: 800px;
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     font-size: 1.2rem;
   }
-  @media (min-width: 1100px) {
+  @media screen and (min-width: 1100px) {
     text-align: left;
     max-width: 450px;
     font-size: 1.6rem;

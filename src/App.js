@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Homepage";
 import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
-import Overlay from "./components/Overlay";
+// import Menu from "./components/Menu";
+// import Overlay from "./components/Overlay";
 
 const GlobalStyle = createGlobalStyle`
 

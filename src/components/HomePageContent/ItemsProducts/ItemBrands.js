@@ -15,11 +15,11 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
   grid-template-rows: repeat(21, 1fr);
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     grid-template-columns: 0.2fr repeat(5, 1fr) 0.2fr;
     grid-template-rows: repeat(22, 1fr);
   }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     grid-template-columns: 0.5fr repeat(28, 1fr) 0.5fr;
   }
 `;
@@ -28,10 +28,10 @@ const BrandsTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     grid-area: 1 / 3 / 7 / 6;
   }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     grid-area: 1 / 10 / 7 / 22;
   }
   span {
@@ -50,13 +50,13 @@ const BrandsTitle = styled.div`
       position: relative;
       text-align: center;
 
-      @media (min-width: 650px) {
+      @media screen and (min-width: 650px) {
         font-size: 3.5rem;
       }
-      @media (min-width: 850px) {
+      @media screen and (min-width: 850px) {
         font-size: 5rem;
       }
-      @media (min-width: 1100px) {
+      @media screen and (min-width: 1100px) {
         font-size: 5.5rem;
       }
     }
@@ -73,16 +73,16 @@ const Tukas = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 400px) {
+  @media screen and (min-width: 400px) {
     grid-area: 7 / 2 / 11 / 4;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     grid-area: 10 / 2 / 15 / 4;
   }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     grid-area: 9 / 2 / 14 / 10;
   }
-  @media (min-width: 1300px) {
+  @media screen and (min-width: 1300px) {
     grid-area: 9 / 5 / 15 / 12;
   }
 `;
@@ -94,16 +94,16 @@ const UltraCompact = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 400px) {
+  @media screen and (min-width: 400px) {
     grid-area: 12 / 2 / 16 / 4;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     grid-area: 17 / 3 / 22 / 6;
   }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     grid-area: 9 / 12 / 14 / 20;
   }
-  @media (min-width: 1300px) {
+  @media screen and (min-width: 1300px) {
     grid-area: 9 / 12 / 15 / 20;
   }
 `;
@@ -115,16 +115,16 @@ const Nestle = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 400px) {
+  @media screen and (min-width: 400px) {
     grid-area: 17 / 2 / 21 / 4;
   }
-  @media (min-width: 650px) {
+  @media screen and (min-width: 650px) {
     grid-area: 10 / 5 / 15 / 7;
   }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     grid-area: 9 / 22 / 14 / 30;
   }
-  @media (min-width: 1300px) {
+  @media screen and (min-width: 1300px) {
     grid-area: 9 / 20 / 15 / 27;
   }
 `;
@@ -133,10 +133,10 @@ const Image = styled.img`
   width: auto;
   max-width: 300px;
   min-height: 110px;
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     min-height: 90px;
   }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     height: auto;
     width: 100%;
   }
