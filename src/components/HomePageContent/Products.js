@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ItemAntibacterial from "./ItemsProducts/ItemAntibacterial";
 import ItemHandwash from "./ItemsProducts/ItemHandwash";
 import ItemShowerGel from "./ItemsProducts/ItemShowerGel";
-import ItemFood from "./ItemsProducts/ItemFood";
+import ItemGrocery from "./ItemsProducts/ItemGrocery";
 import ItemBodyMist from "./ItemsProducts/ItemBodyMist";
 import ItemCoffee from "./ItemsProducts/ItemCoffee";
 import ItemPerfume from "./ItemsProducts/ItemPerfume";
@@ -39,7 +39,7 @@ function Products() {
         <ItemBodyMist />
         <ItemAirFreshener />
         <ItemCoffee />
-        <ItemFood />
+        <ItemGrocery />
         <ItemBrands />
       </Wrapper>
     </>

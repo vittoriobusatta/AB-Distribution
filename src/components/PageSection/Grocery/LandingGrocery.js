@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  handWash,
+  Grocery,
   LandingContainer,
   LandingWrap,
   LandingContent,
@@ -9,33 +9,30 @@ import {
   LandingParagraph,
   LandingLine,
   LandingTitle,
-  LandingProductsTitle
+  LandingProductsTitle,
 } from "../../Common";
 
-
-
-function LandingHandwash() {
+function LandingGrocery() {
   return (
     <LandingContainer>
       <LandingWrap>
         <LandingContent>
           <LandingBox>
-            <LandingTitle className="title_handwash">Handwash</LandingTitle>
+            <LandingTitle className="title_grocery">Grocery</LandingTitle>
           </LandingBox>
 
           <LandingDescription>
             <LandingParagraph>
-              Une bonne hygiène des mains est importante pour tout le monde. Il
-              est important de se laver les mains plusieurs fois par jour.
-              Dans cette catégorie, vous retrouverez des savons liquides pour
-              les mains sèches aux senteurs fruitées.
+              Nous proposons un large éventail de produits alimentaires de la
+              marque Tukas tels que des produits en conserve, des légumes
+              marinés, des confitures et sauces . Découvrez nos sélections !
             </LandingParagraph>
           </LandingDescription>
         </LandingContent>
 
         <LandingProductsTitle>
           <LandingLine>
-            <div className="line_handwash"/>
+            <div className="line_grocery" />
           </LandingLine>
           <span>
             <h1>Nos Produits</h1>
@@ -46,12 +43,12 @@ function LandingHandwash() {
             >
               <path
                 d="M1.60044 25.4382C30.7327 7.85973 63.4391 7.49884 141.26 18.1553"
-                stroke={handWash}
+                stroke={Grocery}
                 strokeWidth="5"
               />
               <path
                 d="M128.819 13.4999C134.718 15.0127 146.945 16.3379 162.02 17.2055C177.017 18.0685 194.612 18.468 211.115 18.1876C227.649 17.9068 242.97 16.945 253.472 15.1165C258.786 14.1912 262.575 13.0895 264.674 11.9063C265.74 11.3056 266.014 10.879 266.057 10.7812C266.063 10.7678 266.059 10.7719 266.057 10.7893C266.054 10.8072 266.056 10.8192 266.056 10.8183C266.055 10.8162 266.039 10.6982 265.877 10.4524L270.054 7.70378C271.047 9.21272 271.414 11.005 270.641 12.7791C269.957 14.3477 268.561 15.4549 267.129 16.2621C264.233 17.8946 259.713 19.105 254.33 20.0424C243.435 21.9393 227.801 22.9049 211.2 23.1869C194.569 23.4694 176.85 23.0672 161.733 22.1972C146.695 21.3318 134.009 19.9927 127.577 18.3431L128.819 13.4999Z"
-                fill={handWash}
+                fill={Grocery}
               />
             </svg>
           </span>
@@ -61,4 +58,4 @@ function LandingHandwash() {
   );
 }
 
-export default LandingHandwash;
+export default LandingGrocery;

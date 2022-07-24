@@ -24,7 +24,7 @@ function ItemAntibacterial() {
           <NameContent>
             <Title className="antibacterial_line">Anti-Bactérien</Title>
             <span>
-              <Link to="anti-bactérien">
+              <Link to="anti-bacterien">
                 <span>Voir les Produits</span>
               </Link>
               <Svg

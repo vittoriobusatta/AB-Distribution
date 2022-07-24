@@ -128,7 +128,7 @@ const DescriptionTitle = styled.div`
     position: relative;
     font-family: ${baliviaRegular};
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 5rem;

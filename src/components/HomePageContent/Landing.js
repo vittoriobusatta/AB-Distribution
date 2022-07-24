@@ -1,197 +1,44 @@
 import React from "react";
-import styled from "styled-components";
 import {
-  cabinRegular,
-  baliviaRegular,
-  playfairDisplayMedium,
   accueil,
+  LandingContainer,
+  LandingWrap,
+  LandingContent,
+  LandingBox,
+  LandingDescription,
+  LandingParagraph,
+  LandingLine,
+  LandingTitle,
+  LandingProductsTitle
 } from "../Common";
 
-const Container = styled.section`
-  height: calc(100vh - 8vh);
-  width: 100%;
-  @media (max-width: 350px) {
-    height: calc(70vh - 8vh);
-  }
-`;
-const Wrap = styled.div`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
-const Content = styled.div`
-  height: 70%;
-  width: 100%;
-`;
-const Box = styled.div`
-  height: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 5vh;
-  @media (min-width: 650px) {
-    padding-bottom: 0;
-  }
-`;
-const Title = styled.h1`
-  font-size: 10rem;
-  position: relative;
-  white-space: nowrap;
-  font-family: ${playfairDisplayMedium};
-  @media (max-width: 350px) {
-    font-size: 8rem;
-  }
-  @media (min-width: 650px) {
-    font-size: 11rem;
-  }
-  @media (min-width: 850px) {
-    font-size: 13rem;
-  }
-  @media (min-width: 1100px) {
-    font-size: 16rem;
-  }
 
-  &::before {
-    position: absolute;
-    color: #000;
-    font-family: ${baliviaRegular};
-    font-size: 4rem;
-    text-transform: uppercase;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 80%);
-    white-space: nowrap;
-    letter-spacing: 0.3rem;
 
-    @media (max-width: 350px) {
-      font-size: 3.5rem;
-    }
-    @media (min-width: 650px) {
-      font-size: 4.5rem;
-    }
-    @media (min-width: 850px) {
-      font-size: 5rem;
-    }
-    @media (min-width: 1100px) {
-      font-size: 6.5rem;
-    }
-  }
 
-  &.title_accueil {
-    color: ${accueil};
-  }
-  &.title_accueil::before {
-    content: "Accueil";
-  }
-`;
-const Description = styled.div`
-  height: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-const Paragraph = styled.p`
-  position: relative;
-  color: #838383;
-  font-size: 1.4rem;
-  text-align: center;
-  line-height: 2.5rem;
-  font-family: ${cabinRegular};
-  width: fit-content;
-  padding: 2rem;
-  max-width: 720px;
-  @media (max-width: 350px) {
-    font-size: 1.1rem;
-    line-height: 2rem;
-  }
-  @media (min-width: 650px) {
-    font-size: 1.8rem;
-  }
-`;
-
-const ProductsTitle = styled.div`
-  height: 30%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-
-  & span {
-    height: auto;
-    width: 100%;
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    & h1 {
-      color: #111;
-      font-family: ${baliviaRegular};
-      font-size: 3rem;
-      text-transform: uppercase;
-      position: relative;
-      text-align: center;
-
-      @media (min-width: 650px) {
-        font-size: 3.5rem;
-      }
-      @media (min-width: 850px) {
-        font-size: 5rem;
-      }
-      @media (min-width: 1100px) {
-        font-size: 5.5rem;
-      }
-    }
-
-    & svg {
-      width: auto;
-      padding-top: 0.5rem;
-    }
-  }
-`;
-
-const Line = styled.div`
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  & div {
-    height: 5rem;
-    width: 2px;
-    background-color: ${accueil};
-  }
-`;
 
 function Landing() {
   return (
-    <Container>
-      <Wrap>
-        <Content>
-          <Box>
-            <Title className="title_accueil">Home</Title>
-          </Box>
+    <LandingContainer>
+      <LandingWrap>
+        <LandingContent>
+          <LandingBox>
+            <LandingTitle className="title_accueil">Home</LandingTitle>
+          </LandingBox>
 
-          <Description>
-            <Paragraph className="line_accueil">
+          <LandingDescription>
+            <LandingParagraph>
               AB Distribution est une société qui fournit des produits au détail
               dans trois catégories distinctes : l’Alimentation, la Parfumerie
               ainsi que l'Hygiène. Explorer le catalogue de produits dont nous
               disposons.
-            </Paragraph>
-          </Description>
-        </Content>
+            </LandingParagraph>
+          </LandingDescription>
+        </LandingContent>
 
-        <ProductsTitle>
-          <Line>
-            <div></div>
-          </Line>
+        <LandingProductsTitle>
+          <LandingLine>
+            <div className="line_accueil"/>
+          </LandingLine>
           <span>
             <h1>Nos Produits</h1>
             <svg
@@ -210,9 +57,9 @@ function Landing() {
               />
             </svg>
           </span>
-        </ProductsTitle>
-      </Wrap>
-    </Container>
+        </LandingProductsTitle>
+      </LandingWrap>
+    </LandingContainer>
   );
 }
 

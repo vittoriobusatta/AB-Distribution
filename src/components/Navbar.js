@@ -126,7 +126,7 @@ const Li = styled.li`
         &.product_shower_gel,
         &.product_handwash,
         &.product_antibacterial,
-        &.product_food,
+        &.product_grocery,
         &.product_airfreshener,
         &.product_bodymist {
           color: #fff;
@@ -149,8 +149,8 @@ const Li = styled.li`
     &.hover_handwash::after {
       background-color: $handwash;
     }
-    &.hover_food::after {
-      background-color: $food;
+    &.hover_grocery::after {
+      background-color: $Grocery;
     }
     &.hover_antibacterial::after {
       background-color: $antibacterial;
@@ -190,8 +190,8 @@ const Li = styled.li`
         color: $antibacterial;
       }
 
-      &.product_food {
-        color: $food;
+      &.product_grocery {
+        color: $Grocery;
       }
 
       &.product_airfreshener {

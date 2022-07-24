@@ -1,5 +1,5 @@
 import React from "react";
-import food from "../../../assets/img/home/food.webp";
+import grocery from "../../../assets/img/home/grocery.webp";
 import { Link } from "react-router-dom";
 import {
   Item,
@@ -16,19 +16,19 @@ import {
   P,
 } from "../../Common";
 
-function ItemFood() {
+function ItemGrocery() {
   return (
     <Item>
       <Layout>
         <Name>
           <NameContent>
-            <Title className="food_line">Produits Alimentaires</Title>
+            <Title className="grocery_line">Produits Alimentaires</Title>
             <span>
               <Link to="alimentations">
                 <span>Voir les Produits</span>
               </Link>
               <Svg
-                className="food_color"
+                className="grocery_color"
                 viewBox="0 0 287 133"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ function ItemFood() {
 
         <Overview>
           <OverviewContent>
-            <Image src={food} alt="" />
+            <Image src={grocery} alt="" />
           </OverviewContent>
         </Overview>
 
@@ -64,4 +64,4 @@ function ItemFood() {
   );
 }
 
-export default ItemFood;
+export default ItemGrocery;
