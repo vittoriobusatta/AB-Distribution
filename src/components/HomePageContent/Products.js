@@ -18,12 +18,11 @@ const Wrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 15vh;
   @media screen and (min-width: 1100px) {
     row-gap: 10vh;
   }
-  @media screen and (max-height: 700px) {
-    row-gap: 30vh;
+  @media screen and (min-height: 700px) {
+    row-gap: 5vh;
   }
 `;
 

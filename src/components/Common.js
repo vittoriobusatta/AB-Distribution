@@ -39,6 +39,9 @@ export const LandingContainer = styled.section`
   @media screen and (max-height: 700px) {
     height: calc(140vh - 70px);
   }
+  @media screen and (max-height: 500px) {
+    height: calc(160vh - 70px);
+  }
 `;
 
 export const LandingWrap = styled.div`
@@ -64,6 +67,10 @@ export const LandingBox = styled.div`
   padding-bottom: 5vh;
   @media screen and (min-width: 650px) {
     padding-bottom: 0;
+  }
+  @media screen and (max-height: 500px) {
+    padding-bottom: 0;
+    align-items: center;
   }
 `;
 
@@ -235,8 +242,11 @@ export const Item = styled.div`
   @media screen and (max-width: 350px) {
     height: 70vh;
   }
-  @media screen and (max-height: 850px) {
+  @media screen and (max-height: 700px) {
     height: 110vh;
+  }
+  @media screen and (max-height: 600px) {
+    height: 140vh;
   }
 
 `;
