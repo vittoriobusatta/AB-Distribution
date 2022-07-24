@@ -57,7 +57,7 @@ const ItemContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0px 1rem;
+  padding: 0px 2rem;
 `;
 const Left = styled.div`
   height: 60%;

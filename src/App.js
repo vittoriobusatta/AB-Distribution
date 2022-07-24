@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${mainColor};
-    overflow: ${(props) => (props.isActive === true ? "hidden" : "visible")};
+    /* overflow: ${(props) => (props.isActive === true ? "hidden" : "visible")}; */
     font-size: 1.6rem;
   }
 
@@ -78,8 +78,8 @@ function App() {
       {/* <Loader isLoaded={isLoaded} setIsLoaded={setIsLoaded} /> */}
       <BrowserRouter>
         <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
-        <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />
-        <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} />
+        {/* <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
+        {/* <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
 
         <Routes>
           <Route path="/*" element={<HomePage setOpenMenu={setOpenMenu} openMenu={openMenu} />} />
