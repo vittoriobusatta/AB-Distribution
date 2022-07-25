@@ -235,7 +235,7 @@ function Products() {
             </Description>
           </Layout>
         </Item>
-g
+        
         <Item id="Coffee">
           <Layout>
             <Name>
