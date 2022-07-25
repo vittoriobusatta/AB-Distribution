@@ -69,8 +69,17 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
+
+  // setTitle("i am a new title");
+
+  const [openMenu, setOpenMenu] = useState(false)
+  const [scrollTop, setScrollTop] = useState(0)
+  // const [title, setTitle] = useState("Accueil | AB Distribution")
+
+  // useEffect(() => {
+  //   document.title = title;
+  // }, [title]);
+
 
   useEffect(() => {
     function onScroll() {

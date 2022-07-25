@@ -3,13 +3,13 @@ import Handwash from "./PageSection/Handwash/Handwash";
 import Products from "./HomePageContent/Products";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Function/ScrollToTop";
-import LandingPerfume from "./PageSection/Perfume/LandingPerfume";
-import LandingCoffee from "./PageSection/Coffee/LandingCoffee";
-import LandingShowergel from "./PageSection/Showergel/LandingShowergel";
-import LandingAirfreshener from "./PageSection/Airfreshener/LandingAirfreshener";
-import LandingGrocery from "./PageSection/Grocery/LandingGrocery";
-import LandingAntibacterial from "./PageSection/Antibacterial/LandingAntibacterial";
-import LandingBodymist from "./PageSection/Bodymist/LandingBodymist";
+import Airfreshener from "./PageSection/Airfreshener/Airfreshener";
+import Antibacterial from "./PageSection/Antibacterial/Antibacterial";
+import Bodymist from "./PageSection/Bodymist/Bodymist";
+import Coffee from "./PageSection/Coffee/Coffee";
+import Grocery from "./PageSection/Grocery/Grocery";
+import Perfume from "./PageSection/Perfume/Perfume";
+import Showergel from "./PageSection/Showergel/Showergel";
 
 const Container = styled.main`
   height: auto;
@@ -29,13 +29,13 @@ const HomePage = () => {
       <Routes>
         <Route path="/" element={<Products />} />
         <Route path="lave-mains" element={<Handwash />} />
-        <Route path="parfums-d-ambiance" element={<LandingPerfume />} />
-        <Route path="anti-bacterien" element={<LandingAntibacterial />} />
-        <Route path="cafes" element={<LandingCoffee />} />
-        <Route path="desodorisants" element={<LandingAirfreshener />} />
-        <Route path="gels-douches" element={<LandingShowergel />} />
-        <Route path="alimentations" element={<LandingGrocery />} />
-        <Route path="brumes-corporelles" element={<LandingBodymist />} />
+        <Route path="parfums-d-ambiance" element={<Perfume />} />
+        <Route path="anti-bacterien" element={<Antibacterial />} />
+        <Route path="cafes" element={<Coffee />} />
+        <Route path="desodorisants" element={<Airfreshener />} />
+        <Route path="gels-douches" element={<Showergel />} />
+        <Route path="alimentations" element={<Grocery />} />
+        <Route path="brumes-corporelles" element={<Bodymist />} />
       </Routes>
     </Container>
   );

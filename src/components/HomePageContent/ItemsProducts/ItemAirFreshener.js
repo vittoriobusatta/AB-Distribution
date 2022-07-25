@@ -25,7 +25,7 @@ function ItemAirFreshener() {
             <Title className="airfreshener_line">Désodorisants</Title>
             <Link to="desodorisants">
               <div className="airfreshener_line">
-                  <span>Voir les Produits</span>
+                <span>Voir les Produits</span>
               </div>
             </Link>
           </NameContent>

@@ -14,7 +14,7 @@ function Landing() {
   return (
     <LandingWrap>
       <LandingContent>
-          <LandingTitle className="title_accueil">Home</LandingTitle>
+        <LandingTitle className="title_accueil">Home</LandingTitle>
 
         <LandingDescription>
           <LandingParagraph>

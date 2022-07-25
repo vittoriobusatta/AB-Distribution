@@ -1,10 +1,10 @@
 import React from "react";
 import {
   perfume,
-  LandingContainer,
+  
   LandingWrap,
   LandingContent,
-  LandingBox,
+  
   LandingDescription,
   LandingParagraph,
   LandingLine,
@@ -14,12 +14,12 @@ import {
 
 function LandingPerfume() {
   return (
-    <LandingContainer>
+    
       <LandingWrap>
         <LandingContent>
-          <LandingBox>
+          
             <LandingTitle className="title_perfume">Perfume</LandingTitle>
-          </LandingBox>
+          
 
           <LandingDescription>
             <LandingParagraph>
@@ -54,7 +54,7 @@ function LandingPerfume() {
           </span>
         </LandingProductsTitle>
       </LandingWrap>
-    </LandingContainer>
+    
   );
 }
 

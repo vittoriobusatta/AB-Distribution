@@ -12,6 +12,7 @@ import mango from "../../../../src/assets/img/handwash/mango.webp";
 import plum from "../../../../src/assets/img/handwash/plum.webp";
 import cranberry from "../../../../src/assets/img/handwash/cranberry.webp";
 import LandingHandwash from "./LandingHandwash";
+import setTitle from "../../Function/setTitle";
 
 const mangoColor = "#F8C23A";
 const cranberryColor = "#E91D2D";
@@ -265,9 +266,11 @@ const NumberLinks = styled.div`
 
 // .lvm_products_content.handwash_reverse {
 //   flex-direction: row-reverse;
-// }
+// 
+
 
 function Handwash() {
+  setTitle("Lave Mains | AB Distribtion");
   return (
     <>
       <LandingHandwash />

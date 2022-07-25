@@ -9,8 +9,8 @@ import ItemCoffee from "./ItemsProducts/ItemCoffee";
 import ItemPerfume from "./ItemsProducts/ItemPerfume";
 import ItemAirFreshener from "./ItemsProducts/ItemAirFreshener";
 import ItemBrands from "./ItemsProducts/ItemBrands";
-import { useState } from "react";
 import Landing from "./Landing";
+import setTitle from "../Function/setTitle";
 
 
 const Wrapper = styled.section`
@@ -28,7 +28,8 @@ const Wrapper = styled.section`
 
 function Products() {
 
-  console.log();
+  setTitle("Accueil | AB Distribution");
+
   return (
     <>
       <Landing />
