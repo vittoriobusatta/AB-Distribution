@@ -267,7 +267,7 @@ export const LandingProductsTitle = styled.div`
 export const Item = styled.div`
   height: auto;
   width: 100%;
-  margin-top: max(20rem, 10vh);
+  margin-top: max(20rem, 140px);
   /* @media screen and (max-width: 350px) {
     height: 70vh;
   }
@@ -365,7 +365,7 @@ export const NameContent = styled.div`
   flex-direction: row;
   margin: 0 3rem 0 0;
 
-  @media screen and (max-width: 321px) {
+  @media screen and (max-width: 450px) {
     flex-direction: column;
   }
 
@@ -375,18 +375,45 @@ export const NameContent = styled.div`
     margin: 0;
   }
 
-  & span {
+  & div {
     height: auto;
     width: auto;
     position: relative;
     margin-left: 3rem;
-    @media screen and (max-width: 321px) {
+    border-radius: 5px;
+    border: solid 2px;
+    transition: ${textHover};
+    &:hover {
+      &.antibacterial_line{background-color: ${antibacterial}}
+      &.grocery_line{background-color: ${Grocery}}
+      &.airfreshener_line{background-color: ${airfreshener}}
+      &.bodymist_line{background-color: #2e2b27}
+      &.perfume_line{background-color: ${perfume}}
+      &.showergel_line{background-color: ${showergel}}
+      &.coffee_line{background-color: ${coffee}}
+      &.handwash_line{background-color: ${handWash}}
+    }
+    &:hover > span {
+      color : ${mainColor};
+    }
+    &.antibacterial_line{border-color: ${antibacterial}}
+    &.grocery_line{border-color: ${Grocery}}
+    &.airfreshener_line{border-color: ${airfreshener}}
+    &.bodymist_line{border-color: #2e2b27}
+    &.perfume_line{border-color: ${perfume}}
+    &.showergel_line{border-color: ${showergel}}
+    &.coffee_line{border-color: ${coffee}}
+    &.handwash_line{border-color: ${handWash}}
+    padding: clamp(5px, 1.5rem, 10px) clamp(10px, 2.5rem, 20px);
+    /* padding: max(1.5rem, 5px) max(2.5rem, 10px); */
+    @media screen and (max-width: 450px) {
       margin-left: 0;
-      margin-top: 50px;
+      margin-top: 70px;
+      
     }
   }
 
-  & span span {
+  & a span {
     position: relative;
     color: #222;
     font-family: ${cabinBold};
@@ -394,8 +421,8 @@ export const NameContent = styled.div`
     z-index: 1;
     text-transform: uppercase;
     white-space: nowrap;
-    transition: all 0.4s ease-out;
-    @media screen and (min-width: 850px) {
+    /* transition: all 0.4s ease-out; */
+    /* @media screen and (min-width: 992px) {
       &:before {
         content: "";
         display: block;
@@ -409,7 +436,7 @@ export const NameContent = styled.div`
       &:hover:before {
         width: 100%;
       }
-    }
+    } */
   }
 `;
 
@@ -423,7 +450,7 @@ export const Title = styled.h2`
   text-align: left;
   max-width: 250px;
 
-  @media screen and (max-width: 321px) {
+  @media screen and (max-width: 450px) {
     text-align: center;
     font-size: 30px;
   }
@@ -434,7 +461,7 @@ export const Title = styled.h2`
   @media screen and (min-width: 768px) {
     font-size: 6rem;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1224px) {
     font-size: min(7rem, 50px);
   }
 
@@ -447,7 +474,7 @@ export const Title = styled.h2`
     height: 2px;
     background: #000;
     z-index: 2;
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 450px) {
       width: 85px;
       bottom: -15px;
       left: 50%;
@@ -499,7 +526,7 @@ export const Svg = styled.svg`
   left: 0%;
   transform: translate(-20%, 40%);
   @media screen and (min-width: 1224px) {
-    display: block;
+    /* display: block; */
     min-height: 100px;
     transform: translate(-30%, 40%);
   }

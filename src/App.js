@@ -65,12 +65,7 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb{
     background: #D4CEBD;
     border-radius: 15px;
-    transition: all .3s ease-in;
-    /* &:hover {
-      background-color: #fff;
-    } */
   }
-
 `;
 
 function App() {
