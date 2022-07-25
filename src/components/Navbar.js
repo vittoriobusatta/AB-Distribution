@@ -11,7 +11,7 @@ const Container = styled.header`
   right: 0;
   z-index: 100;
   transition: all 0.3s ease-in 0s, top 0.3s ease 0s;
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); */
   background-color: #faf7ee;
 `;
 const Wrap = styled.div`
@@ -37,24 +37,19 @@ const LeftContent = styled.div`
 const Logo = styled.svg`
   height: auto;
   width: 6rem;
-  @media screen and (max-width: 350px) {
-    width: 5.5rem;
-  }
-  @media screen and (min-width: 650px) {
-    width: 7rem;
-  }
-  @media screen and (min-width: 850px) {
+  min-width: 60px;
+  max-width: 70px;
+
+  @media screen and (min-width: 1224px) {
     & path {
       transition: all 0.5s ease;
     }
-    &:hover path:nth-child(2),
-    &:hover path:nth-child(3) {
+    &:hover path:nth-child(1),
+    &:hover path:nth-child(2) {
       fill: #ff773d;
     }
   }
-  @media screen and (min-width: 1100px) {
-    width: 7.5rem;
-  }
+
 `;
 
 // const Right = styled.div`
