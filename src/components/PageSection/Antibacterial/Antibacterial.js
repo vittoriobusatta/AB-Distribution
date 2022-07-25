@@ -1,14 +1,16 @@
-import React from 'react'
-import setTitle from '../../Function/setTitle';
-import LandingAntibacterial from './LandingAntibacterial';
+import React from "react";
+import setTitle from "../../Function/setTitle";
+import LandingAntibacterial from "./LandingAntibacterial";
+import NavbarAntibacterial from "./NavbarAntibacterial";
 
 function Antibacterial() {
   setTitle("Anti-Bactérien | AB Distribtion");
   return (
     <>
-        <LandingAntibacterial />
+      <NavbarAntibacterial />
+      <LandingAntibacterial />
     </>
-  )
+  );
 }
 
-export default Antibacterial
+export default Antibacterial;

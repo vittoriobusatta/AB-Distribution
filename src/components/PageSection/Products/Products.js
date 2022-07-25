@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Landing from "./Landing";
-import setTitle from "../Function/setTitle";
+import setTitle from "../../Function/setTitle";
 import {
   Item,
   Layout,
@@ -16,14 +16,15 @@ import {
   P,
 } from "./ProductsCommon";
 import { Link } from "react-router-dom";
-import airfreshenerImage from "../../assets/img/home/airfreshener.webp";
-import antibacterialImage from "../../assets/img/home/antibacterial.webp";
-import bodymistImage from "../../assets/img/home/bodymist.webp";
-import coffeeImage from "../../assets/img/home/coffee.webp";
-import groceryImage from "../../assets/img/home/grocery.webp";
-import handwashImage from "../../assets/img/home/handwash.webp";
-import perfumeImage from "../../assets/img/home/perfume.webp";
-import showergelImage from "../../assets/img/home/showergel.webp";
+import airfreshenerImage from "../../../assets/img/home/airfreshener.webp";
+import antibacterialImage from "../../../assets/img/home/antibacterial.webp";
+import bodymistImage from "../../../assets/img/home/bodymist.webp";
+import coffeeImage from "../../../assets/img/home/coffee.webp";
+import groceryImage from "../../../assets/img/home/grocery.webp";
+import handwashImage from "../../../assets/img/home/handwash.webp";
+import perfumeImage from "../../../assets/img/home/perfume.webp";
+import showergelImage from "../../../assets/img/home/showergel.webp";
+import Navbar from "./Navbar";
 
 const Wrapper = styled.section`
   height: 100%;
@@ -37,6 +38,7 @@ function Products() {
 
   return (
     <>
+      <Navbar />
       <Landing />
       <Wrapper>
         <Item id="Body Mist">
@@ -235,7 +237,7 @@ function Products() {
             </Description>
           </Layout>
         </Item>
-        
+
         <Item id="Coffee">
           <Layout>
             <Name>

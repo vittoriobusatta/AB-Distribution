@@ -8,7 +8,7 @@ import {
   LandingLine,
   LandingTitle,
   LandingProductsTitle,
-} from "../Common";
+} from "../../Common";
 
 function Landing() {
   return (

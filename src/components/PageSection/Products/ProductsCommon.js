@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { airfreshener, antibacterial, baliviaRegular, cabinBold, cabinRegular, coffee, Grocery, handWash, lineheightP, mainColor, perfume, showergel, sizeH2, sizeP, textHover } from "../Common";
+import { airfreshener, antibacterial, baliviaRegular, cabinBold, cabinRegular, coffee, Grocery, handWash, lineheightP, mainColor, perfume, showergel, sizeH2, sizeP, textHover } from "../../Common";
 
 
 export const Item = styled.div`

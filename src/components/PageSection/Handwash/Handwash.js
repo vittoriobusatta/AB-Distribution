@@ -13,6 +13,7 @@ import plum from "../../../../src/assets/img/handwash/plum.webp";
 import cranberry from "../../../../src/assets/img/handwash/cranberry.webp";
 import LandingHandwash from "./LandingHandwash";
 import setTitle from "../../Function/setTitle";
+import NavbarHandwash from "./NavbarHandwash";
 
 const mangoColor = "#F8C23A";
 const cranberryColor = "#E91D2D";
@@ -273,6 +274,7 @@ function Handwash() {
   setTitle("Lave Mains | AB Distribtion");
   return (
     <>
+      <NavbarHandwash />
       <LandingHandwash />
       <Container>
         <Wrap>

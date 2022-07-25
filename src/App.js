@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Homepage";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/HomePageContent/Navbar";
 // import Menu from "./components/Menu";
 // import Overlay from "./components/Overlay";
 
@@ -103,7 +103,7 @@ function App() {
       <GlobalStyle isActive={openMenu} />
       {/* <Loader isLoaded={isLoaded} setIsLoaded={setIsLoaded} /> */}
       <BrowserRouter>
-        <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
+        {/* <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
         {/* <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
         {/* <Overlay setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
 

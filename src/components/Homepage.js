@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Handwash from "./PageSection/Handwash/Handwash";
-import Products from "./HomePageContent/Products";
+import Products from "./PageSection/Products/Products";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Function/ScrollToTop";
 import Airfreshener from "./PageSection/Airfreshener/Airfreshener";

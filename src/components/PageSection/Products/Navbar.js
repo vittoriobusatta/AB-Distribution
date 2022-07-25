@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { accueil } from "./Common";
+import { accueil } from "../../Common";
 import { Link } from "react-router-dom";
 
 const Container = styled.header`
