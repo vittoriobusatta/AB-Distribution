@@ -16,10 +16,10 @@ export const handWash = "#FEDA57";
 
 // Font Sizes /////////////////////////////////////////////////////////////////
 
-export const sizeP = "clamp(14px,2.7rem,18px);";
-export const lineheightP = "max(4rem,20px);";
-export const sizeH1 = "clamp(20px,5.5rem,50px);";
-export const sizeH2 = "clamp(30px,4.5rem,50px);";
+export const sizeP = "clamp(14px,2.7rem,18px)";
+export const lineheightP = "max(4rem,20px)";
+export const sizeH1 = "clamp(20px,5.5rem,50px)";
+export const sizeH2 = "clamp(30px,5.5rem,60px)";
 
 // Font Familly ///////////////////////////////////////////////////////////////
 

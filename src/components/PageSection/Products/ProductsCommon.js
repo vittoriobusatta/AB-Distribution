@@ -21,11 +21,14 @@ export const Item = styled.div`
   height: auto;
   width: 100%;
   margin-top: max(20rem, 140px);
+  display: flex;
+  justify-content: center;
 `;
 export const Layout = styled.div`
   height: 100%;
   width: 100%;
   padding: 0 1.3rem;
+  max-width: 1700px;
   @media screen and (min-width: 576px) {
     padding: 0 4rem;
   }
@@ -195,7 +198,7 @@ export const Title = styled.h2`
   position: relative;
   font-family: ${baliviaRegular};
   font-weight: 700;
-  font-size: ${sizeH2};
+  font-size: clamp(30px,4.5rem,50px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;

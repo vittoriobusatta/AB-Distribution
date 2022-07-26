@@ -37,8 +37,14 @@ const ItemContent = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 0px 2rem;
+  @media screen and (min-width: 1224px) {
+    flex-direction: row;
+    max-width: 1500px;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
 `;
-
 
 const ImageContainer = styled.div`
   position: relative;
@@ -48,12 +54,20 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 50px 0;
+  @media screen and (min-width: 1224px) {
+    margin: 0;
+  }
 `;
 const Image = styled.img`
   position: relative;
   height: auto;
   width: 80%;
   max-width: 450px;
+  @media screen and (min-width: 1224px) {
+    width:auto;
+    height: 100%;
+    max-width: 550px;
+  }
 `;
 
 const Left = styled.div`
@@ -64,6 +78,15 @@ const Left = styled.div`
   align-items: flex-end;
   position: relative;
 
+  @media screen and (min-width: 1224px) {
+    width: 50%;
+    height: 100%;
+    &.reverse::before {
+      left: -100%;
+    }
+        
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -72,18 +95,21 @@ const Left = styled.div`
     text-transform: uppercase;
     left: 0%;
     top: 0%;
-    @media screen and (max-width: 350px) {
-      font-size: 3.5rem;
-    }
-    @media screen and (min-width: 650px) {
-      font-size: 7rem;
-    }
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 576px) {
       font-size: 8rem;
     }
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 768px) {
       font-size: 9rem;
     }
+    @media screen and (min-width: 992px) {
+      font-size: 10rem;
+    }
+    @media screen and (min-width: 1224px) {
+      font-size: 11rem;
+      left: 100%;
+      
+    }
+    
   }
   &.img_mango::before {
     color: ${mangoColor};
@@ -108,7 +134,17 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1224px) {
+    width: 50%;
+    height: 100%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 `;
+
 const ProductAbout = styled.div`
   height: 100%;
   width: 100%;
@@ -145,16 +181,17 @@ const DescriptionTitle = styled.div`
     &::before {
       position: absolute;
       content: "";
-      bottom: -1.5rem;
+      bottom: -15px;
       width: 82px;
       height: 2px;
       background: #000;
       z-index: 10;
       left: 50%;
       transform: translate(-50%, 0);
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 576px) {
         height: 3px;
       }
+      
     }
   }
 `;
@@ -170,7 +207,10 @@ const DescriptionParagraph = styled.div`
     line-height: ${lineheightP};
     text-align: center;
     padding: 0 10px;
-    max-width: 500px;
+    max-width: 700px;
+    @media screen and (min-width: 1224px) {
+      line-height: 3rem;
+    }
   }
 `;
 const Info = styled.div`
@@ -200,16 +240,16 @@ const NumberLinks = styled.div`
     transition: ${textHover};
 
     &:hover.mango_color {
-      color: #ffd365;
+      color: ${mangoColor};
     }
     &:hover.cranberry_color {
-      color: #df3946;
+      color: ${cranberryColor};
     }
     &:hover.plum_color {
-      color: #cf73ad;
+      color: ${plumColor};
     }
     &:hover.blueberry_color {
-      color: #91eaff;
+      color: ${blueberryColor};
     }
     &.mango_color {
       color: ${mangoColor};
@@ -224,6 +264,7 @@ const NumberLinks = styled.div`
       color: ${blueberryColor};
     }
   }
+
   & span {
     position: relative;
     width: 40px;
@@ -245,9 +286,6 @@ const NumberLinks = styled.div`
   }
 `;
 
-// .lvm_products_content.handwash_reverse {
-//   flex-direction: row-reverse;
-//
 
 function Handwash() {
   setTitle("Lave Mains | AB Distribution");
@@ -300,8 +338,8 @@ function Handwash() {
         </Item>
 
         <Item id="cranberry">
-          <ItemContent>
-            <Left className="img_cranberry">
+          <ItemContent className="reverse">
+            <Left className="img_cranberry reverse">
               <ImageContainer>
                 <Image src={cranberry} alt="" />
               </ImageContainer>
@@ -384,8 +422,8 @@ function Handwash() {
         </Item>
 
         <Item id="blueberry">
-          <ItemContent>
-            <Left className="img_blueberry">
+          <ItemContent className="reverse">
+            <Left className="img_blueberry reverse">
               <ImageContainer>
                 <Image src={blueberry} alt="" />
               </ImageContainer>
