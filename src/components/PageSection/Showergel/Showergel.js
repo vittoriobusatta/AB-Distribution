@@ -3,7 +3,7 @@ import setTitle from '../../Function/setTitle';
 import LandingShowergel from './LandingShowergel';
 
 function Showergel() {
-  setTitle("Gels Docuhes | AB Distribtion");
+  setTitle("Gels Docuhes | AB Distribution");
   return (
     <>
       <LandingShowergel />

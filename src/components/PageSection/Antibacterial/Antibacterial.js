@@ -4,7 +4,7 @@ import LandingAntibacterial from "./LandingAntibacterial";
 import NavbarAntibacterial from "./NavbarAntibacterial";
 
 function Antibacterial() {
-  setTitle("Anti-Bactérien | AB Distribtion");
+  setTitle("Anti-Bactérien | AB Distribution");
   return (
     <>
       <NavbarAntibacterial />

@@ -4,7 +4,7 @@ import LandingBodymist from "./LandingBodymist";
 import NavbarBodymist from "./NavbarBodymist";
 
 function Bodymist() {
-  setTitle("Brumes Corporelles | AB Distribtion");
+  setTitle("Brumes Corporelles | AB Distribution");
   return (
     <>
       <NavbarBodymist />

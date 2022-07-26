@@ -4,7 +4,7 @@ import LandingAirfreshener from '../Airfreshener/LandingAirfreshener';
 import NavbarAirfreshener from '../Airfreshener/NavbarAirfreshener';
 
 function Airfreshener() {
-  setTitle("Désodorisants | AB Distribtion");
+  setTitle("Désodorisants | AB Distribution");
 
   return (
     <>

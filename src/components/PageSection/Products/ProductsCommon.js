@@ -1,28 +1,31 @@
 import styled from "styled-components";
-import { airfreshener, antibacterial, baliviaRegular, cabinBold, cabinRegular, coffee, Grocery, handWash, lineheightP, mainColor, perfume, showergel, sizeH2, sizeP, textHover } from "../../Common";
-
+import {
+  airfreshener,
+  antibacterial,
+  baliviaRegular,
+  cabinBold,
+  cabinRegular,
+  coffee,
+  Grocery,
+  handWash,
+  lineheightP,
+  mainColor,
+  perfume,
+  showergel,
+  sizeH2,
+  sizeP,
+  textHover,
+} from "../../Common";
 
 export const Item = styled.div`
   height: auto;
   width: 100%;
   margin-top: max(20rem, 140px);
-  /* @media screen and (max-width: 350px) {
-    height: 70vh;
-  }
-  @media screen and (max-height: 700px) {
-    height: 110vh;
-  }
-  @media screen and (max-height: 600px) {
-    height: 140vh;
-  } */
 `;
 export const Layout = styled.div`
   height: 100%;
   width: 100%;
   padding: 0 1.3rem;
-  /* @media screen and (min-width: 576px) {
-    padding: 0 2rem;
-  } */
   @media screen and (min-width: 576px) {
     padding: 0 4rem;
   }
@@ -54,11 +57,9 @@ export const Overview = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   @media screen and (min-width: 576px) {
     margin: 80px 0;
   }
-
   @media screen and (min-width: 1224px) {
     height: 100%;
     width: 45%;
@@ -91,7 +92,6 @@ export const Description = styled.div`
     align-items: center;
     margin-top: 200px;
   }
-
 `;
 
 export const NameContent = styled.div`
@@ -102,11 +102,9 @@ export const NameContent = styled.div`
   align-items: center;
   flex-direction: row;
   margin: 0 3rem 0 0;
-
   @media screen and (max-width: 450px) {
     flex-direction: column;
   }
-
   @media screen and (min-width: 1224px) {
     flex-direction: column;
     justify-content: space-around;
@@ -122,32 +120,63 @@ export const NameContent = styled.div`
     border: solid 2px;
     transition: ${textHover};
     &:hover {
-      &.antibacterial_line{background-color: ${antibacterial}}
-      &.grocery_line{background-color: ${Grocery}}
-      &.airfreshener_line{background-color: ${airfreshener}}
-      &.bodymist_line{background-color: #2e2b27}
-      &.perfume_line{background-color: ${perfume}}
-      &.showergel_line{background-color: ${showergel}}
-      &.coffee_line{background-color: ${coffee}}
-      &.handwash_line{background-color: ${handWash}}
+      &.antibacterial_line {
+        background-color: ${antibacterial};
+      }
+      &.grocery_line {
+        background-color: ${Grocery};
+      }
+      &.airfreshener_line {
+        background-color: ${airfreshener};
+      }
+      &.bodymist_line {
+        background-color: #2e2b27;
+      }
+      &.perfume_line {
+        background-color: ${perfume};
+      }
+      &.showergel_line {
+        background-color: ${showergel};
+      }
+      &.coffee_line {
+        background-color: ${coffee};
+      }
+      &.handwash_line {
+        background-color: ${handWash};
+      }
     }
     &:hover > span {
-      color : ${mainColor};
+      color: ${mainColor};
     }
-    &.antibacterial_line{border-color: ${antibacterial}}
-    &.grocery_line{border-color: ${Grocery}}
-    &.airfreshener_line{border-color: ${airfreshener}}
-    &.bodymist_line{border-color: #2e2b27}
-    &.perfume_line{border-color: ${perfume}}
-    &.showergel_line{border-color: ${showergel}}
-    &.coffee_line{border-color: ${coffee}}
-    &.handwash_line{border-color: ${handWash}}
+    &.antibacterial_line {
+      border-color: ${antibacterial};
+    }
+    &.grocery_line {
+      border-color: ${Grocery};
+    }
+    &.airfreshener_line {
+      border-color: ${airfreshener};
+    }
+    &.bodymist_line {
+      border-color: #2e2b27;
+    }
+    &.perfume_line {
+      border-color: ${perfume};
+    }
+    &.showergel_line {
+      border-color: ${showergel};
+    }
+    &.coffee_line {
+      border-color: ${coffee};
+    }
+    &.handwash_line {
+      border-color: ${handWash};
+    }
     padding: clamp(5px, 1.5rem, 10px) clamp(10px, 2.5rem, 20px);
     /* padding: max(1.5rem, 5px) max(2.5rem, 10px); */
     @media screen and (max-width: 450px) {
       margin-left: 0;
       margin-top: 70px;
-      
     }
   }
 
@@ -159,22 +188,6 @@ export const NameContent = styled.div`
     z-index: 1;
     text-transform: uppercase;
     white-space: nowrap;
-    /* transition: all 0.4s ease-out; */
-    /* @media screen and (min-width: 992px) {
-      &:before {
-        content: "";
-        display: block;
-        position: relative;
-        width: 0;
-        top: 2rem;
-        border-bottom: 2px solid #000;
-        transition: width 0.4s ease-out;
-        z-index: 2;
-      }
-      &:hover:before {
-        width: 100%;
-      }
-    } */
   }
 `;
 
@@ -187,12 +200,10 @@ export const Title = styled.h2`
   text-transform: uppercase;
   text-align: left;
   max-width: 250px;
-
   @media screen and (max-width: 450px) {
     text-align: center;
     font-size: 30px;
   }
-
   @media screen and (min-width: 576px) {
     font-size: 5rem;
   }

@@ -4,7 +4,7 @@ import LandingGrocery from './LandingGrocery';
 import NavbarGrocery from './NavbarGrocery';
 
 function Grocery() {
-  setTitle("Épicerie | AB Distribtion");
+  setTitle("Épicerie | AB Distribution");
   return (
     <>
       <NavbarGrocery />

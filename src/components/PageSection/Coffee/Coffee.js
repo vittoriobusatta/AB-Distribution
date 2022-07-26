@@ -4,7 +4,7 @@ import LandingCoffee from './LandingCoffee';
 import NavbarCoffee from './NavbarCoffee';
 
 function Coffee() {
-  setTitle("Cafés | AB Distribtion");
+  setTitle("Cafés | AB Distribution");
   return (
     <>
       <NavbarCoffee />

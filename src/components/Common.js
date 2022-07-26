@@ -19,7 +19,7 @@ export const handWash = "#FEDA57";
 export const sizeP = "clamp(14px,2.7rem,18px);";
 export const lineheightP = "max(4rem,20px);";
 export const sizeH1 = "clamp(20px,5.5rem,50px);";
-export const sizeH2 = "clamp(20px,4.5rem,50px);";
+export const sizeH2 = "clamp(30px,4.5rem,50px);";
 
 // Font Familly ///////////////////////////////////////////////////////////////
 
@@ -37,28 +37,11 @@ export const textHover = "all 0.5s cubic-bezier(0, 0, 0.25, 1.21)";
 
 // Landing Components  ////////////////////////////////////////////////////////
 
-export const LandingContainer = styled.section`
-  /* @media screen and (max-width: 350px) {
-    height: calc(70vh - 70px);
-  }
-  @media screen and (max-height: 700px) {
-    height: calc(140vh - 70px);
-  }
-  @media screen and (max-height: 500px) {
-    height: calc(160vh - 70px);
-  } */
-`;
-
-export const LandingBox = styled.div``;
-
 export const LandingWrap = styled.section`
   height: auto;
   width: 100%;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
-  /* min-height: 100vh; */
 `;
 
 export const LandingContent = styled.div`
@@ -140,6 +123,9 @@ export const LandingTitle = styled.h1`
   width: fit-content;
   margin: 100px auto;
 
+  @media screen and (max-width: 400px) {
+    font-size: 50px;
+  }
   @media screen and (min-width: 576px) {
     margin: 150px auto;
   }
@@ -166,6 +152,9 @@ export const LandingTitle = styled.h1`
     }
     @media screen and (max-width: 576px) {
       font-size: max(34%, 30px);
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 22px;
     }
   }
 
@@ -261,4 +250,3 @@ export const LandingProductsTitle = styled.div`
     }
   }
 `;
-

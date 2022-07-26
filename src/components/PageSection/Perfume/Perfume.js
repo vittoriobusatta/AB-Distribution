@@ -4,7 +4,7 @@ import LandingPerfume from './LandingPerfume';
 import NavbarPerfume from './NavbarPerfume';
 
 function Perfume() {
-  setTitle("Parfums | AB Distribtion");
+  setTitle("Parfums | AB Distribution");
   return (
     <>
       <NavbarPerfume />
