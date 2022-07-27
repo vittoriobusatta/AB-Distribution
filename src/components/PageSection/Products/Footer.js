@@ -115,7 +115,7 @@ const CopyContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: max(1.5rem, 10px) 2rem;
   background: ${accueil};
   @media screen and (max-width: 576px) {
     flex-direction: column;
