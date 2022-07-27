@@ -4,29 +4,29 @@ import { Link } from "react-router-dom";
 import { ReactComponent as NavbarLogoFooter } from "../../../assets/icons/Logo.svg";
 
 import {
-  NavbarWrapper,
-  NavbarContent,
-  NavbarGrid,
-  NavbarColumnLogo,
-  NavbarColumnLinks,
-  NavbarColumnSocials,
-  NavbarSocialsLinks,
-  NavbarCopyright,
-  NavbarCopyContent,
-  NavbarLicense,
-  NavbarCopy,
+  FooterWrapper,
+  FooterContent,
+  FooterGrid,
+  FooterColumnLogo,
+  FooterColumnLinks,
+  FooterColumnSocials,
+  FooterSocialsLinks,
+  FooterCopyright,
+  FooterCopyContent,
+  FooterLicense,
+  FooterCopy,
 } from "../PageCommon";
 
 function Footer() {
   return (
-    <NavbarWrapper>
-      <NavbarContent>
-        <NavbarGrid>
-          <NavbarColumnLogo>
+    <FooterWrapper>
+      <FooterContent>
+        <FooterGrid>
+          <FooterColumnLogo>
             <NavbarLogoFooter />
-          </NavbarColumnLogo>
+          </FooterColumnLogo>
 
-          <NavbarColumnLinks>
+          <FooterColumnLinks>
             <ul>
               <li>
                 <Link to="/">Accueil</Link>
@@ -37,10 +37,10 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </NavbarColumnLinks>
+          </FooterColumnLinks>
 
-          <NavbarColumnSocials>
-            <NavbarSocialsLinks>
+          <FooterColumnSocials>
+            <FooterSocialsLinks>
               <a className="links_accueil" href="https://www.instagram.com">
                 <svg
                   width="28"
@@ -81,26 +81,26 @@ function Footer() {
                   />
                 </svg>
               </a>
-            </NavbarSocialsLinks>
-          </NavbarColumnSocials>
-        </NavbarGrid>
+            </FooterSocialsLinks>
+          </FooterColumnSocials>
+        </FooterGrid>
 
-        <NavbarCopyright>
-          <NavbarCopyContent>
-            <NavbarLicense>
+        <FooterCopyright>
+          <FooterCopyContent>
+            <FooterLicense>
               <span>© 2022 - AB Distribution | Tous droits réservés</span>
-            </NavbarLicense>
+            </FooterLicense>
 
-            <NavbarCopy>
+            <FooterCopy>
               <span>
                 Réalisation par &nbsp;
                 <a href="https://vittoriobusatta.fr">Vittorio</a>
               </span>
-            </NavbarCopy>
-          </NavbarCopyContent>
-        </NavbarCopyright>
-      </NavbarContent>
-    </NavbarWrapper>
+            </FooterCopy>
+          </FooterCopyContent>
+        </FooterCopyright>
+      </FooterContent>
+    </FooterWrapper>
   );
 }
 

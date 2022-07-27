@@ -52,23 +52,23 @@ export const Logo = styled.svg`
     }
   }
 `;
-
+// Footer
 // Navbar Components ////////////////////////////////////////////////////////////
 
-export const NavbarWrapper = styled.footer`
+export const FooterWrapper = styled.footer`
   position: fixed;
   width: 100%;
   bottom: 0;
   z-index: 2;
   background-color: #FFFBF5;
 `;
-export const NavbarContent = styled.div`
+export const FooterContent = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 `;
-export const NavbarGrid = styled.div`
+export const FooterGrid = styled.div`
   height: auto;
   width: 100%;
   display: flex;
@@ -77,18 +77,18 @@ export const NavbarGrid = styled.div`
   flex-direction: row;
   padding: max(1.5rem, 10px) max(2rem, 10px) max(1.5rem, 10px) max(2rem, 10px);
   max-height: 120px;
-  min-height: 90px;
+  min-height: 70px;
   @media screen and (max-width: 576px) {
     padding: 0;
   }
 `;
-export const NavbarCopyright = styled.div`
+export const FooterCopyright = styled.div`
   height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
 `;
-export const NavbarColumnLogo = styled.div`
+export const FooterColumnLogo = styled.div`
   height: 100%;
   width: auto;
   flex: 1;
@@ -104,7 +104,7 @@ export const NavbarColumnLogo = styled.div`
     display: none;
   }
 `;
-export const NavbarColumnLinks = styled.div`
+export const FooterColumnLinks = styled.div`
   height: 100%;
   width: auto;
   flex: 2;
@@ -129,12 +129,12 @@ export const NavbarColumnLinks = styled.div`
     flex: 1;
   }
 `;
-export const NavbarColumnSocials = styled.div`
+export const FooterColumnSocials = styled.div`
   height: 100%;
   width: auto;
   flex: 1;
 `;
-export const NavbarSocialsLinks = styled.div`
+export const FooterSocialsLinks = styled.div`
   height: 100%;
   width: 100%;
   display: inline-flex;
@@ -154,7 +154,7 @@ export const NavbarSocialsLinks = styled.div`
     }
   }
 `;
-export const NavbarCopyContent = styled.div`
+export const FooterCopyContent = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
@@ -173,7 +173,7 @@ export const NavbarCopyContent = styled.div`
     font-size: clamp(11px, 2rem, 14px);
   }
 `;
-export const NavbarCopy = styled.div`
+export const FooterCopy = styled.div`
   height: auto;
   width: auto;
   display: flex;
@@ -184,7 +184,7 @@ export const NavbarCopy = styled.div`
     text-decoration: underline;
   }
 `;
-export const NavbarLicense = styled.div`
+export const FooterLicense = styled.div`
   height: auto;
   width: auto;
   display: flex;

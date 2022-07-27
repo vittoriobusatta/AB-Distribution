@@ -4,42 +4,42 @@ import { Link } from "react-router-dom";
 import { ReactComponent as NavbarLogoFooter } from "../../../assets/icons/Logo.svg";
 
 import {
-  NavbarWrapper,
-  NavbarContent,
-  NavbarGrid,
-  NavbarColumnLogo,
-  NavbarColumnLinks,
-  NavbarColumnSocials,
-  NavbarSocialsLinks,
-  NavbarCopyright,
-  NavbarCopyContent,
-  NavbarLicense,
-  NavbarCopy,
+  FooterWrapper,
+  FooterContent,
+  FooterGrid,
+  FooterColumnLogo,
+  FooterColumnLinks,
+  FooterColumnSocials,
+  FooterSocialsLinks,
+  FooterCopyright,
+  FooterCopyContent,
+  FooterLicense,
+  FooterCopy,
 } from "../PageCommon";
 import { airfreshener } from "../../Common";
 
-export const UpdateSocialsLinks = styled(NavbarSocialsLinks)`
+export const UpdateSocialsLinks = styled(FooterSocialsLinks)`
   & svg:hover > path {
     fill: ${airfreshener};
   }
 `;
-export const UpdateColumnLinks = styled(NavbarColumnLinks)`
+export const UpdateColumnLinks = styled(FooterColumnLinks)`
   ul li a:hover {
     color: ${airfreshener};
   }
 `;
-export const UpdateCopyContent = styled(NavbarCopyContent)`
+export const UpdateCopyContent = styled(FooterCopyContent)`
   background-color: ${airfreshener};
 `;
 
 function FooterAirfreshener() {
   return (
-    <NavbarWrapper>
-      <NavbarContent>
-        <NavbarGrid>
-          <NavbarColumnLogo>
+    <FooterWrapper>
+      <FooterContent>
+        <FooterGrid>
+          <FooterColumnLogo>
             <NavbarLogoFooter />
-          </NavbarColumnLogo>
+          </FooterColumnLogo>
 
           <UpdateColumnLinks>
             <ul>
@@ -54,7 +54,7 @@ function FooterAirfreshener() {
             </ul>
           </UpdateColumnLinks>
 
-          <NavbarColumnSocials>
+          <FooterColumnSocials>
             <UpdateSocialsLinks>
               <a className="links_accueil" href="https://www.instagram.com">
                 <svg
@@ -97,25 +97,25 @@ function FooterAirfreshener() {
                 </svg>
               </a>
             </UpdateSocialsLinks>
-          </NavbarColumnSocials>
-        </NavbarGrid>
+          </FooterColumnSocials>
+        </FooterGrid>
 
-        <NavbarCopyright>
+        <FooterCopyright>
           <UpdateCopyContent>
-            <NavbarLicense>
+            <FooterLicense>
               <span>© 2022 - AB Distribution | Tous droits réservés</span>
-            </NavbarLicense>
+            </FooterLicense>
 
-            <NavbarCopy>
+            <FooterCopy>
               <span>
                 Réalisation par &nbsp;
                 <a href="https://vittoriobusatta.fr">Vittorio</a>
               </span>
-            </NavbarCopy>
+            </FooterCopy>
           </UpdateCopyContent>
-        </NavbarCopyright>
-      </NavbarContent>
-    </NavbarWrapper>
+        </FooterCopyright>
+      </FooterContent>
+    </FooterWrapper>
   );
 }
 
