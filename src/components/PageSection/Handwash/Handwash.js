@@ -84,7 +84,6 @@ const Left = styled.div`
     &.reverse::before {
       left: -100%;
     }
-        
   }
 
   &::before {

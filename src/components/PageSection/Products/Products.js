@@ -25,12 +25,18 @@ import handwashImage from "../../../assets/img/home/handwash.webp";
 import perfumeImage from "../../../assets/img/home/perfume.webp";
 import showergelImage from "../../../assets/img/home/showergel.webp";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { mainColor } from "../../Common";
 
 const Wrapper = styled.section`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
+  background-color: ${mainColor};
+  position: relative;
+  z-index: 3;
 `;
 
 function Products() {
@@ -38,7 +44,7 @@ function Products() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Landing />
       <Wrapper>
         <Item id="Body Mist">
@@ -302,7 +308,8 @@ function Products() {
             </Description>
           </Layout>
         </Item>
-      </Wrapper>
+      </Wrapper> */}
+      <Footer />
     </>
   );
 }

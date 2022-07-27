@@ -18,13 +18,14 @@ const Container = styled.main`
   align-items: flex-end;
   flex-direction: column;
   margin-top: 70px;
+  position: relative;
+  z-index: 1;
 `;
 
 const HomePage = () => {
   return (
     <Container>
       <ScrollToTop />
-      
 
       <Routes>
         <Route path="/" element={<Products />} />

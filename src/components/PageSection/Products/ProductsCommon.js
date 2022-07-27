@@ -23,6 +23,9 @@ export const Item = styled.div`
   margin-top: max(20rem, 140px);
   display: flex;
   justify-content: center;
+  &:last-child {
+    margin-bottom: max(20rem, 100px);
+  }
 `;
 export const Layout = styled.div`
   height: 100%;
@@ -283,6 +286,7 @@ export const DescriptionContent = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 export const P = styled.p`
   font-family: ${cabinRegular};
   font-size: ${sizeP};
