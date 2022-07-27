@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Landing from "./Landing";
 import setTitle from "../../Function/setTitle";
 import {
-  Item,
   Layout,
   Name,
   NameContent,
@@ -27,6 +26,7 @@ import showergelImage from "../../../assets/img/home/showergel.webp";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { mainColor } from "../../Common";
+import { Item } from "../PageCommon";
 
 const Wrapper = styled.section`
   height: 100%;

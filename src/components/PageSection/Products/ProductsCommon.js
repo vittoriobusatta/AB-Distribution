@@ -19,16 +19,6 @@ import {
 
 // Item Components ///////////////////////////////////////////////////////////////
 
-export const Item = styled.div`
-  height: auto;
-  width: 100%;
-  margin-top: max(20rem, 140px);
-  display: flex;
-  justify-content: center;
-  &:last-child {
-    margin-bottom: max(20rem, 40px);
-  }
-`;
 export const Layout = styled.div`
   height: 100%;
   width: 100%;
@@ -269,7 +259,6 @@ export const Title = styled.h2`
 export const Image = styled.img`
   height: auto;
   width: 80%;
-
 `;
 export const DescriptionContent = styled.div`
   height: 100%;

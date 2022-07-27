@@ -1,6 +1,19 @@
 import styled from "styled-components";
 import { accueil, cabinMedium } from "../Common";
 
+
+
+export const Item = styled.div`
+  height: auto;
+  width: 100%;
+  margin-top: max(20rem, 140px);
+  display: flex;
+  justify-content: center;
+  &:last-child {
+    margin-bottom: max(20rem, 40px);
+  }
+`;
+
 export const Container = styled.header`
   height: 70px;
   width: 100%;
@@ -76,7 +89,7 @@ export const FooterGrid = styled.div`
   align-items: center;
   flex-direction: row;
   padding: max(1.5rem, 10px) max(2rem, 10px) max(1.5rem, 10px) max(2rem, 10px);
-  max-height: 120px;
+  max-height: 100px;
   min-height: 70px;
   @media screen and (max-width: 576px) {
     padding: 0;

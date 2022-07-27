@@ -11,15 +11,15 @@ import {
   sizeP,
   textHover,
 } from "../../Common";
-import blueberry from "../../../../src/assets/img/handwash/blueberry.webp";
-import mango from "../../../../src/assets/img/handwash/mango.webp";
-import plum from "../../../../src/assets/img/handwash/plum.webp";
-import cranberry from "../../../../src/assets/img/handwash/cranberry.webp";
+import blueberry from "./images/blueberry.webp";
+import mango from "./images/mango.webp";
+import plum from "./images/plum.webp";
+import cranberry from "./images/cranberry.webp";
 import LandingHandwash from "./LandingHandwash";
 import setTitle from "../../Function/setTitle";
 import NavbarHandwash from "./NavbarHandwash";
-import { Item } from "../Products/ProductsCommon";
 import FooterHandwash from "./FooterHandwash";
+import { Item } from '../PageCommon';
 
 const mangoColor = "#F8C23A";
 const cranberryColor = "#E91D2D";
