@@ -31,6 +31,11 @@ const Grid = styled.div`
   padding: max(1.5rem, 10px) max(2rem, 10px) max(1.5rem, 10px) max(2rem, 10px);
   max-height: 120px;
   min-height: 90px;
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 10px 0 8px 0;
+  }
 `;
 const Copyright = styled.div`
   height: auto;
@@ -49,6 +54,9 @@ const ColumnLogo = styled.div`
     height: 8rem;
     width: auto;
     max-width: 90px;
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
   }
 `;
 const ColumnLinks = styled.div`
@@ -106,7 +114,7 @@ const CopyContent = styled.div`
   align-items: center;
   padding: 2rem 3rem 2rem 3rem;
   background: ${accueil};
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 576px) {
     flex-direction: column;
     row-gap: 5px;
   }

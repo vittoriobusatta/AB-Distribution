@@ -42,6 +42,9 @@ export const LandingWrap = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: ${mainColor};
+  position: relative;
+  z-index: 3;
 `;
 
 export const LandingContent = styled.div`
