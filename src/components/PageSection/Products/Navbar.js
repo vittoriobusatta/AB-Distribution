@@ -39,12 +39,10 @@ const Logo = styled.svg`
   width: 6rem;
   min-width: 60px;
   max-width: 70px;
-
   @media screen and (max-width: 576px) {
     min-width: 50px;
     max-width: 60px;
   }
-
   @media screen and (min-width: 1224px) {
     & path {
       transition: all 0.5s ease;

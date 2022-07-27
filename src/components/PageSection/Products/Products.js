@@ -33,7 +33,7 @@ const Wrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
   background-color: ${mainColor};
   position: relative;
   z-index: 3;
@@ -44,7 +44,7 @@ function Products() {
 
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Landing />
       <Wrapper>
         <Item id="Body Mist">
@@ -308,7 +308,7 @@ function Products() {
             </Description>
           </Layout>
         </Item>
-      </Wrapper> */}
+      </Wrapper>
       <Footer />
     </>
   );

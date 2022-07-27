@@ -3,14 +3,16 @@ import styled from "styled-components";
 import { accueil, cabinMedium, cabinRegular } from "../../Common";
 import "./styles.css";
 import { ReactComponent as LogoFooter } from "../../../assets/icons/Logo.svg";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.footer`
   position: fixed;
-  height: fit-content;
+  /* height: fit-content; */
   width: 100%;
   bottom: 0;
   z-index: 2;
-  background-color: #fff;
+  background-color: #FFFBF5;
+  /* min-height: 100px; */
   /* max-height: 150px; */
 `;
 const Content = styled.div`
@@ -26,7 +28,9 @@ const Grid = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: max(3rem, 10px) max(5rem, 15px);
+  padding: max(1.5rem, 10px) max(2rem, 10px) max(1.5rem, 10px) max(2rem, 10px);
+  max-height: 120px;
+  min-height: 90px;
 `;
 const Copyright = styled.div`
   height: auto;
@@ -41,7 +45,6 @@ const ColumnLogo = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   & svg {
     height: 8rem;
     width: auto;
@@ -52,7 +55,6 @@ const ColumnLinks = styled.div`
   height: 100%;
   width: auto;
   flex: 2;
-
   ul {
     width: auto;
     display: flex;
@@ -64,7 +66,7 @@ const ColumnLinks = styled.div`
       font-size: clamp(14px, 2.5rem, 18px);
       color: #222;
       font-family: ${cabinMedium};
-      transition: color 0.1s;
+      transition: color 0.3s ;
       &:hover {
         color: ${accueil};
       }
@@ -83,14 +85,13 @@ const SocialsLinks = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 2.5rem;
-
   & svg {
     height: 4rem;
     width: auto;
     max-width: 25px;
     max-height: 25px;
     & > path {
-      transition: fill 0.1s;
+      transition: fill 0.3s;
     }
     &:hover > path {
       fill: ${accueil};
@@ -103,8 +104,17 @@ const CopyContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 3rem 2rem 3rem;
   background: ${accueil};
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  & span, 
+  & a {
+    color: #222;
+    font-family: ${cabinMedium};
+  }
 `;
 const Copy = styled.div`
   height: auto;
@@ -113,10 +123,8 @@ const Copy = styled.div`
   justify-content: flex-end;
   align-items: center;
   flex: 1;
-
   & span {
-    font-size: 1.5rem;
-    font-family: ${cabinRegular};
+    font-size: clamp(11px, 2rem, 14px);
   }
 `;
 const License = styled.div`
@@ -125,19 +133,16 @@ const License = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex: 1;
-
   & span {
-    font-size: 1.5rem;
-    font-family: ${cabinRegular};
+    font-size: clamp(11px, 2rem, 14px);
   }
 `;
 
 function Footer() {
   return (
-    <Wrapper className="footer">
-      <Content className="footer_container">
-        <Grid className="footer_menu">
+    <Wrapper>
+      <Content>
+        <Grid>
           <ColumnLogo>
             <LogoFooter />
           </ColumnLogo>
@@ -145,12 +150,9 @@ function Footer() {
           <ColumnLinks>
             <ul>
               <li>
-                <a
-                  className="links_accueil"
-                  href="https://www.ab-distribution.re"
-                >
-                  Accueil
-                </a>
+                <Link to="/">
+                    Accueil
+                </Link>
               </li>
               <li>
                 <a className="links_accueil" href="mentions-legales">
@@ -206,13 +208,13 @@ function Footer() {
           </ColumnSocials>
         </Grid>
 
-        <Copyright className="footer_details accueil_footer">
+        <Copyright>
           <CopyContent>
             <License>
               <span>© 2022 - AB Distribution | Tous droits réservés</span>
             </License>
 
-            <Copy className="front_end_dev">
+            <Copy>
               <span>
                 Réalisation par
                 <a href="https://vittoriobusatta.fr"> Vittorio</a>
