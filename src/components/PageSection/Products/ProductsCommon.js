@@ -17,6 +17,8 @@ import {
   textHover,
 } from "../../Common";
 
+// Item Components ///////////////////////////////////////////////////////////////
+
 export const Item = styled.div`
   height: auto;
   width: 100%;
@@ -24,7 +26,7 @@ export const Item = styled.div`
   display: flex;
   justify-content: center;
   &:last-child {
-    margin-bottom: max(20rem, 100px);
+    margin-bottom: max(20rem, 40px);
   }
 `;
 export const Layout = styled.div`
@@ -43,7 +45,6 @@ export const Layout = styled.div`
     padding: 0;
   }
 `;
-
 export const Name = styled.div`
   height: 10%;
   width: 100%;
@@ -71,7 +72,6 @@ export const Overview = styled.div`
     width: 45%;
   }
 `;
-
 export const OverviewContent = styled.div`
   height: 100%;
   width: 100%;
@@ -86,7 +86,6 @@ export const OverviewContent = styled.div`
     max-width: 750px;
   }
 `;
-
 export const Description = styled.div`
   height: 20%;
   width: 100%;
@@ -99,7 +98,6 @@ export const Description = styled.div`
     margin-top: 200px;
   }
 `;
-
 export const NameContent = styled.div`
   height: 100%;
   width: 100%;
@@ -196,7 +194,6 @@ export const NameContent = styled.div`
     white-space: nowrap;
   }
 `;
-
 export const Title = styled.h2`
   position: relative;
   font-family: ${baliviaRegular};
@@ -269,16 +266,11 @@ export const Title = styled.h2`
     background-color: #2e2b27;
   }
 `;
-
 export const Image = styled.img`
   height: auto;
   width: 80%;
-  /* max-width: 400px;
-  @media screen and (min-width: 1224px) {
-    max-width: 550px;
-  } */
-`;
 
+`;
 export const DescriptionContent = styled.div`
   height: 100%;
   width: 100%;
@@ -286,7 +278,6 @@ export const DescriptionContent = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
 export const P = styled.p`
   font-family: ${cabinRegular};
   font-size: ${sizeP};
@@ -303,3 +294,4 @@ export const P = styled.p`
     /* max-width: 600px; */
   }
 `;
+

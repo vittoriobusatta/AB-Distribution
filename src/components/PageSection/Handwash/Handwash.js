@@ -6,6 +6,7 @@ import {
   cabinMedium,
   cabinRegular,
   lineheightP,
+  mainColor,
   sizeH2,
   sizeP,
   textHover,
@@ -18,17 +19,22 @@ import LandingHandwash from "./LandingHandwash";
 import setTitle from "../../Function/setTitle";
 import NavbarHandwash from "./NavbarHandwash";
 import { Item } from "../Products/ProductsCommon";
+import FooterHandwash from "./FooterHandwash";
 
 const mangoColor = "#F8C23A";
 const cranberryColor = "#E91D2D";
 const blueberryColor = "#54C6E1";
 const plumColor = "#BD4B93";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 3;
+  background-color: ${mainColor};
+  margin-bottom: 170px;
 `;
 const ItemContent = styled.div`
   height: 100%;
@@ -462,6 +468,8 @@ function Handwash() {
           </ItemContent>
         </Item>
       </Wrapper>
+
+      <FooterHandwash />
     </>
   );
 }

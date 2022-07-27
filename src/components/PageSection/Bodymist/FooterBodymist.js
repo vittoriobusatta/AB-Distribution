@@ -16,8 +16,23 @@ import {
   NavbarLicense,
   NavbarCopy,
 } from "../PageCommon";
+import { bodymist } from "../../Common";
 
-function Footer() {
+export const UpdateSocialsLinks = styled(NavbarSocialsLinks)`
+  & svg:hover > path {
+    fill: ${bodymist};
+  }
+`;
+export const UpdateColumnLinks = styled(NavbarColumnLinks)`
+  ul li a:hover {
+    color: ${bodymist};
+  }
+`;
+export const UpdateCopyContent = styled(NavbarCopyContent)`
+  background-color: ${bodymist};
+`;
+
+function FooterBodymist() {
   return (
     <NavbarWrapper>
       <NavbarContent>
@@ -26,7 +41,7 @@ function Footer() {
             <NavbarLogoFooter />
           </NavbarColumnLogo>
 
-          <NavbarColumnLinks>
+          <UpdateColumnLinks>
             <ul>
               <li>
                 <Link to="/">Accueil</Link>
@@ -37,10 +52,10 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </NavbarColumnLinks>
+          </UpdateColumnLinks>
 
           <NavbarColumnSocials>
-            <NavbarSocialsLinks>
+            <UpdateSocialsLinks>
               <a className="links_accueil" href="https://www.instagram.com">
                 <svg
                   width="28"
@@ -81,12 +96,12 @@ function Footer() {
                   />
                 </svg>
               </a>
-            </NavbarSocialsLinks>
+            </UpdateSocialsLinks>
           </NavbarColumnSocials>
         </NavbarGrid>
 
         <NavbarCopyright>
-          <NavbarCopyContent>
+          <UpdateCopyContent>
             <NavbarLicense>
               <span>© 2022 - AB Distribution | Tous droits réservés</span>
             </NavbarLicense>
@@ -97,11 +112,11 @@ function Footer() {
                 <a href="https://vittoriobusatta.fr">Vittorio</a>
               </span>
             </NavbarCopy>
-          </NavbarCopyContent>
+          </UpdateCopyContent>
         </NavbarCopyright>
       </NavbarContent>
     </NavbarWrapper>
   );
 }
 
-export default Footer;
+export default FooterBodymist;
