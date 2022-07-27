@@ -125,6 +125,7 @@ const CopyContent = styled.div`
   & a {
     color: #222;
     font-family: ${cabinMedium};
+    font-size: clamp(11px, 2rem, 14px);
   }
 `;
 const Copy = styled.div`
@@ -134,8 +135,8 @@ const Copy = styled.div`
   justify-content: flex-end;
   align-items: center;
   flex: 1;
-  & span {
-    font-size: clamp(11px, 2rem, 14px);
+  & span a {
+    text-decoration: underline;
   }
 `;
 const License = styled.div`
@@ -144,9 +145,6 @@ const License = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  & span {
-    font-size: clamp(11px, 2rem, 14px);
-  }
 `;
 
 function Footer() {
@@ -227,8 +225,8 @@ function Footer() {
 
             <Copy>
               <span>
-                Réalisation par
-                <a href="https://vittoriobusatta.fr"> Vittorio</a>
+                Réalisation par &nbsp;
+                <a href="https://vittoriobusatta.fr">Vittorio</a>
               </span>
             </Copy>
           </CopyContent>
