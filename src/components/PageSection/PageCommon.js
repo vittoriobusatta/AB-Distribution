@@ -140,6 +140,12 @@ export const FooterColumnLinks = styled.div`
   }
   @media screen and (max-width: 576px) {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      align-items: flex-start;
+    }
   }
 `;
 export const FooterColumnSocials = styled.div`
