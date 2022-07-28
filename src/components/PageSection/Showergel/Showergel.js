@@ -7,7 +7,6 @@ import styled from "styled-components";
 import {
   albraSans,
   baliviaRegular,
-  cabinBold,
   cabinMedium,
   cabinRegular,
   lineheightP,
@@ -54,7 +53,7 @@ const ItemContent = styled.div`
   }
   @media screen and (min-width: 1224px) {
     flex-direction: row;
-    padding: 0 50px;
+    /* padding: 0 50px; */
   }
 `;
 
@@ -105,6 +104,7 @@ export const Overview = styled.div`
   @media screen and (min-width: 1224px) {
     height: 100%;
     width: 45%;
+    margin: 80px 40px;
   }
 `;
 
@@ -145,6 +145,11 @@ export const Description = styled.div`
 const DescriptionTitle = styled.div`
   height: auto;
   width: 100%;
+  @media screen and (min-width: 1224px) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   & h2 {
     position: relative;
     font-family: ${baliviaRegular};
@@ -155,6 +160,9 @@ const DescriptionTitle = styled.div`
     margin-bottom: max(5rem, 40px);
     text-align: center;
     color: ${mainColor};
+    @media screen and (min-width: 1224px) {
+      text-align: left;
+    }
 
     &.line::before {
       background-color: ${mainColor};
@@ -173,13 +181,18 @@ const DescriptionTitle = styled.div`
       @media screen and (min-width: 576px) {
         height: 3px;
       }
+      @media screen and (min-width: 1224px) {
+        left: 0;
+        transform: translate(0%, 0);
+        width: 112px;
+      }
     }
   }
 `;
 const DescriptionParagraph = styled.div`
   height: auto;
   width: 100%;
-  padding-top: max(4rem, 25px);
+  padding-top: max(3rem, 25px);
   display: flex;
   justify-content: center;
   & p {
@@ -191,7 +204,9 @@ const DescriptionParagraph = styled.div`
     max-width: 700px;
     color: ${mainColor};
     @media screen and (min-width: 1224px) {
-      line-height: 3rem;
+      line-height: 2.3rem;
+      text-align: left;
+      padding: 0;
     }
   }
 `;
@@ -206,6 +221,9 @@ const Info = styled.div`
     font-family: ${cabinMedium};
     font-size: ${sizeP};
     color: ${mainColor};
+  }
+  @media screen and (min-width: 1224px) {
+    justify-content: flex-start;
   }
 `;
 

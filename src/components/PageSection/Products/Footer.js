@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ReactComponent as NavbarLogoFooter } from "../../../assets/icons/Logo.svg";
 

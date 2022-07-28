@@ -12,7 +12,6 @@ import {
   mainColor,
   perfume,
   showergel,
-  sizeH2,
   sizeP,
   textHover,
 } from "../../Common";
