@@ -1,10 +1,8 @@
 import React from "react";
 import {
   bodymist,
-  
   LandingWrap,
   LandingContent,
-  
   LandingDescription,
   LandingParagraph,
   LandingLine,
@@ -20,10 +18,9 @@ function LandingBodymist() {
 
         <LandingDescription>
           <LandingParagraph>
-            Nos brumes parfumées sont des parfums corporels qui sont
-            spécialement conçues pour leur grande légèreté. Ces eaux parfumées
-            sont beaucoup plus rafraîchissantes et contribuent également à
-            hydrater notre corps.
+            La brume corporelle est une lotion pour le corps au parfum léger, une grande alliée
+            pendant les mois chauds, car une fois vaporisée sur notre peau, en
+            plus de son parfum léger, elle fournit un effet rafraîchissant.
           </LandingParagraph>
         </LandingDescription>
       </LandingContent>

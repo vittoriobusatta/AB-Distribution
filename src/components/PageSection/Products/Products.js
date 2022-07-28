@@ -69,10 +69,11 @@ function Products() {
             <Description>
               <DescriptionContent>
                 <P>
-                  Nos brumes parfumées sont des parfums corporels qui sont
-                  spécialement conçues pour leur grande légèreté. Ces eaux
-                  parfumées sont beaucoup plus rafraîchissantes et contribuent
-                  également à hydrater notre corps.
+                  La collection de brumes corporelles rafraîchissantes procure
+                  un moment doux et léger. Ce sont des brumes aux essences
+                  naturelles d’été. Idéales pour obtenir une sensation de
+                  fraîcheur et d’énergie. Vous pouvez les utiliser sur votre
+                  corps, vos cheveux, à la maison et/ou sur les textiles.
                 </P>
               </DescriptionContent>
             </Description>

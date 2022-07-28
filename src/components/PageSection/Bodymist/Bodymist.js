@@ -52,6 +52,74 @@ const ItemContent = styled.div`
   }
 `;
 
+export const Name = styled.div`
+  height: 10%;
+  width: 100%;
+  @media screen and (min-width: 1224px) {
+    width: 27.5%;
+    height: 700px;
+  }
+`;
+
+export const NameContent = styled.div`
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 3rem;
+  & h2 {
+    font-size: clamp(20px, 7rem, 100px);
+    font-family: ${albraSans};
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    &::after {
+      text-transform: none;
+      position: absolute;
+      font-size: clamp(20px, 4rem, 100px);
+      bottom: max(-5rem, -40px);
+      left: 3rem;
+    }
+    &.loyal {
+      color: ${loyal};
+      &::after {
+        content: "La magie des arômes";
+        color: #2f5e7b;
+      }
+    }
+    &.brave {
+      color: ${brave};
+      &::after {
+        content: "Une ambiance paisible";
+        color: #b24528;
+      }
+    }
+    &.creative {
+      color: ${creative};
+      &::after {
+        content: "Un éveil des sens";
+        color: #c0d03b;
+      }
+    }
+    &.dynamic {
+      color: ${dynamic};
+      &::after {
+        content: "Un souffle de pureté";
+        color: #cf3911;
+      }
+    }
+  }
+  @media screen and (min-width: 1224px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    & h2 {
+      line-height: 100px;
+    }
+  }
+`;
+
 const ImageContainer = styled.div`
   position: relative;
   height: 80%;
@@ -113,8 +181,6 @@ const Left = styled.div`
       font-size: 11rem;
       left: 100%;
     }
-
-    
   }
 `;
 const Right = styled.div`
@@ -226,25 +292,25 @@ const NumberLinks = styled.div`
     font-size: max(3.5rem, 25px);
     transition: ${textHover};
     &.loyal_active {
-      color: #2F5E7B;
+      color: #2f5e7b;
     }
     &.loyal_color {
       color: ${loyal};
     }
     &.brave_active {
-      color: #B24528;
+      color: #b24528;
     }
     &.brave_color {
       color: ${brave};
     }
     &.creative_active {
-      color: #C0D03B;
+      color: #c0d03b;
     }
     &.creative_color {
       color: ${creative};
     }
     &.dynamic_active {
-      color: #CF3911;
+      color: #cf3911;
     }
     &.dynamic_color {
       color: ${dynamic};
@@ -260,9 +326,13 @@ function Bodymist() {
       <LandingBodymist />
 
       <Wrapper>
-
         <Item id="loyal">
           <ItemContent>
+            <Name>
+              <NameContent>
+                <h2 className="loyal">La Magie des Arômes</h2>
+              </NameContent>
+            </Name>
             <Left>
               <ImageContainer>
                 <Image src={loyalImage} alt="" />
@@ -282,9 +352,9 @@ function Bodymist() {
 
                 <DescriptionParagraph>
                   <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu  the readable content of a page when looking.
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle Loyal
+                    laisse un voile odorant fin et durable.
                   </p>
                 </DescriptionParagraph>
 
@@ -309,6 +379,11 @@ function Bodymist() {
 
         <Item id="brave">
           <ItemContent>
+            <Name>
+              <NameContent>
+                <h2 className="brave">Une ambiance paisible</h2>
+              </NameContent>
+            </Name>
             <Left>
               <ImageContainer>
                 <Image src={braveImage} alt="" />
@@ -327,10 +402,10 @@ function Bodymist() {
                 </DescriptionTitle>
 
                 <DescriptionParagraph>
-                <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu  the readable content of a page when looking.
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle Brave
+                    laisse un voile odorant fin et durable.
                   </p>
                 </DescriptionParagraph>
 
@@ -355,6 +430,11 @@ function Bodymist() {
 
         <Item id="creative">
           <ItemContent>
+            <Name>
+              <NameContent>
+                <h2 className="creative">Un éveil des sens</h2>
+              </NameContent>
+            </Name>
             <Left>
               <ImageContainer>
                 <Image src={creativeImage} alt="" />
@@ -373,10 +453,10 @@ function Bodymist() {
                 </DescriptionTitle>
 
                 <DescriptionParagraph>
-                <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu  the readable content of a page when looking.
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle
+                    Creative laisse un voile odorant fin et durable.
                   </p>
                 </DescriptionParagraph>
 
@@ -401,6 +481,11 @@ function Bodymist() {
 
         <Item id="dynamic">
           <ItemContent>
+          <Name>
+              <NameContent>
+                <h2 className="dynamic">Un souffle de pureté</h2>
+              </NameContent>
+            </Name>
             <Left>
               <ImageContainer>
                 <Image src={dynamicImage} alt="" />
@@ -419,10 +504,10 @@ function Bodymist() {
                 </DescriptionTitle>
 
                 <DescriptionParagraph>
-                <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu  the readable content of a page when looking.
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle
+                    Dynamic laisse un voile odorant fin et durable.
                   </p>
                 </DescriptionParagraph>
 
@@ -444,7 +529,6 @@ function Bodymist() {
             </Right>
           </ItemContent>
         </Item>
-
       </Wrapper>
 
       <FooterBodymist />
