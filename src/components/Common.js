@@ -204,7 +204,7 @@ export const LandingTitle = styled.h1`
     color: ${Grocery};
   }
   &.title_grocery::before {
-    content: "Epicerie";
+    content: "Épicerie";
   }
   &.title_airfreshener {
     color: ${airfreshener};

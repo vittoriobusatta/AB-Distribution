@@ -22,7 +22,6 @@ import {
   mainColor,
   sizeH2,
   sizeP,
-  textHover,
 } from "../../Common";
 import styled from "styled-components";
 
