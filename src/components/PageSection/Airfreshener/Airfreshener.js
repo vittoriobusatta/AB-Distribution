@@ -421,7 +421,7 @@ function Airfreshener() {
             <Name>
               <NameContent>
                 <h2>
-                  Rose<span className="whiteRose">White</span>
+                  Rose <br/> <span className="whiteRose">White</span>
                 </h2>
               </NameContent>
             </Name>
