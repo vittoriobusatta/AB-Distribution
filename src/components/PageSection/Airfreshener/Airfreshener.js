@@ -5,12 +5,13 @@ import NavbarAirfreshener from "../Airfreshener/NavbarAirfreshener";
 import FooterAirfreshener from "./FooterAirfreshener";
 import flowerGardenImage from "./images/flower_garden.webp";
 import glamourFruitsImage from "./images/glamour_fruits.webp";
-import greenTeaImage from "./images/green_tea.webp";
-import mysticOudImage from "./images/mystic_oud.webp";
 import oceanImage from "./images/ocean.webp";
 import tobaccoImage from "./images/tobacco.webp";
 import whiteRoseImage from "./images/white_rose.webp";
 import wildLavenderImage from "./images/wild_lavender.webp";
+import mysticOudImage from "./images/mystic_oud.webp";
+import greenTeaImage from "./images/green_tea.webp";
+
 import { Item } from "../PageCommon";
 import {
   albraSans,
@@ -25,14 +26,14 @@ import {
 } from "../../Common";
 import styled from "styled-components";
 
-const flowerGarden = "#74B643";
-const glamourFruits = "#EB7223";
-const greenTea = "#C7D881";
-const mysticOud = "#7F5027";
-const ocean = "#008BD0";
-const tobacco = "#9DC3DD";
 const whiteRose = "#F7CDE1";
 const wildLavender = "#734F99";
+const greenTea = "#C7D881";
+const mysticOud = "#7F5027";
+const flowerGarden = "#74B643";
+const glamourFruits = "#EB7223";
+const ocean = "#008BD0";
+const tobacco = "#9DC3DD";
 
 const Wrapper = styled.section`
   height: 100%;
@@ -85,6 +86,18 @@ export const NameContent = styled.div`
     & span {
       font-size: 10rem;
       color: transparent;
+      &.flowerGarden {
+        -webkit-text-stroke: 1px ${flowerGarden};
+      }
+      &.glamourFruits {
+        -webkit-text-stroke: 1px ${glamourFruits};
+      }
+      &.ocean {
+        -webkit-text-stroke: 1px ${ocean};
+      }
+      &.tobacco {
+        -webkit-text-stroke: 1px ${tobacco};
+      }
       &.greenTea {
         -webkit-text-stroke: 1px ${greenTea};
       }
@@ -223,6 +236,18 @@ const DescriptionTitle = styled.div`
         height: 3px;
       }
     }
+    &.flowerGarden_line::before {
+      background-color: ${flowerGarden};
+    }
+    &.glamourFruits_line::before {
+      background-color: ${glamourFruits};
+    }
+    &.ocean_line::before {
+      background-color: ${ocean};
+    }
+    &.tobacco_line::before {
+      background-color: ${tobacco};
+    }
     &.greenTea_line::before {
       background-color: ${greenTea};
     }
@@ -319,7 +344,9 @@ function Airfreshener() {
           <ItemContent>
             <Name>
               <NameContent>
-                <h2>Oud <span className="mysticOud">Mystic</span></h2>
+                <h2>
+                  Oud <span className="mysticOud">Mystic</span>
+                </h2>
               </NameContent>
             </Name>
             <Left>
@@ -355,7 +382,9 @@ function Airfreshener() {
           <ItemContent>
             <Name>
               <NameContent>
-                <h2>Wild <span className="wildLavender">Lavender</span></h2>
+                <h2>
+                  Wild <span className="wildLavender">Lavender</span>
+                </h2>
               </NameContent>
             </Name>
             <Left>
@@ -391,7 +420,9 @@ function Airfreshener() {
           <ItemContent>
             <Name>
               <NameContent>
-                <h2>Rose<span className="whiteRose">White</span></h2>
+                <h2>
+                  Rose<span className="whiteRose">White</span>
+                </h2>
               </NameContent>
             </Name>
             <Left>
@@ -416,6 +447,158 @@ function Airfreshener() {
                     Avec sa senteur orientale de musc blanc très délicate grâce
                     à ses notes de coton et de jasmin, la brume corporelle
                     whiteRose laisse un voile odorant fin et durable.
+                  </p>
+                </DescriptionParagraph>
+              </ProductAbout>
+            </Right>
+          </ItemContent>
+        </Item>
+
+        <Item id="flowerGarden">
+          <ItemContent>
+            <Name>
+              <NameContent>
+                <h2>
+                  Flower <span className="flowerGarden">Garden</span>
+                </h2>
+              </NameContent>
+            </Name>
+            <Left>
+              <ImageContainer>
+                <Image src={flowerGardenImage} alt="" />
+              </ImageContainer>
+            </Left>
+
+            <Right>
+              <ProductAbout>
+                <DescriptionTitle>
+                  <h2 className="flowerGarden_line">Jardin Floral</h2>
+                  <Info>
+                    <span>250ml</span>
+                    <span>•</span>
+                    <span>Désodorisants</span>
+                  </Info>
+                </DescriptionTitle>
+
+                <DescriptionParagraph>
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle
+                    flowerGarden laisse un voile odorant fin et durable.
+                  </p>
+                </DescriptionParagraph>
+              </ProductAbout>
+            </Right>
+          </ItemContent>
+        </Item>
+
+        <Item id="glamourFruits">
+          <ItemContent>
+            <Name>
+              <NameContent>
+                <h2>
+                  Fruits <span className="glamourFruits">Glamour</span>
+                </h2>
+              </NameContent>
+            </Name>
+            <Left>
+              <ImageContainer>
+                <Image src={glamourFruitsImage} alt="" />
+              </ImageContainer>
+            </Left>
+
+            <Right>
+              <ProductAbout>
+                <DescriptionTitle>
+                  <h2 className="glamourFruits_line">Fruits Glamour</h2>
+                  <Info>
+                    <span>250ml</span>
+                    <span>•</span>
+                    <span>Désodorisants</span>
+                  </Info>
+                </DescriptionTitle>
+
+                <DescriptionParagraph>
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle
+                    glamourFruits laisse un voile odorant fin et durable.
+                  </p>
+                </DescriptionParagraph>
+              </ProductAbout>
+            </Right>
+          </ItemContent>
+        </Item>
+
+        <Item id="ocean">
+          <ItemContent>
+            <Name>
+              <NameContent>
+                <h2>
+                  The <span className="ocean">Ocean</span>
+                </h2>
+              </NameContent>
+            </Name>
+            <Left>
+              <ImageContainer>
+                <Image src={oceanImage} alt="" />
+              </ImageContainer>
+            </Left>
+
+            <Right>
+              <ProductAbout>
+                <DescriptionTitle>
+                  <h2 className="ocean_line">Océan</h2>
+                  <Info>
+                    <span>250ml</span>
+                    <span>•</span>
+                    <span>Désodorisants</span>
+                  </Info>
+                </DescriptionTitle>
+
+                <DescriptionParagraph>
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle ocean
+                    laisse un voile odorant fin et durable.
+                  </p>
+                </DescriptionParagraph>
+              </ProductAbout>
+            </Right>
+          </ItemContent>
+        </Item>
+
+        <Item id="tobacco">
+          <ItemContent>
+            <Name>
+              <NameContent>
+                <h2>
+                  Anti<span className="tobacco"> Tobacco</span>
+                </h2>
+              </NameContent>
+            </Name>
+            <Left>
+              <ImageContainer>
+                <Image src={tobaccoImage} alt="" />
+              </ImageContainer>
+            </Left>
+
+            <Right>
+              <ProductAbout>
+                <DescriptionTitle>
+                  <h2 className="tobacco_line">Anti Tabac</h2>
+                  <Info>
+                    <span>250ml</span>
+                    <span>•</span>
+                    <span>Désodorisants</span>
+                  </Info>
+                </DescriptionTitle>
+
+                <DescriptionParagraph>
+                  <p>
+                    Avec sa senteur orientale de musc blanc très délicate grâce
+                    à ses notes de coton et de jasmin, la brume corporelle
+                    tobacco laisse un voile odorant fin et durable.
                   </p>
                 </DescriptionParagraph>
               </ProductAbout>
