@@ -17,10 +17,10 @@ import LandingPerfume from "./LandingPerfume";
 import NavbarPerfume from "./NavbarPerfume";
 import { Item } from "../PageCommon";
 
-import cachemereImage from "./images/cachemere.png";
-import rainbowImage from "./images/rainbow.png";
-import sandalwoodImage from "./images/sandalwood.png";
-import roseblackImage from "./images/roseblack.png";
+import cachemereImage from "./images/cachemere.webp";
+import rainbowImage from "./images/rainbow.webp";
+import sandalwoodImage from "./images/sandalwood.webp";
+import roseblackImage from "./images/roseblack.webp";
 
 const cachemere = "#5DA245";
 const roseblack = "#EFA2AC";
