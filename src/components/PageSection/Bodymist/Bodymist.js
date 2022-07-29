@@ -3,10 +3,10 @@ import setTitle from "../../Function/setTitle";
 import LandingBodymist from "./LandingBodymist";
 import NavbarBodymist from "./NavbarBodymist";
 import FooterBodymist from "./FooterBodymist";
-import loyalImage from "./images/loyal.png";
-import braveImage from "./images/brave.png";
-import creativeImage from "./images/creative.png";
-import dynamicImage from "./images/dynamic.png";
+import loyalImage from "./images/loyal.webp";
+import braveImage from "./images/brave.webp";
+import creativeImage from "./images/creative.webp";
+import dynamicImage from "./images/dynamic.webp";
 import { Item } from "../PageCommon";
 import {
   albraSans,

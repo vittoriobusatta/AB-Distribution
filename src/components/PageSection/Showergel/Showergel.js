@@ -15,9 +15,9 @@ import {
   sizeP,
 } from "../../Common";
 import { Item } from "../PageCommon";
-import roseImage from "./images/romantic-rose.png";
-import passionImage from "./images/passion-fruits.png";
-import amberImage from "./images/amber-oud.png";
+import roseImage from "./images/romantic-rose.webp";
+import passionImage from "./images/passion-fruits.webp";
+import amberImage from "./images/amber-oud.webp";
 
 export const rose = "#F8ACB9";
 export const amber = "#FF9E54";
