@@ -82,28 +82,40 @@ export const NameContent = styled.div`
       left: 3rem;
     }
     &.loyal {
-      color: ${loyal};
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, rgba(0,137,174,1) 0%, rgba(0,137,174,1) 37%, rgba(0,117,161,1) 78%, rgba(54,91,118,1) 100%);
       &::after {
         content: "La magie des arômes";
         color: #2f5e7b;
       }
     }
     &.brave {
-      color: ${brave};
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, rgba(207,57,16,1) 37%, rgba(201,50,20,1) 58%, rgba(167,72,44,1) 78%);
       &::after {
         content: "Une ambiance paisible";
         color: #b24528;
       }
     }
     &.creative {
-      color: ${creative};
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, rgba(248,230,75,1) 37%, rgba(205,212,0,1) 58%, rgba(185,205,85,1) 78%);
       &::after {
         content: "Un éveil des sens";
         color: #c0d03b;
       }
     }
     &.dynamic {
-      color: ${dynamic};
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, rgba(212,66,44,1) 4%, rgba(211,23,37,1) 37%, rgba(173,30,92,1) 58%, rgba(158,85,151,1) 78%);;
       &::after {
         content: "Un souffle de pureté";
         color: #cf3911;

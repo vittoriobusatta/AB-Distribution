@@ -293,7 +293,7 @@ const NumberLinks = styled.div`
     font-size: max(3.5rem, 25px);
     transition: ${textHover};
     &.cachemere_active {
-      color: #F0B938;
+      color: #F0B938 ;
     }
     &.cachemere_color {
       color: ${cachemere};
@@ -343,7 +343,7 @@ function Perfume() {
             <Right>
               <ProductAbout>
                 <DescriptionTitle>
-                  <h2 className="cachemere_line">cachemere</h2>
+                  <h2 className="cachemere_line">Cachemire</h2>
                   <Info>
                     <span>100ml</span>
                     <span>•</span>
@@ -394,7 +394,7 @@ function Perfume() {
             <Right>
               <ProductAbout>
                 <DescriptionTitle>
-                  <h2 className="rainbow_line">rainbow</h2>
+                  <h2 className="rainbow_line">Arc-en-ciel</h2>
                   <Info>
                     <span>100ml</span>
                     <span>•</span>
@@ -445,7 +445,7 @@ function Perfume() {
             <Right>
               <ProductAbout>
                 <DescriptionTitle>
-                  <h2 className="sandalwood_line">sandalwood</h2>
+                  <h2 className="sandalwood_line">Bois de Santal</h2>
                   <Info>
                     <span>100ml</span>
                     <span>•</span>
@@ -496,7 +496,7 @@ function Perfume() {
             <Right>
               <ProductAbout>
                 <DescriptionTitle>
-                  <h2 className="roseblack_line">roseblack</h2>
+                  <h2 className="roseblack_line">Rose Noire</h2>
                   <Info>
                     <span>100ml</span>
                     <span>•</span>
