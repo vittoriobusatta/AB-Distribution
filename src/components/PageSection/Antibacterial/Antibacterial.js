@@ -261,9 +261,9 @@ function Antibacterial() {
               <ProductAbout>
                 <DescriptionTitle>
                   <Info>
-                    <span>250ml</span>
+                    <span>500ml</span>
                     <span>•</span>
-                    <span>Désodorisants</span>
+                    <span>Anti-bactérien</span>
                   </Info>
                 </DescriptionTitle>
               </ProductAbout>
@@ -271,7 +271,7 @@ function Antibacterial() {
           </ItemContent>
         </Item>
 
-        <Item id="mysticOud">
+        <Item id="gel2">
           <ItemContent>
             <Left>
               <ImageContainer>
@@ -283,9 +283,9 @@ function Antibacterial() {
               <ProductAbout>
                 <DescriptionTitle>
                   <Info>
-                    <span>250ml</span>
+                    <span>50ml</span>
                     <span>•</span>
-                    <span>Désodorisants</span>
+                    <span>Anti-bactérien</span>
                   </Info>
                 </DescriptionTitle>
               </ProductAbout>
@@ -293,7 +293,7 @@ function Antibacterial() {
           </ItemContent>
         </Item>
 
-        <Item id="wildLavender">
+        <Item id="wipe1">
           <ItemContent>
             <Name>
               <NameContent>
@@ -312,9 +312,9 @@ function Antibacterial() {
               <ProductAbout>
                 <DescriptionTitle>
                   <Info>
-                    <span>250ml</span>
+                    <span>40pcs</span>
                     <span>•</span>
-                    <span>Désodorisants</span>
+                    <span>Anti-bactérien</span>
                   </Info>
                 </DescriptionTitle>
               </ProductAbout>
@@ -322,7 +322,7 @@ function Antibacterial() {
           </ItemContent>
         </Item>
 
-        <Item id="whiteRose">
+        <Item id="wipe2">
           <ItemContent>
             <Left>
               <ImageContainer>
@@ -334,9 +334,9 @@ function Antibacterial() {
               <ProductAbout>
                 <DescriptionTitle>
                   <Info>
-                    <span>250ml</span>
+                    <span>15pcs</span>
                     <span>•</span>
-                    <span>Désodorisants</span>
+                    <span>Anti-bactérien</span>
                   </Info>
                 </DescriptionTitle>
               </ProductAbout>
@@ -344,7 +344,7 @@ function Antibacterial() {
           </ItemContent>
         </Item>
 
-        <Item id="flowerGarden">
+        <Item id="wipe3">
           <ItemContent>
             <Left>
               <ImageContainer>
@@ -356,9 +356,9 @@ function Antibacterial() {
               <ProductAbout>
                 <DescriptionTitle>
                   <Info>
-                    <span>250ml</span>
+                    <span>100pcs</span>
                     <span>•</span>
-                    <span>Désodorisants</span>
+                    <span>Anti-bactérien</span>
                   </Info>
                 </DescriptionTitle>
               </ProductAbout>
