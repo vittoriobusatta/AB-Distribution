@@ -311,7 +311,6 @@ function Antibacterial() {
             <Right>
               <ProductAbout>
                 <DescriptionTitle>
-                  <h2 className="wildLavender_line">Lavende sauvage</h2>
                   <Info>
                     <span>250ml</span>
                     <span>•</span>
