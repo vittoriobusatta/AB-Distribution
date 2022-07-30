@@ -65,11 +65,11 @@ const Image = styled.img`
   position: relative;
   height: auto;
   width: 80%;
-  max-width: 450px;
+  max-width: 300px;
   @media screen and (min-width: 1224px) {
     width: auto;
     height: 100%;
-    max-width: 550px;
+    max-width: 450px;
   }
 `;
 

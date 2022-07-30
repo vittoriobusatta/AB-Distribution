@@ -110,9 +110,9 @@ export const NameContent = styled.div`
     position: relative;
     margin-left: 3rem;
     border-radius: 5px;
-    border: solid 2px;
+    border: solid 2px none;
     transition: ${textHover};
-    &:hover {
+    /* &:hover {
       &.antibacterial_line {
         background-color: ${antibacterial};
       }
@@ -137,33 +137,33 @@ export const NameContent = styled.div`
       &.handwash_line {
         background-color: ${handWash};
       }
-    }
+    } */
     &:hover > span {
-      color: ${mainColor};
+      color: #222;
     }
     &.antibacterial_line {
-      border-color: ${antibacterial};
+      background-color: ${antibacterial};
     }
     &.grocery_line {
-      border-color: ${Grocery};
+      background-color: ${Grocery};
     }
     &.airfreshener_line {
-      border-color: ${airfreshener};
+      background-color: ${airfreshener};
     }
     &.bodymist_line {
-      border-color: #2e2b27;
+      background-color: #2e2b27;
     }
     &.perfume_line {
-      border-color: ${perfume};
+      background-color: ${perfume};
     }
     &.showergel_line {
-      border-color: ${showergel};
+      background-color: ${showergel};
     }
     &.coffee_line {
-      border-color: ${coffee};
+      background-color: ${coffee};
     }
     &.handwash_line {
-      border-color: ${handWash};
+      background-color: ${handWash};
     }
     padding: clamp(5px, 1.5rem, 10px) clamp(10px, 2.5rem, 20px);
     /* padding: max(1.5rem, 5px) max(2.5rem, 10px); */
@@ -175,12 +175,13 @@ export const NameContent = styled.div`
 
   & a span {
     position: relative;
-    color: #222;
+    color: #fff;
     font-family: ${cabinBold};
     font-size: clamp(12px, 2rem, 14px);
     z-index: 1;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: ${textHover};
   }
 `;
 export const Title = styled.h2`
