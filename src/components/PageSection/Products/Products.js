@@ -15,14 +15,14 @@ import {
   P,
 } from "./ProductsCommon";
 import { Link } from "react-router-dom";
-import airfreshenerImage from "../../../assets/img/home/airfreshener.webp";
-import antibacterialImage from "../../../assets/img/home/antibacterial.webp";
-import bodymistImage from "../../../assets/img/home/bodymist.webp";
-import coffeeImage from "../../../assets/img/home/coffee.webp";
-import groceryImage from "../../../assets/img/home/grocery.webp";
-import handwashImage from "../../../assets/img/home/handwash.webp";
-import perfumeImage from "../../../assets/img/home/perfume.webp";
-import showergelImage from "../../../assets/img/home/showergel.webp";
+import airfreshenerImage from "./images/airfreshener.webp";
+import antibacterialImage from "./images/antibacterial.webp";
+import bodymistImage from "./images/bodymist.webp";
+import coffeeImage from "./images/coffee.webp";
+import groceryImage from "./images/grocery.webp";
+import handwashImage from "./images/handwash.webp";
+import perfumeImage from "./images/perfume.webp";
+import showergelImage from "./images/showergel.webp";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { mainColor } from "../../Common";

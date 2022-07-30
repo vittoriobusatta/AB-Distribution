@@ -245,7 +245,7 @@ function Coffee() {
         </Item>
 
         <Item id="vanilla">
-          <ItemContent>
+          <ItemContent className="reverse">
             <Left className="img_vanilla">
               <ImageContainer>
                 <Image src={vanilla} alt="" />
@@ -276,8 +276,8 @@ function Coffee() {
         </Item>
 
         <Item id="choco">
-          <ItemContent className="reverse">
-            <Left className="img_choco reverse">
+          <ItemContent>
+            <Left className="img_choco">
               <ImageContainer>
                 <Image src={choco} alt="" />
               </ImageContainer>
