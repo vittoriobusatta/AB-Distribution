@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { accueil, cabinMedium } from "../Common";
+import { accueil, cabinMedium, cabinBold } from "../Common";
 
 
 
@@ -201,6 +201,7 @@ export const FooterCopy = styled.div`
   flex: 1;
   & span a {
     text-decoration: underline;
+    font-family: ${cabinBold};
   }
 `;
 export const FooterLicense = styled.div`

@@ -92,7 +92,7 @@ function Footer() {
 
             <FooterCopy>
               <span>
-                Réalisation par &nbsp;
+                Réalisation par&nbsp;
                 <a href="https://vittoriobusatta.fr">Vittorio</a>
               </span>
             </FooterCopy>
