@@ -334,7 +334,7 @@ function Antibacterial() {
               <ProductAbout>
                 <DescriptionTitle>
                   <Info>
-                    <span>15pcs</span>
+                    <span>10pcs</span>
                     <span>•</span>
                     <span>Anti-bactérien</span>
                   </Info>
