@@ -293,9 +293,9 @@ function Grocery() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    redbeans laisse un voile odorant fin et durable.
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
               </ProductAbout>
@@ -329,9 +329,9 @@ function Grocery() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    whitebeans laisse un voile odorant fin et durable.
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
               </ProductAbout>
@@ -365,9 +365,9 @@ function Grocery() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    greenpepper laisse un voile odorant fin et durable.
+                  It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
               </ProductAbout>
@@ -401,9 +401,9 @@ function Grocery() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    strawberrryjam laisse un voile odorant fin et durable.
+                  It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
               </ProductAbout>
@@ -437,9 +437,9 @@ function Grocery() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    apricotjam laisse un voile odorant fin et durable.
+                  It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
               </ProductAbout>

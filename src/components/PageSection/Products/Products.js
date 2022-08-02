@@ -168,9 +168,7 @@ function Products() {
               <DescriptionContent>
                 <P>
                   Une bonne hygiène des mains est importante pour tout le monde.
-                  Il est important de se laver les mains plusieurs fois par jour
-                  : avant de cuisiner, de manger ou après un passage aux
-                  toilettes. Dans cette catégorie, vous retrouverez des savons
+                  Il est important de se laver les mains plusieurs fois par jour. Dans cette catégorie, vous retrouverez des savons
                   liquides pour les mains sèches, normales ou sensibles, aux
                   senteurs fruitées.
                 </P>

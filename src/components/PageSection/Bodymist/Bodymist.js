@@ -364,9 +364,9 @@ function Bodymist() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle Loyal
-                    laisse un voile odorant fin et durable.
+                  It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
 
@@ -415,9 +415,9 @@ function Bodymist() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle Brave
-                    laisse un voile odorant fin et durable.
+                  It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
 
@@ -466,9 +466,9 @@ function Bodymist() {
 
                 <DescriptionParagraph>
                   <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    Creative laisse un voile odorant fin et durable.
+                  It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsu.
                   </p>
                 </DescriptionParagraph>
 

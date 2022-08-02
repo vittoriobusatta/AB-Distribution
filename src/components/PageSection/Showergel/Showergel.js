@@ -260,10 +260,9 @@ function Showergel() {
 
               <DescriptionParagraph>
                 <p>
-                  Ultra Compact vous propose une solution de savon liquide qui
-                  rendra le lavage de vos mains agréable avec son parfum
-                  aromatisé à la mangue. Il purifiera vos mains de la saleté et
-                  les rendra propre et douces.
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
                 </p>
               </DescriptionParagraph>
             </Description>
@@ -294,10 +293,9 @@ function Showergel() {
 
               <DescriptionParagraph>
                 <p>
-                  Ultra Compact vous propose une solution de savon liquide qui
-                  rendra le lavage de vos mains agréable avec son parfum
-                  aromatisé à la mangue. Il purifiera vos mains de la saleté et
-                  les rendra propre et douces.
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
                 </p>
               </DescriptionParagraph>
             </Description>
@@ -328,10 +326,9 @@ function Showergel() {
 
               <DescriptionParagraph>
                 <p>
-                  Ultra Compact vous propose une solution de savon liquide qui
-                  rendra le lavage de vos mains agréable avec son parfum
-                  aromatisé à la mangue. Il purifiera vos mains de la saleté et
-                  les rendra propre et douces.
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
                 </p>
               </DescriptionParagraph>
             </Description>
