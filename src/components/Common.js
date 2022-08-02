@@ -126,11 +126,15 @@ export const LandingTitle = styled.h1`
   width: fit-content;
   margin: 100px auto;
 
+ 
   @media screen and (max-width: 500px) {
     font-size: 65px;
   }
   @media screen and (max-width: 400px) {
     font-size: 50px;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 40px;
   }
   @media screen and (min-width: 576px) {
     margin: 150px auto;

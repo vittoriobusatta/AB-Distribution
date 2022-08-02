@@ -37,13 +37,10 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 321px) {
       font-size: 28%;
     }
-    
   } 
 
   body {
     background-color: ${mainColor};
-    /* overflow: ${(props) =>
-      props.isActive === true ? "hidden" : "visible"}; */
     font-size: 1.6rem;
   }
 

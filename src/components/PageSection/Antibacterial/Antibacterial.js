@@ -3,7 +3,6 @@ import setTitle from "../../Function/setTitle";
 import LandingAntibacterial from "./LandingAntibacterial";
 import NavbarAntibacterial from "./NavbarAntibacterial";
 import FooterAntibacterial from "./FooterAntibacterial";
-import { Item } from "../PageCommon";
 import gel2Image from "./images/gel2.png";
 import gel1Image from "./images/gel1.png";
 import wipe1Image from "./images/wipe1.png";
@@ -11,6 +10,7 @@ import wipe2Image from "./images/wipe2.png";
 import wipe3Image from "./images/wipe3.png";
 import {
   albraSans,
+  antibacterial,
   baliviaRegular,
   cabinMedium,
   cabinRegular,
@@ -22,18 +22,35 @@ import {
 import styled from "styled-components";
 
 const medicalBlue = "#48B8B3";
-const lemonGreen = "#B8DC40";
 
 const Wrapper = styled.section`
   height: 100%;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
   z-index: 3;
   background-color: ${mainColor};
   margin-bottom: 170px;
 `;
+
+export const Item = styled.div`
+  height: auto;
+  width: 100%;
+  margin-top: max(5rem, 100px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &:last-child {
+    margin-bottom: max(20rem, 40px);
+  }
+  @media screen and (min-width: 1224px) {
+    max-width: 1600px;
+  }
+`;
+
 const ItemContent = styled.div`
   height: 100%;
   width: 100%;
@@ -41,12 +58,17 @@ const ItemContent = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 0px 2rem;
-  @media screen and (min-width: 1224px) {
+  margin-bottom: 40px;
+`;
+
+export const Article = styled.div`
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: max(8rem, 40px);
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-    max-width: 1500px;
-    &.reverse {
-      flex-direction: row-reverse;
-    }
   }
 `;
 
@@ -54,8 +76,8 @@ export const Name = styled.div`
   height: 10%;
   width: 100%;
   @media screen and (min-width: 1224px) {
-    width: 27.5%;
-    height: 700px;
+    width: auto;
+    height: 300px;
   }
 `;
 
@@ -65,21 +87,27 @@ export const NameContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: 3rem;
+  padding-left: 10rem;
+  @media screen and (max-width: 576px) {
+    padding-left: 20px;
+  }
   & h2 {
-    font-size: clamp(20px, 7rem, 100px);
+    font-size: clamp(20px, 6.5rem, 100px);
     font-family: ${albraSans};
     text-transform: uppercase;
     position: relative;
     color: ${medicalBlue};
-  }
-
-  @media screen and (min-width: 1224px) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    & h2 {
-      line-height: 100px;
+    position: relative;
+    @media screen and (min-width: 576px) {
+      &::before {
+        content: "01";
+        position: absolute;
+        top: 0px;
+        left: -20px;
+        color: ${antibacterial};
+        font-family: ${baliviaRegular};
+        font-size: 10rem;
+      }
     }
   }
 `;
@@ -94,6 +122,7 @@ const ImageContainer = styled.div`
   margin: 50px 0;
   @media screen and (min-width: 1224px) {
     margin: 0;
+    margin-bottom: 50px;
   }
 `;
 const Image = styled.img`
@@ -104,7 +133,7 @@ const Image = styled.img`
   @media screen and (min-width: 1224px) {
     width: auto;
     height: 100%;
-    max-width: 450px;
+    max-width: 350px;
   }
 `;
 
@@ -115,37 +144,6 @@ const Left = styled.div`
   justify-content: center;
   align-items: flex-end;
   position: relative;
-
-  @media screen and (min-width: 1224px) {
-    width: 50%;
-    height: 100%;
-    &.reverse::before {
-      left: -100%;
-    }
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    font-size: max(5rem, 40px);
-    font-family: ${albraSans};
-    text-transform: uppercase;
-    left: 0%;
-    top: 0%;
-    @media screen and (min-width: 576px) {
-      font-size: 8rem;
-    }
-    @media screen and (min-width: 768px) {
-      font-size: 9rem;
-    }
-    @media screen and (min-width: 992px) {
-      font-size: 10rem;
-    }
-    @media screen and (min-width: 1224px) {
-      font-size: 11rem;
-      left: 100%;
-    }
-  }
 `;
 const Right = styled.div`
   height: 40%;
@@ -153,15 +151,6 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: 1224px) {
-    width: 50%;
-    height: 100%;
-    min-height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
 `;
 
 const ProductAbout = styled.div`
@@ -171,6 +160,7 @@ const ProductAbout = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: max(8rem, 40px);
 `;
 const DescriptionTitle = styled.div`
   height: auto;
@@ -182,7 +172,7 @@ const DescriptionTitle = styled.div`
     font-size: ${sizeH2};
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: max(5rem, 40px);
+    margin-bottom: max(4rem, 30px);
     text-align: center;
     &::before {
       position: absolute;
@@ -197,16 +187,19 @@ const DescriptionTitle = styled.div`
       @media screen and (min-width: 576px) {
         height: 3px;
       }
+      @media screen and (min-width: 1224px) {
+        width: 112px;
+      }
     }
-    &.flowerGarden_line::before {
-      background-color: ${lemonGreen};
+    &.antibacterial_line::before {
+      background-color: ${antibacterial};
     }
   }
 `;
 const DescriptionParagraph = styled.div`
   height: auto;
   width: 100%;
-  padding-top: max(4rem, 25px);
+  padding-top: max(3rem, 15px);
   display: flex;
   justify-content: center;
   & p {
@@ -242,128 +235,134 @@ function Antibacterial() {
       <LandingAntibacterial />
 
       <Wrapper>
-        <Item id="gel1">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2>
-                  Gels <br /> antibactériens
-                </h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={gel1Image} alt="" />
-              </ImageContainer>
-            </Left>
+        <Item id="gel">
+          <Name>
+            <NameContent>
+              <h2>
+                Gels <br /> antibactériens
+              </h2>
+            </NameContent>
+          </Name>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <Info>
-                    <span>500ml</span>
-                    <span>•</span>
-                    <span>Anti-bactérien</span>
-                  </Info>
-                </DescriptionTitle>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
+          <Article>
+            <ItemContent id="gel1">
+              <Left>
+                <ImageContainer>
+                  <Image src={gel1Image} alt="" />
+                </ImageContainer>
+              </Left>
+
+              <Right>
+                <Info>
+                  <span>500ml</span>
+                  <span>•</span>
+                  <span>Anti-bactérien</span>
+                </Info>
+              </Right>
+            </ItemContent>
+
+            <ItemContent id="gel2">
+              <Left>
+                <ImageContainer>
+                  <Image src={gel2Image} alt="" />
+                </ImageContainer>
+              </Left>
+
+              <Right>
+                <Info>
+                  <span>50ml</span>
+                  <span>•</span>
+                  <span>Anti-bactérien</span>
+                </Info>
+              </Right>
+            </ItemContent>
+          </Article>
+
+          <ProductAbout>
+            <DescriptionTitle>
+              <h2 className="antibacterial_line">Gels</h2>
+            </DescriptionTitle>
+            <DescriptionParagraph>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsu.
+              </p>
+            </DescriptionParagraph>
+          </ProductAbout>
         </Item>
 
-        <Item id="gel2">
-          <ItemContent>
-            <Left>
-              <ImageContainer>
-                <Image src={gel2Image} alt="" />
-              </ImageContainer>
-            </Left>
+        <Item id="wipe">
+          <Name>
+            <NameContent>
+              <h2>
+                Lingettes <br /> anti-bactériennes
+              </h2>
+            </NameContent>
+          </Name>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <Info>
-                    <span>50ml</span>
-                    <span>•</span>
-                    <span>Anti-bactérien</span>
-                  </Info>
-                </DescriptionTitle>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
+          <Article>
+            <ItemContent id="wipe1">
+              <Left>
+                <ImageContainer>
+                  <Image src={wipe1Image} alt="" />
+                </ImageContainer>
+              </Left>
 
-        <Item id="wipe1">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2>
-                  Lingettes <br /> anti-bactériennes
-                </h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={wipe1Image} alt="" />
-              </ImageContainer>
-            </Left>
+              <Right>
+                <Info>
+                  <span>40pcs</span>
+                  <span>•</span>
+                  <span>Anti-bactérien</span>
+                </Info>
+              </Right>
+            </ItemContent>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <Info>
-                    <span>40pcs</span>
-                    <span>•</span>
-                    <span>Anti-bactérien</span>
-                  </Info>
-                </DescriptionTitle>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
+            <ItemContent id="wipe2">
+              <Left>
+                <ImageContainer>
+                  <Image src={wipe2Image} alt="" />
+                </ImageContainer>
+              </Left>
 
-        <Item id="wipe2">
-          <ItemContent>
-            <Left>
-              <ImageContainer>
-                <Image src={wipe2Image} alt="" />
-              </ImageContainer>
-            </Left>
+              <Right>
+                <Info>
+                  <span>10pcs</span>
+                  <span>•</span>
+                  <span>Anti-bactérien</span>
+                </Info>
+              </Right>
+            </ItemContent>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <Info>
-                    <span>10pcs</span>
-                    <span>•</span>
-                    <span>Anti-bactérien</span>
-                  </Info>
-                </DescriptionTitle>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
+            <ItemContent id="wipe3">
+              <Left>
+                <ImageContainer>
+                  <Image src={wipe3Image} alt="" />
+                </ImageContainer>
+              </Left>
 
-        <Item id="wipe3">
-          <ItemContent>
-            <Left>
-              <ImageContainer>
-                <Image src={wipe3Image} alt="" />
-              </ImageContainer>
-            </Left>
+              <Right>
+                <Info>
+                  <span>100pcs</span>
+                  <span>•</span>
+                  <span>Anti-bactérien</span>
+                </Info>
+              </Right>
+            </ItemContent>
+          </Article>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <Info>
-                    <span>100pcs</span>
-                    <span>•</span>
-                    <span>Anti-bactérien</span>
-                  </Info>
-                </DescriptionTitle>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
+          <ProductAbout>
+            <DescriptionTitle>
+              <h2 className="antibacterial_line">Lingettes</h2>
+            </DescriptionTitle>
+            <DescriptionParagraph>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsu.
+              </p>
+            </DescriptionParagraph>
+          </ProductAbout>
         </Item>
       </Wrapper>
 
