@@ -174,6 +174,12 @@ export const LandingTitle = styled.h1`
   &.title_accueil::before {
     content: "Accueil";
   }
+  &.title_legalnotice {
+    color: ${accueil};
+  }
+  &.title_legalnotice::before {
+    content: "Mentions Légales";
+  }
   &.title_handwash {
     color: ${handWash};
   }
