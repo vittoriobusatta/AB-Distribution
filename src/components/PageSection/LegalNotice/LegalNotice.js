@@ -61,7 +61,7 @@ const SubArticle = styled.h2`
   }
 `;
 const Content = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   max-width: 1400px;
@@ -69,6 +69,7 @@ const Content = styled.p`
   color: #222;
   @media screen and (min-width: 992px) {
   line-height: 22px;
+  font-size: 16px;
   }
 `;
 
