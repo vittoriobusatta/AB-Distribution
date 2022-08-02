@@ -9,6 +9,7 @@ export const Item = styled.div`
   margin-top: max(20rem, 140px);
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   &:last-child {
     margin-bottom: max(20rem, 40px);
