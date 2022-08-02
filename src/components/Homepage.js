@@ -10,6 +10,7 @@ import Coffee from "./PageSection/Coffee/Coffee";
 import Grocery from "./PageSection/Grocery/Grocery";
 import Perfume from "./PageSection/Perfume/Perfume";
 import Showergel from "./PageSection/Showergel/Showergel";
+import LegalNotice from "./PageSection/LegalNotice/LegalNotice";
 
 const Container = styled.main`
   height: auto;
@@ -37,6 +38,7 @@ const HomePage = () => {
         <Route path="gels-douches" element={<Showergel />} />
         <Route path="alimentations" element={<Grocery />} />
         <Route path="brumes-corporelles" element={<Bodymist />} />
+        <Route path="mentions-legales" element={<LegalNotice />} />
       </Routes>
     </Container>
   );

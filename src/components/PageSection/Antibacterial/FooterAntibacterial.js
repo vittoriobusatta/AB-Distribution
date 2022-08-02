@@ -47,9 +47,7 @@ function FooterAntibacterial() {
                 <Link to="/">Accueil</Link>
               </li>
               <li>
-                <a className="links_accueil" href="mentions-legales">
-                  Mentions Légales
-                </a>
+                <Link to="/mentions-legales">Mentions Légales</Link>
               </li>
             </ul>
           </UpdateColumnLinks>
