@@ -200,24 +200,6 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(4rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    @media screen and (min-width: 1224px) {
-      line-height: 3rem;
-    }
-  }
-`;
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -319,14 +301,6 @@ function Handwash() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la mangue. Il purifiera vos mains de la saleté
-                    et les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
 
                 <NumberLinks>
                   <a className="mango_color" href="#blueberry">
@@ -360,16 +334,6 @@ function Handwash() {
                     <span>Lave Mains</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la canneberge. Il purifiera vos mains de la
-                    saleté et les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
-
                 <NumberLinks>
                   <a className="cranberry_color" href="#mango">
                     01
@@ -403,15 +367,6 @@ function Handwash() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la prune. Il purifiera vos mains de la saleté et
-                    les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
-
                 <NumberLinks>
                   <a className="plum_color" href="#cranberry">
                     02
@@ -444,15 +399,6 @@ function Handwash() {
                     <span>Lave Mains</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Ultra Compact vous propose une solution de savon liquide qui
-                    rendra le lavage de vos mains agréable avec son parfum
-                    aromatisé à la myrtille. Il purifiera vos mains de la saleté
-                    et les rendra propre et douces.
-                  </p>
-                </DescriptionParagraph>
 
                 <NumberLinks>
                   <a className="blueberry_color" href="#plum">

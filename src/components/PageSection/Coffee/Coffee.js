@@ -175,24 +175,7 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(4rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    @media screen and (min-width: 1224px) {
-      line-height: 3rem;
-    }
-  }
-`;
+
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -233,12 +216,6 @@ function Coffee() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Un mélange harmonieux avec un arôme incomparable et une
-                    saveur particulièrement douce, douce et séduisante.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -263,13 +240,6 @@ function Coffee() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Un mélange de cafés avec une crème veloutée et un arôme
-                    persistant. Parfums de vanille pour un capuccino doux et
-                    crémeux.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -294,12 +264,6 @@ function Coffee() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Un café légèrement torréfié avec une acidité minime ainsi
-                    que des notes de cacao pur.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>

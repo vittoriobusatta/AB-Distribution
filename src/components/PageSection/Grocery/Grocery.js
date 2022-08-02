@@ -228,24 +228,6 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(4rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    @media screen and (min-width: 1224px) {
-      line-height: 3rem;
-    }
-  }
-`;
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -291,13 +273,6 @@ function Grocery() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    redbeans laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -326,14 +301,6 @@ function Grocery() {
                     <span>Épicerie</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    whitebeans laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -363,13 +330,6 @@ function Grocery() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    greenpepper laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -399,13 +359,6 @@ function Grocery() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    strawberrryjam laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -435,13 +388,6 @@ function Grocery() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    apricotjam laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>

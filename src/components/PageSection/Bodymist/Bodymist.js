@@ -260,24 +260,6 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(4rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    @media screen and (min-width: 1224px) {
-      line-height: 3rem;
-    }
-  }
-`;
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -362,14 +344,6 @@ function Bodymist() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle Loyal
-                    laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
-
                 <NumberLinks>
                   <a className="loyal_active" href="#loyal">
                     01
@@ -412,14 +386,6 @@ function Bodymist() {
                     <span>Brumes Corporelles</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle Brave
-                    laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
 
                 <NumberLinks>
                   <a className="brave_color" href="#loyal">
@@ -464,14 +430,6 @@ function Bodymist() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    Creative laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
-
                 <NumberLinks>
                   <a className="creative_color" href="#loyal">
                     01
@@ -514,14 +472,6 @@ function Bodymist() {
                     <span>Brumes Corporelles</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    Dynamic laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
 
                 <NumberLinks>
                   <a className="dynamic_color" href="#loyal">

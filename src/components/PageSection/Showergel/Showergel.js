@@ -189,27 +189,6 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(3rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    color: ${mainColor};
-    @media screen and (min-width: 1224px) {
-      line-height: 2.3rem;
-      text-align: left;
-      padding: 0;
-    }
-  }
-`;
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -258,14 +237,6 @@ function Showergel() {
                 </Info>
               </DescriptionTitle>
 
-              <DescriptionParagraph>
-                <p>
-                  Ultra Compact vous propose une solution de savon liquide qui
-                  rendra le lavage de vos mains agréable avec son parfum
-                  aromatisé à la mangue. Il purifiera vos mains de la saleté et
-                  les rendra propre et douces.
-                </p>
-              </DescriptionParagraph>
             </Description>
           </ItemContent>
         </Item>
@@ -291,15 +262,6 @@ function Showergel() {
                   <span>Gels Douches</span>
                 </Info>
               </DescriptionTitle>
-
-              <DescriptionParagraph>
-                <p>
-                  Ultra Compact vous propose une solution de savon liquide qui
-                  rendra le lavage de vos mains agréable avec son parfum
-                  aromatisé à la mangue. Il purifiera vos mains de la saleté et
-                  les rendra propre et douces.
-                </p>
-              </DescriptionParagraph>
             </Description>
           </ItemContent>
         </Item>
@@ -325,15 +287,6 @@ function Showergel() {
                   <span>Gels Douches</span>
                 </Info>
               </DescriptionTitle>
-
-              <DescriptionParagraph>
-                <p>
-                  Ultra Compact vous propose une solution de savon liquide qui
-                  rendra le lavage de vos mains agréable avec son parfum
-                  aromatisé à la mangue. Il purifiera vos mains de la saleté et
-                  les rendra propre et douces.
-                </p>
-              </DescriptionParagraph>
             </Description>
           </ItemContent>
         </Item>

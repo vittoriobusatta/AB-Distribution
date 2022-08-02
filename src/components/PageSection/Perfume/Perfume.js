@@ -249,24 +249,6 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(4rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    @media screen and (min-width: 1224px) {
-      line-height: 3rem;
-    }
-  }
-`;
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -351,14 +333,6 @@ function Perfume() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle cachemere
-                    laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
-
                 <NumberLinks>
                   <a className="cachemere_active" href="#cachemere">
                     01
@@ -401,14 +375,6 @@ function Perfume() {
                     <span>Brumes Corporelles</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle rainbow
-                    laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
 
                 <NumberLinks>
                   <a className="rainbow_color" href="#cachemere">
@@ -453,14 +419,6 @@ function Perfume() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    sandalwood laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
-
                 <NumberLinks>
                   <a className="sandalwood_color" href="#cachemere">
                     01
@@ -503,14 +461,6 @@ function Perfume() {
                     <span>Brumes Corporelles</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    roseblack laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
 
                 <NumberLinks>
                   <a className="roseblack_color" href="#cachemere">

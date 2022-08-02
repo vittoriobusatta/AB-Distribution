@@ -277,19 +277,6 @@ function Antibacterial() {
               </Right>
             </ItemContent>
           </Article>
-
-          <ProductAbout>
-            <DescriptionTitle>
-              <h2 className="antibacterial_line">Gels</h2>
-            </DescriptionTitle>
-            <DescriptionParagraph>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-            </DescriptionParagraph>
-          </ProductAbout>
         </Item>
 
         <Item id="wipe">
@@ -350,19 +337,7 @@ function Antibacterial() {
               </Right>
             </ItemContent>
           </Article>
-
-          <ProductAbout>
-            <DescriptionTitle>
-              <h2 className="antibacterial_line">Lingettes</h2>
-            </DescriptionTitle>
-            <DescriptionParagraph>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-            </DescriptionParagraph>
-          </ProductAbout>
+        
         </Item>
       </Wrapper>
 

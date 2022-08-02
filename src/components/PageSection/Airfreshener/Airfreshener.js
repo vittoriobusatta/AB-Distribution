@@ -261,24 +261,6 @@ const DescriptionTitle = styled.div`
     }
   }
 `;
-const DescriptionParagraph = styled.div`
-  height: auto;
-  width: 100%;
-  padding-top: max(4rem, 25px);
-  display: flex;
-  justify-content: center;
-  & p {
-    font-family: ${cabinRegular};
-    font-size: ${sizeP};
-    line-height: ${lineheightP};
-    text-align: center;
-    padding: 0 10px;
-    max-width: 700px;
-    @media screen and (min-width: 1224px) {
-      line-height: 3rem;
-    }
-  }
-`;
 const Info = styled.div`
   height: auto;
   width: 100%;
@@ -327,13 +309,7 @@ function Airfreshener() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    greenTea laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
+                
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -364,14 +340,6 @@ function Airfreshener() {
                     <span>Désodorisants</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    mysticOud laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -403,13 +371,7 @@ function Airfreshener() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    wildLavender laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
+               
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -441,13 +403,7 @@ function Airfreshener() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    whiteRose laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
+                
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -479,13 +435,6 @@ function Airfreshener() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    flowerGarden laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -516,14 +465,7 @@ function Airfreshener() {
                     <span>Désodorisants</span>
                   </Info>
                 </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    glamourFruits laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
+                
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -555,13 +497,6 @@ function Airfreshener() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle ocean
-                    laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
@@ -593,13 +528,6 @@ function Airfreshener() {
                   </Info>
                 </DescriptionTitle>
 
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    tobacco laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
               </ProductAbout>
             </Right>
           </ItemContent>
