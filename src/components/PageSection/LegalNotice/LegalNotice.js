@@ -92,10 +92,13 @@ function LegalNotice() {
             L'entreprise individuelle de Youssouf ISMAEL DAOUDJEE située :
           </Content>
           <Content>
-            82 rue Victor le Vigoureux, 97410 Saint-Pierre immatriculée au RCS
-            de 890 934 342
+            82 rue Victor le Vigoureux, 97410 Saint-Pierre. 
           </Content>
-          <Content>n° de téléphone : +33692548883</Content>
+          <Content>immatriculée au RCS
+            de SAINT-PIERRE-DE-LA-REUNION sous le numéro 890 934 342.
+            </Content>
+            <Content>Le numéro individuel TVA est : FR 48 890934342.</Content>
+          <Content>n° de téléphone : +262 6 92 54 88 83</Content>
           <Content>adresse mail : services@ab-distribution.re</Content>
           <SubArticle>1.3 Hébergeur</SubArticle>
           <Content>

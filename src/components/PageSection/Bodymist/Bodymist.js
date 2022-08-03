@@ -6,7 +6,7 @@ import FooterBodymist from "./FooterBodymist";
 import loyalImage from "./images/loyal.webp";
 import braveImage from "./images/brave.webp";
 import creativeImage from "./images/creative.webp";
-import dynamicImage from "./images/dynamic.webp";
+import dynamicImage from "./images/dynamic.png";
 import { Item } from "../PageCommon";
 import {
   albraSans,
@@ -22,8 +22,8 @@ import {
 import styled from "styled-components";
 
 const loyal = "#0088AE";
-const dynamic = "#984088";
-const creative = "#E7DD08";
+const dynamic = "#D4422C";
+const creative = "#F8E64B";
 const brave = "#CF3911";
 
 const Wrapper = styled.section`
@@ -85,7 +85,7 @@ export const NameContent = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      background-image: linear-gradient(90deg, rgba(0,137,174,1) 0%, rgba(0,137,174,1) 37%, rgba(0,117,161,1) 78%, rgba(54,91,118,1) 100%);
+      background-image: linear-gradient(90deg, rgba(54,91,118,1) 4%, rgba(0,137,174,1) 38%);
       &::after {
         content: "La magie des arômes";
         color: #2f5e7b;
@@ -95,7 +95,7 @@ export const NameContent = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      background-image: linear-gradient(90deg, rgba(207,57,16,1) 37%, rgba(201,50,20,1) 58%, rgba(167,72,44,1) 78%);
+      background-image: linear-gradient(90deg, rgba(152,58,25,1) 4%, rgba(207,57,16,1) 38%);
       &::after {
         content: "Une ambiance paisible";
         color: #b24528;
@@ -105,7 +105,7 @@ export const NameContent = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      background-image: linear-gradient(90deg, rgba(248,230,75,1) 37%, rgba(205,212,0,1) 58%, rgba(185,205,85,1) 78%);
+      background-image: linear-gradient(90deg, rgba(185,205,85,1) 4%, rgba(248,230,75,1) 38%);
       &::after {
         content: "Un éveil des sens";
         color: #c0d03b;
@@ -115,10 +115,10 @@ export const NameContent = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      background-image: linear-gradient(90deg, rgba(212,66,44,1) 4%, rgba(211,23,37,1) 37%, rgba(173,30,92,1) 58%, rgba(158,85,151,1) 78%);;
+      background-image: linear-gradient(90deg, rgba(158,85,151,1) 4%, rgba(212,66,44,1) 38%);
       &::after {
         content: "Un souffle de pureté";
-        color: #cf3911;
+        color: #984088;
       }
     }
   }
@@ -316,13 +316,13 @@ const NumberLinks = styled.div`
       color: ${brave};
     }
     &.creative_active {
-      color: #c0d03b;
-    }
-    &.creative_color {
       color: ${creative};
     }
+    &.creative_color {
+      color: #c0d03b;
+    }
     &.dynamic_active {
-      color: #cf3911;
+      color: #984088;
     }
     &.dynamic_color {
       color: ${dynamic};
