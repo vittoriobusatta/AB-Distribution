@@ -65,18 +65,6 @@ function Products() {
                 <Image src={bodymistImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  La collection de brumes corporelles rafraîchissantes procure
-                  un moment doux et léger. Ce sont des brumes aux essences
-                  naturelles d’été. Idéales pour obtenir une sensation de
-                  fraîcheur et d’énergie. Vous pouvez les utiliser sur votre
-                  corps, vos cheveux, à la maison et/ou sur les textiles.
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -99,17 +87,6 @@ function Products() {
               </OverviewContent>
             </Overview>
 
-            <Description>
-              <DescriptionContent>
-                <P>
-                  Les parfums d’intérieur peuvent donner vie à votre décoration
-                  et à votre maison en amenant une dimension sensorielle toute
-                  particulière. Les parfums d’ambiance spray vous permettront de
-                  créer une nouvelle atmosphère intérieure parfumée en un tour
-                  de main.
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -131,17 +108,6 @@ function Products() {
                 <Image src={antibacterialImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  Parce que 80% des microbes se transmettent par les mains, il
-                  est important d’adopter les bons gestes d’hygiène pour se
-                  protéger des infections comme le rhume ou le covid-19.
-                  Découvrez notre séléctions de produits anti-bactériens
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -163,19 +129,6 @@ function Products() {
                 <Image src={handwashImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  Une bonne hygiène des mains est importante pour tout le monde.
-                  Il est important de se laver les mains plusieurs fois par jour
-                  : avant de cuisiner, de manger ou après un passage aux
-                  toilettes. Dans cette catégorie, vous retrouverez des savons
-                  liquides pour les mains sèches, normales ou sensibles, aux
-                  senteurs fruitées.
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -197,18 +150,6 @@ function Products() {
                 <Image src={showergelImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  Avec les gels douche Ultra Compact, plongez dans le plaisir et
-                  la douceur du Paradis. Une expérience d'évasion unique grâce
-                  aux ingrédients exotiques et parfumés. Grâce à leur formule
-                  avec plus d'agent hydratant au pH neutre pour la peau et aux
-                  extraits naturels, vous sentez votre peau douce et hydratée.
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -230,18 +171,6 @@ function Products() {
                 <Image src={airfreshenerImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  Un désodorisant d’intérieur est aussi un moyen efficace de
-                  lutter contre les mauvaises odeurs dans votre maison. Dîtes
-                  adieu aux odeurs de poubelles, de linge sale ou d’humidité et
-                  bienvenue aux odeurs et parfums frais ou gourmands d’Ultra
-                  Compact !
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -263,19 +192,6 @@ function Products() {
                 <Image src={coffeeImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  NESCAFÉ Xpress vous donnera le réveil dont vous avez besoin
-                  pour continuer votre journée. Les grains de café et le lait
-                  doux spécialement sélectionnés; la délicieuse saveur de café
-                  au lait glacé qui sort lorsqu’il est combiné avec la
-                  spécialisation NESCAFÉ vous fera oublier l’intensité de la
-                  journée.
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
 
@@ -297,16 +213,6 @@ function Products() {
                 <Image src={groceryImage} alt="" />
               </OverviewContent>
             </Overview>
-
-            <Description>
-              <DescriptionContent>
-                <P>
-                  Nous proposons un large éventail de produits alimentaires de
-                  la marque Tukas tels que des produits en conserve, des légumes
-                  marinés, des confitures et sauces . Découvrez nos séléctions !
-                </P>
-              </DescriptionContent>
-            </Description>
           </Layout>
         </Item>
       </Wrapper>
