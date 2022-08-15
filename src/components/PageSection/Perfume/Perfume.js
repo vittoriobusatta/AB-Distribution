@@ -53,7 +53,7 @@ const ItemContent = styled.div`
   }
 `;
 
-export const Name = styled.div`
+const Name = styled.div`
   height: 10%;
   width: 100%;
   @media screen and (min-width: 1224px) {
@@ -62,7 +62,7 @@ export const Name = styled.div`
   }
 `;
 
-export const NameContent = styled.div`
+const NameContent = styled.div`
   height: 100%;
   width: auto;
   display: flex;
@@ -75,40 +75,16 @@ export const NameContent = styled.div`
     text-transform: uppercase;
     width: fit-content;
     position: relative;
+    color: ${(props) => props.color};
+
     &::after {
       text-transform: none;
       position: absolute;
       font-size: clamp(20px, 4rem, 100px);
       bottom: max(-5rem, -40px);
       left: 3rem;
-    }
-    &.cachemere {
-      color: ${cachemere};
-      &::after {
-        content: "La magie des arômes";
-        color: #F0B938;
-      }
-    }
-    &.rainbow {
-      color: ${rainbow};
-      &::after {
-        content: "Une ambiance paisible";
-        color: #F79974;
-      }
-    }
-    &.sandalwood {
-      color: ${sandalwood};
-      &::after {
-        content: "Un éveil des sens";
-        color: #2A255D;
-      }
-    }
-    &.roseblack {
-      color: ${roseblack};
-      &::after {
-        content: "Un souffle de pureté";
-        color: #B5ABC8;
-      }
+      color: ${(props) => props.secondColor};
+      content: "${(props) => props.content}";
     }
   }
   @media screen and (min-width: 1224px) {
@@ -227,25 +203,13 @@ const DescriptionTitle = styled.div`
       bottom: -15px;
       width: 82px;
       height: 2px;
-      background: #000;
+      background: ${(props) => props.identColor};
       z-index: 10;
       left: 50%;
       transform: translate(-50%, 0);
       @media screen and (min-width: 576px) {
         height: 3px;
       }
-    }
-    &.cachemere_line::before {
-      background-color: ${cachemere};
-    }
-    &.rainbow_line::before {
-      background-color: ${rainbow};
-    }
-    &.sandalwood_line::before {
-      background-color: ${sandalwood};
-    }
-    &.roseblack_line::before {
-      background-color: ${roseblack};
     }
   }
 `;
@@ -290,34 +254,57 @@ const NumberLinks = styled.div`
   column-gap: 10px;
   & a {
     font-family: ${baliviaRegular};
-    font-size: max(3.5rem, 25px);
+    font-size: max(3rem, 25px);
     transition: ${textHover};
-    &.cachemere_active {
-      color: #F0B938 ;
-    }
-    &.cachemere_color {
-      color: ${cachemere};
-    }
-    &.rainbow_active {
-      color: #F79974;
-    }
-    &.rainbow_color {
-      color: ${rainbow};
-    }
-    &.sandalwood_active {
-      color: #2A255D;
-    }
-    &.sandalwood_color {
-      color: ${sandalwood};
-    }
-    &.roseblack_active {
-      color: #B5ABC8;
-    }
-    &.roseblack_color {
-      color: ${roseblack};
-    }
+    color: ${(props) => props.color};
   }
 `;
+const data = [
+  {
+    title: "Cachemire",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: cachemere,
+    colorActive: "#",
+    image: cachemereImage,
+    id: "cachemere",
+    secondColor: "#f0b938",
+    content: "La magie des arômes",
+  },
+  {
+    title: "Rose Noire",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: roseblack,
+    colorActive: "#",
+    image: roseblackImage,
+    id: "roseblack",
+    secondColor: "#b5abc8",
+    content: "Une ambiance paisible",
+  },
+  {
+    title: "Bois de santal",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: sandalwood,
+    colorActive: "#",
+    image: sandalwoodImage,
+    id: "sandalwood",
+    secondColor: "#2a255d",
+    content: "Un éveil des sens",
+  },
+  {
+    title: "Arc-en-ciel",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: rainbow,
+    colorActive: "#",
+    image: rainbowImage,
+    id: "rainbow",
+    secondColor: "#f79974",
+    content: "Un souffle de pureté",
+  },
+];
 
 function Perfume() {
   setTitle("Parfums | AB Distribution");
@@ -327,209 +314,49 @@ function Perfume() {
       <LandingPerfume />
 
       <Wrapper>
-        <Item id="cachemere">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="cachemere">La Magie des Arômes</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={cachemereImage} alt="" />
-              </ImageContainer>
-            </Left>
+        {data.map((item, index) => (
+          <Item id={item.id} key={index}>
+            <ItemContent>
+              <Name>
+                <NameContent
+                  content={item.content}
+                  color={item.color}
+                  secondColor={item.secondColor}
+                >
+                  <h2>{item.content}</h2>
+                </NameContent>
+              </Name>
+              <Left>
+                <ImageContainer>
+                  <Image src={item.image} alt="" />
+                </ImageContainer>
+              </Left>
+              <Right>
+                <ProductAbout>
+                  <DescriptionTitle identColor={item.color}>
+                    <h2>{item.title}</h2>
+                    <Info>
+                      <span>100ml</span>
+                      <span>•</span>
+                      <span>Brumes Corporelles</span>
+                    </Info>
+                  </DescriptionTitle>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="cachemere_line">Cachemire</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
+                  <DescriptionParagraph>
+                    <p>{item.description}</p>
+                  </DescriptionParagraph>
 
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="cachemere_active" href="#cachemere">
-                    01
-                  </a>
-                  <a className="cachemere_color" href="#rainbow">
-                    02
-                  </a>
-                  <a className="cachemere_color" href="#sandalwood">
-                    03
-                  </a>
-                  <a className="cachemere_color" href="#roseblack">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
-
-        <Item id="rainbow">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="rainbow">Une ambiance paisible</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={rainbowImage} alt="" />
-              </ImageContainer>
-            </Left>
-
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="rainbow_line">Arc-en-ciel</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="rainbow_color" href="#cachemere">
-                    01
-                  </a>
-                  <a className="rainbow_active" href="#rainbow">
-                    02
-                  </a>
-                  <a className="rainbow_color" href="#sandalwood">
-                    03
-                  </a>
-                  <a className="rainbow_color" href="#roseblack">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
-
-        <Item id="sandalwood">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="sandalwood">Un éveil des sens</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={sandalwoodImage} alt="" />
-              </ImageContainer>
-            </Left>
-
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="sandalwood_line">Bois de Santal</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="sandalwood_color" href="#cachemere">
-                    01
-                  </a>
-                  <a className="sandalwood_color" href="#rainbow">
-                    02
-                  </a>
-                  <a className="sandalwood_active" href="#sandalwood">
-                    03
-                  </a>
-                  <a className="sandalwood_color" href="#roseblack">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
-
-        <Item id="roseblack">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="roseblack">Un souffle de pureté</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={roseblackImage} alt="" />
-              </ImageContainer>
-            </Left>
-
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="roseblack_line">Rose Noire</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="roseblack_color" href="#cachemere">
-                    01
-                  </a>
-                  <a className="roseblack_color" href="#rainbow">
-                    02
-                  </a>
-                  <a className="roseblack_color" href="#sandalwood">
-                    03
-                  </a>
-                  <a className="roseblack_active" href="#roseblack">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
+                  <NumberLinks color={item.color}>
+                    <a href="#loyal">01</a>
+                    <a href="#brave">02</a>
+                    <a href="#creative">03</a>
+                    <a href="#dynamic">04</a>
+                  </NumberLinks>
+                </ProductAbout>
+              </Right>
+            </ItemContent>
+          </Item>
+        ))}
       </Wrapper>
 
       <FooterPerfume />
