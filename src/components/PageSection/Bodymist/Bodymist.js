@@ -52,7 +52,7 @@ const ItemContent = styled.div`
   }
 `;
 
-export const Name = styled.div`
+const Name = styled.div`
   height: 10%;
   width: 100%;
   @media screen and (min-width: 1224px) {
@@ -61,7 +61,7 @@ export const Name = styled.div`
   }
 `;
 
-export const NameContent = styled.div`
+const NameContent = styled.div`
   height: 100%;
   width: auto;
   display: flex;
@@ -74,52 +74,19 @@ export const NameContent = styled.div`
     text-transform: uppercase;
     width: fit-content;
     position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: ${(props) => props.colorGradient};
+
     &::after {
       text-transform: none;
       position: absolute;
       font-size: clamp(20px, 4rem, 100px);
       bottom: max(-5rem, -40px);
       left: 3rem;
-    }
-    &.loyal {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(90deg, rgba(54,91,118,1) 4%, rgba(0,137,174,1) 38%);
-      &::after {
-        content: "La magie des arômes";
-        color: #2f5e7b;
-      }
-    }
-    &.brave {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(90deg, rgba(152,58,25,1) 4%, rgba(207,57,16,1) 38%);
-      &::after {
-        content: "Une ambiance paisible";
-        color: #b24528;
-      }
-    }
-    &.creative {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(90deg, rgba(185,205,85,1) 4%, rgba(248,230,75,1) 38%);
-      &::after {
-        content: "Un éveil des sens";
-        color: #c0d03b;
-      }
-    }
-    &.dynamic {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(90deg, rgba(158,85,151,1) 4%, rgba(212,66,44,1) 38%);
-      &::after {
-        content: "Un souffle de pureté";
-        color: #984088;
-      }
+      color: ${(props) => props.color};
+      content: "${(props) => props.content}";
     }
   }
   @media screen and (min-width: 1224px) {
@@ -238,7 +205,7 @@ const DescriptionTitle = styled.div`
       bottom: -15px;
       width: 82px;
       height: 2px;
-      background: #000;
+      background: ${(props) => props.identColor};
       z-index: 10;
       left: 50%;
       transform: translate(-50%, 0);
@@ -301,8 +268,9 @@ const NumberLinks = styled.div`
   column-gap: 10px;
   & a {
     font-family: ${baliviaRegular};
-    font-size: max(3.5rem, 25px);
+    font-size: max(3rem, 25px);
     transition: ${textHover};
+    color: ${(props) => props.color};
     &.loyal_active {
       color: #2f5e7b;
     }
@@ -330,229 +298,114 @@ const NumberLinks = styled.div`
   }
 `;
 
+const data = [
+  {
+    title: "Loyal",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: loyal,
+    colorActive: "#",
+    image: loyalImage,
+    id: "loyal",
+    gradient:
+      "linear-gradient( 90deg, rgba(54, 91, 118, 1) 4%, rgba(0, 137, 174, 1) 38%)",
+    content: "La magie des arômes",
+  },
+  {
+    title: "Brave",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: brave,
+    colorActive: "#",
+    image: braveImage,
+    id: "brave",
+    gradient:
+      "linear-gradient( 90deg, rgba(152, 58, 25, 1) 4%, rgba(207, 57, 16, 1) 38% )",
+    content: "Une ambiance paisible",
+  },
+  {
+    title: "Creative",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: creative,
+    colorActive: "#",
+    image: creativeImage,
+    id: "creative",
+    gradient:
+      "linear-gradient( 90deg, rgba(185, 205, 85, 1) 4%, rgba(248, 230, 75, 1) 38% )",
+    content: "Un éveil des sens",
+  },
+  {
+    title: "Dynamic",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
+    color: dynamic,
+    colorActive: "#",
+    image: dynamicImage,
+    id: "dynamic",
+    gradient:
+      "linear-gradient( 90deg, rgba(158, 85, 151, 1) 4%, rgba(212, 66, 44, 1) 38% )",
+    content: "Un souffle de pureté",
+  },
+];
+
 function Bodymist() {
   setTitle("Brumes Corporelles | AB Distribution");
+
   return (
     <>
       <NavbarBodymist />
       <LandingBodymist />
 
       <Wrapper>
-        <Item id="loyal">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="loyal">La Magie des Arômes</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={loyalImage} alt="" />
-              </ImageContainer>
-            </Left>
+        {data.map((item, index) => (
+          <Item id={item.id} key={index}>
+            <ItemContent>
+              <Name>
+                <NameContent
+                  content={item.content}
+                  color={item.color}
+                  colorGradient={item.gradient}
+                >
+                  <h2>{item.content}</h2>
+                </NameContent>
+              </Name>
+              <Left>
+                <ImageContainer>
+                  <Image src={item.image} alt="" />
+                </ImageContainer>
+              </Left>
+              <Right>
+                <ProductAbout>
+                  <DescriptionTitle identColor={item.color}>
+                    <h2>{item.title}</h2>
+                    <Info>
+                      <span>100ml</span>
+                      <span>•</span>
+                      <span>Brumes Corporelles</span>
+                    </Info>
+                  </DescriptionTitle>
 
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="loyal_line">Loyal</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
+                  <DescriptionParagraph>
+                    <p>{item.description}</p>
+                  </DescriptionParagraph>
 
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="loyal_active" href="#loyal">
-                    01
-                  </a>
-                  <a className="loyal_color" href="#brave">
-                    02
-                  </a>
-                  <a className="loyal_color" href="#creative">
-                    03
-                  </a>
-                  <a className="loyal_color" href="#dynamic">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
-
-        <Item id="brave">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="brave">Une ambiance paisible</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={braveImage} alt="" />
-              </ImageContainer>
-            </Left>
-
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="brave_line">Brave</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="brave_color" href="#loyal">
-                    01
-                  </a>
-                  <a className="brave_active" href="#brave">
-                    02
-                  </a>
-                  <a className="brave_color" href="#creative">
-                    03
-                  </a>
-                  <a className="brave_color" href="#dynamic">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
-
-        <Item id="creative">
-          <ItemContent>
-            <Name>
-              <NameContent>
-                <h2 className="creative">Un éveil des sens</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={creativeImage} alt="" />
-              </ImageContainer>
-            </Left>
-
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="creative_line">Creative</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                  It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsu.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="creative_color" href="#loyal">
-                    01
-                  </a>
-                  <a className="creative_color" href="#brave">
-                    02
-                  </a>
-                  <a className="creative_active" href="#creative">
-                    03
-                  </a>
-                  <a className="creative_color" href="#dynamic">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
-
-        <Item id="dynamic">
-          <ItemContent>
-          <Name>
-              <NameContent>
-                <h2 className="dynamic">Un souffle de pureté</h2>
-              </NameContent>
-            </Name>
-            <Left>
-              <ImageContainer>
-                <Image src={dynamicImage} alt="" />
-              </ImageContainer>
-            </Left>
-
-            <Right>
-              <ProductAbout>
-                <DescriptionTitle>
-                  <h2 className="dynamic_line">Dynamic</h2>
-                  <Info>
-                    <span>100ml</span>
-                    <span>•</span>
-                    <span>Brumes Corporelles</span>
-                  </Info>
-                </DescriptionTitle>
-
-                <DescriptionParagraph>
-                  <p>
-                    Avec sa senteur orientale de musc blanc très délicate grâce
-                    à ses notes de coton et de jasmin, la brume corporelle
-                    Dynamic laisse un voile odorant fin et durable.
-                  </p>
-                </DescriptionParagraph>
-
-                <NumberLinks>
-                  <a className="dynamic_color" href="#loyal">
-                    01
-                  </a>
-                  <a className="dynamic_color" href="#brave">
-                    02
-                  </a>
-                  <a className="dynamic_color" href="#creative">
-                    03
-                  </a>
-                  <a className="dynamic_active" href="#dynamic">
-                    04
-                  </a>
-                </NumberLinks>
-              </ProductAbout>
-            </Right>
-          </ItemContent>
-        </Item>
+                  <NumberLinks color={item.color}>
+                    <a href="#loyal">01</a>
+                    <a href="#brave">02</a>
+                    <a href="#creative">03</a>
+                    <a href="#dynamic">04</a>
+                  </NumberLinks>
+                </ProductAbout>
+              </Right>
+            </ItemContent>
+          </Item>
+        ))}
       </Wrapper>
 
       <FooterBodymist />
     </>
   );
 }
-
-
-
-
-
-
-
 
 export default Bodymist;
