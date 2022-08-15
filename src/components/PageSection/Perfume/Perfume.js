@@ -347,10 +347,10 @@ function Perfume() {
                   </DescriptionParagraph>
 
                   <NumberLinks color={item.color}>
-                    <a href="#loyal">01</a>
-                    <a href="#brave">02</a>
-                    <a href="#creative">03</a>
-                    <a href="#dynamic">04</a>
+                    <a href="#cachemere">01</a>
+                    <a href="#roseblack">02</a>
+                    <a href="#sandalwood">03</a>
+                    <a href="#rainbow">04</a>
                   </NumberLinks>
                 </ProductAbout>
               </Right>
