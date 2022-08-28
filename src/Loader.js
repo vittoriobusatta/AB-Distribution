@@ -26,7 +26,10 @@ const Bloc = styled.div`
 
   & svg {
     overflow: hidden;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+    @media screen and (max-width: 576px) {
+      width: 100px;
+    }
   }
 `;
 const Overlay = styled.div`
