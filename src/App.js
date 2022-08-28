@@ -69,6 +69,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
   const [scrollTop, setScrollTop] = useState(0)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     function onScroll() {
@@ -87,10 +88,16 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4500);
+  });
+
   return (
     <>
+    {loading ? <Loader /> : null}
       <GlobalStyle isActive={openMenu} />
-      <Loader />
       <BrowserRouter>
         <Routes>
           <Route
