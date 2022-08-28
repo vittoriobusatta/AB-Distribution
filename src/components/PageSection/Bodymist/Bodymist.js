@@ -66,7 +66,7 @@ const Name = styled.div`
     display: flex;
     height: 100%;
     grid-area: 2 / 1 / 4 / 2;
-    align-items: center;
+    align-items: flex-end;
     & div {
       width: 120px;
       height: 90%;
@@ -75,9 +75,10 @@ const Name = styled.div`
       align-items: center;
       & h2 {
         font-family: ${albraSans};
-        font-size: 100px;
+        font-size: 9rem;
         writing-mode: vertical-rl;
         color: ${(props) => props.color};
+        color: ${mainColor};
       }
     }
   }
@@ -115,7 +116,7 @@ const TitleContent = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin : 0;
+    margin: 0;
   }
 `;
 
@@ -168,7 +169,7 @@ const Left = styled.div`
     top: 0%;
     @media screen and (min-width: 576px) {
       font-size: 8rem;
-    }
+    } 
     @media screen and (min-width: 768px) {
       font-size: 9rem;
     }
@@ -235,6 +236,9 @@ const DescriptionTitle = styled.div`
       @media screen and (min-width: 576px) {
         height: 3px;
       }
+      @media screen and (min-width: 1224px) {
+        width: 112px;
+      }
     }
     &.loyal_line::before {
       background-color: ${loyal};
@@ -264,7 +268,7 @@ const DescriptionParagraph = styled.div`
     padding: 0 10px;
     max-width: 700px;
     @media screen and (min-width: 1224px) {
-      line-height: 3rem;
+      line-height: 2.2rem;
     }
   }
 `;

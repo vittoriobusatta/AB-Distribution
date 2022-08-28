@@ -111,7 +111,7 @@ export const FooterColumnLogo = styled.div`
   justify-content: center;
   align-items: center;
   & svg {
-    height: 8rem;
+    height: 4.5rem;
     width: auto;
     max-width: 90px;
   }

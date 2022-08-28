@@ -45,24 +45,47 @@ const ItemContent = styled.div`
   flex-direction: column;
   padding: 0px 2rem;
   @media screen and (min-width: 1224px) {
-    flex-direction: row;
-    max-width: 1500px;
-    &.reverse {
-      flex-direction: row-reverse;
-    }
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+`;
+
+const Title = styled.div`
+  height: 10%;
+  width: 100%;
+  @media screen and (min-width: 1224px) {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 2 / 7;
   }
 `;
 
 const Name = styled.div`
-  height: 10%;
-  width: 100%;
+  display: none;
   @media screen and (min-width: 1224px) {
-    width: 27.5%;
-    height: 700px;
+    display: flex;
+    height: 100%;
+    grid-area: 2 / 1 / 4 / 2;
+    align-items: flex-end;
+    & div {
+      width: 120px;
+      height: 90%;
+      background: ${(props) => props.colorActive};
+      display: flex;
+      align-items: center;
+      & h2 {
+        font-family: ${albraSans};
+        font-size: 9rem;
+        writing-mode: vertical-rl;
+        color: ${(props) => props.color};
+      }
+    }
   }
 `;
 
-const NameContent = styled.div`
+const TitleContent = styled.div`
   height: 100%;
   width: auto;
   display: flex;
@@ -89,11 +112,9 @@ const NameContent = styled.div`
   }
   @media screen and (min-width: 1224px) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    & h2 {
-      line-height: 100px;
-    }
+    margin: 0;
   }
 `;
 
@@ -115,8 +136,8 @@ const Image = styled.img`
   width: 80%;
   max-width: 450px;
   @media screen and (min-width: 1224px) {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     max-width: 550px;
   }
 `;
@@ -130,11 +151,10 @@ const Left = styled.div`
   position: relative;
 
   @media screen and (min-width: 1224px) {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    &.reverse::before {
-      left: -100%;
-    }
+    grid-area: 2 / 3 / 6 / 5;
+    align-items: center;
   }
 
   &::before {
@@ -168,12 +188,13 @@ const Right = styled.div`
   align-items: center;
 
   @media screen and (min-width: 1224px) {
-    width: 50%;
+    width: 100%;
     height: 100%;
     min-height: 550px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    grid-area: 2 / 5 / 4 / 7;
   }
 `;
 
@@ -184,6 +205,9 @@ const ProductAbout = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media screen and (min-width: 1224px) {
+    max-width: 450px;
+  }
 `;
 const DescriptionTitle = styled.div`
   height: auto;
@@ -210,6 +234,9 @@ const DescriptionTitle = styled.div`
       @media screen and (min-width: 576px) {
         height: 3px;
       }
+      @media screen and (min-width: 1224px) {
+        width: 112px;
+      }
     }
   }
 `;
@@ -227,7 +254,7 @@ const DescriptionParagraph = styled.div`
     padding: 0 10px;
     max-width: 700px;
     @media screen and (min-width: 1224px) {
-      line-height: 3rem;
+      line-height: 2.2rem;
     }
   }
 `;
@@ -262,10 +289,11 @@ const NumberLinks = styled.div`
 const data = [
   {
     title: "Cachemire",
+    name: "Cachemere",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
     color: cachemere,
-    colorActive: "#",
+    colorActive: "#F0B938",
     image: cachemereImage,
     id: "cachemere",
     secondColor: "#f0b938",
@@ -273,10 +301,11 @@ const data = [
   },
   {
     title: "Rose Noire",
+    name: "Black Rose",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
     color: roseblack,
-    colorActive: "#",
+    colorActive: "#B5ABC8",
     image: roseblackImage,
     id: "roseblack",
     secondColor: "#b5abc8",
@@ -284,10 +313,11 @@ const data = [
   },
   {
     title: "Bois de santal",
+    name: "Sandalwood",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
     color: sandalwood,
-    colorActive: "#",
+    colorActive: "#2A255D",
     image: sandalwoodImage,
     id: "sandalwood",
     secondColor: "#2a255d",
@@ -295,10 +325,11 @@ const data = [
   },
   {
     title: "Arc-en-ciel",
+    name: "Rainbow",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu.",
     color: rainbow,
-    colorActive: "#",
+    colorActive: "#F79974",
     image: rainbowImage,
     id: "rainbow",
     secondColor: "#f79974",
@@ -317,14 +348,19 @@ function Perfume() {
         {data.map((item, index) => (
           <Item id={item.id} key={index}>
             <ItemContent>
-              <Name>
-                <NameContent
+              <Title>
+                <TitleContent
                   content={item.content}
                   color={item.color}
                   secondColor={item.secondColor}
                 >
                   <h2>{item.content}</h2>
-                </NameContent>
+                </TitleContent>
+              </Title>
+              <Name color={item.color} colorActive={item.colorActive}>
+                <div>
+                  <h2>{item.name}</h2>
+                </div>
               </Name>
               <Left>
                 <ImageContainer>
